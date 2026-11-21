@@ -1,0 +1,22 @@
+{
+  "_note": "SCHEDULED (not live) service. PLACEHOLDER stops, offsets and headways — copy from the published Rutgers bus schedule for the pilot semester and set verified: true. Live ETAs are deferred until a Passio/Rutgers feed is approved.",
+  "routes": [
+    {
+      "id": "B", "name": "B (Busch ↔ Livingston)", "days": [1, 2, 3, 4, 5],
+      "firstDeparture": "07:00", "lastDeparture": "23:30", "headwayMin": 10, "verified": false,
+      "stops": [
+        { "id": "busch-sc", "name": "Busch Student Center", "center": { "lat": 40.5235, "lng": -74.4582 }, "offsetMin": 0 },
+        { "id": "liv-plaza", "name": "Livingston Plaza", "center": { "lat": 40.5246, "lng": -74.4373 }, "offsetMin": 8 },
+        { "id": "liv-sc", "name": "Livingston Student Center", "center": { "lat": 40.5237, "lng": -74.4362 }, "offsetMin": 10 }
+      ]
+    },
+    {
+      "id": "LX", "name": "LX (College Ave ↔ Livingston)", "days": [1, 2, 3, 4, 5],
+      "firstDeparture": "07:00", "lastDeparture": "23:45", "headwayMin": 6, "verified": false,
+      "stops": [
+        { "id": "cac-sc", "name": "College Ave Student Center", "center": { "lat": 40.5030, "lng": -74.4520 }, "offsetMin": 0 },
+        { "id": "liv-sc", "name": "Livingston Student Center", "center": { "lat": 40.5237, "lng": -74.4362 }, "offsetMin": 9 }
+      ]
+    }
+  ]
+}

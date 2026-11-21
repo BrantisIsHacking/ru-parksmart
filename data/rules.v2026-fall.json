@@ -1,0 +1,20 @@
+{
+  "version": "2026-fall-draft",
+  "source": "PLACEHOLDER — must be transcribed from rudots.rutgers.edu and confirmed with Rutgers Transportation Services before the pilot.",
+  "verified": false,
+  "verifiedOn": null,
+  "permits": [
+    { "id": "commuter-livingston", "label": "Livingston commuter" },
+    { "id": "commuter-busch", "label": "Busch commuter" },
+    { "id": "commuter-college-ave", "label": "College Ave commuter" },
+    { "id": "resident-livingston", "label": "Livingston resident" },
+    { "id": "none", "label": "No permit / visitor" }
+  ],
+  "rules": [
+    { "id": "r1", "lots": ["LIV-A", "LIV-B"], "permits": ["commuter-livingston"], "days": [1, 2, 3, 4, 5], "start": "00:00", "end": "24:00", "note": "Livingston commuter lots, weekdays.", "verified": false },
+    { "id": "r2", "lots": ["LIV-C"], "permits": ["resident-livingston"], "days": [0, 1, 2, 3, 4, 5, 6], "start": "00:00", "end": "24:00", "note": "Resident lot, all week.", "verified": false },
+    { "id": "r3", "lots": ["LIV-A", "LIV-B", "LIV-C", "BUS-A"], "permits": ["*"], "days": [1, 2, 3, 4, 5], "start": "18:00", "end": "02:00", "note": "Any valid Rutgers permit after 6 PM (example of a time-dependent exception).", "verified": false },
+    { "id": "r4", "lots": ["LIV-A", "LIV-B", "LIV-C", "BUS-A"], "permits": ["*"], "days": [0, 6], "start": "00:00", "end": "24:00", "note": "Any valid Rutgers permit on weekends.", "verified": false },
+    { "id": "r5", "lots": ["BUS-A"], "permits": ["commuter-busch", "commuter-livingston"], "days": [1, 2, 3, 4, 5], "start": "00:00", "end": "24:00", "note": "Busch commuter lot; Livingston commuters assumed eligible for the park-and-ride example.", "verified": false }
+  ]
+}

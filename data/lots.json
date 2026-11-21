@@ -1,0 +1,16 @@
+{
+  "_note": "PLACEHOLDER pilot lots. Replace names, coordinates and capacities with the real Rutgers lots chosen for the pilot (see rudots.rutgers.edu maps), then set verified: true.",
+  "lots": [
+    { "id": "LIV-A", "name": "Livingston Lot A (placeholder)", "campus": "livingston", "center": { "lat": 40.5249, "lng": -74.4393 }, "capacity": 400, "verified": false },
+    { "id": "LIV-B", "name": "Livingston Lot B (placeholder)", "campus": "livingston", "center": { "lat": 40.5208, "lng": -74.4351 }, "capacity": 250, "verified": false },
+    { "id": "LIV-C", "name": "Livingston Lot C (placeholder)", "campus": "livingston", "center": { "lat": 40.5272, "lng": -74.4352 }, "capacity": 180, "verified": false },
+    { "id": "BUS-A", "name": "Busch Lot A (placeholder)", "campus": "busch", "center": { "lat": 40.5222, "lng": -74.4596 }, "capacity": 500, "verified": false }
+  ],
+  "buildings": [
+    { "id": "tillett", "name": "Tillett Hall", "campus": "livingston", "center": { "lat": 40.5225, "lng": -74.4369 }, "aliases": ["tillett", "til"] },
+    { "id": "lucy-stone", "name": "Lucy Stone Hall", "campus": "livingston", "center": { "lat": 40.5243, "lng": -74.4339 }, "aliases": ["lucy stone", "lsh"] },
+    { "id": "beck", "name": "Beck Hall", "campus": "livingston", "center": { "lat": 40.5259, "lng": -74.4374 }, "aliases": ["beck", "bk"] },
+    { "id": "lsc", "name": "Livingston Student Center", "campus": "livingston", "center": { "lat": 40.5237, "lng": -74.4366 }, "aliases": ["livingston student center", "lsc"] },
+    { "id": "rbs", "name": "Rutgers Business School (100 Rockafeller Rd)", "campus": "livingston", "center": { "lat": 40.5229, "lng": -74.4378 }, "aliases": ["business school", "rbs", "100 rockafeller"] }
+  ]
+}
