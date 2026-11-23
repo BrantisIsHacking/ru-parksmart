@@ -30,7 +30,11 @@ export default function Chat() {
   const [busy, setBusy] = useState(false);
   const bottom = useRef<HTMLDivElement>(null);
 
-  useEffect(() => bottom.current?.scrollIntoView({ behavior: "smooth", block: "end" }), [messages, busy]);
+  // Braces matter: newer Chrome returns a Promise from scrollIntoView, and an
+  // effect must return nothing or a cleanup function.
+  useEffect(() => {
+    bottom.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+  }, [messages, busy]);
 
   const send = async (text: string) => {
     const t = text.trim();
