@@ -13,19 +13,27 @@ npm test                     # 49 unit tests, including the permit-rules gate
 npm run dev                  # http://localhost:3000
 ```
 
-The app runs without any keys: storage is in memory, the map falls back to a list, and the identity is a random local ID. Chat and schedule import need `GEMINI_API_KEY`.
+The app runs without any keys: storage is in memory, the map uses free OpenStreetMap tiles, and the identity is a random local ID. Chat and schedule import need `GEMINI_API_KEY`.
 
 | Env var | Needed for |
 |---|---|
-| `GEMINI_API_KEY`, `GEMINI_MODEL` | Assistant and schedule import (AI Studio key) |
-| `ENABLE_MAPS_GROUNDING=1` | Assistant can answer place questions with Grounding with Google Maps |
-| `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`, `NEXT_PUBLIC_GOOGLE_MAP_ID` | Congestion map |
+| `GEMINI_API_KEY` | Assistant and schedule import (AI Studio key) |
+| `GEMINI_MODEL` | Pinned model id, such as `gemini-2.5-flash`. Avoid the `gemini-flash-latest` alias: the current `@google/genai` SDK calls the v1 API, where that alias doesn't exist. |
+| `ENABLE_MAPS_GROUNDING` | `1` lets the assistant answer place questions with Grounding with Google Maps. Needs billing on the Gemini key's project (the free tier returns 429), so it defaults to `0`. |
 | `NEXT_PUBLIC_FIREBASE_*` | Anonymous auth on the client |
 | `FIREBASE_SERVICE_ACCOUNT` | Firestore persistence and token verification on the server (**required for the pilot**) |
 | `PILOT_ADMIN_TOKEN` | Passcode for `/pilot` |
 | `ID_HASH_SALT` | Salt for hashed anonymous IDs |
 
-Firebase setup: enable **Anonymous** sign-in, create a Firestore database, deploy [firestore.rules](firestore.rules) (deny all client access), and paste the service-account JSON into `FIREBASE_SERVICE_ACCOUNT` on one line.
+The map needs no key: it's Leaflet with OpenStreetMap tiles.
+
+**Set the Firebase client vars and `FIREBASE_SERVICE_ACCOUNT` together, or leave all of them empty.** With only the client vars set, the browser sends Firebase tokens that the dev-mode server rejects. With only the service account set, the server requires tokens the browser can't send. Either way, every request fails with a 401 and no lots load.
+
+Firebase setup:
+1. Enable **Authentication → Sign-in method → Anonymous**.
+2. Create a Firestore database (production mode) and deploy [firestore.rules](firestore.rules), which denies all client access.
+3. Copy the web app config (Project settings → Your apps) into the `NEXT_PUBLIC_FIREBASE_*` vars.
+4. Generate a service-account key (Project settings → Service accounts → Generate new private key) and paste its JSON into `FIREBASE_SERVICE_ACCOUNT` on one line, wrapped in single quotes. Keep the key file out of the repo: `.gitignore` covers `*-firebase-adminsdk-*.json`.
 
 ## How it works
 
@@ -40,6 +48,7 @@ Firebase setup: enable **Anonymous** sign-in, create a Firestore database, deplo
 | Grounding with Google Maps (`ask_maps` tool) | [lib/gemini/mapsGrounding.ts](lib/gemini/mapsGrounding.ts) |
 | Schedule screenshot → structured JSON (multimodal) | [lib/gemini/schedule.ts](lib/gemini/schedule.ts) |
 | Pilot metrics and CSV | [lib/metrics/analyze.ts](lib/metrics/analyze.ts), `/pilot` |
+| Congestion map (Leaflet + OpenStreetMap, loaded in the browser only) | [components/LotMap.tsx](components/LotMap.tsx), [components/LeafletMap.tsx](components/LeafletMap.tsx) |
 
 Screens: `/` (leave-by time and recommendation), `/chat`, `/report` (one-tap report), `/onboarding` (permit, commute, schedule), `/privacy`, and `/pilot` (team only).
 
@@ -72,4 +81,6 @@ There is no location tracking. Profile and schedule stay on the device, and scre
 
 ## Deploy
 
-Firebase App Hosting or Vercel. Set the env vars above, and restrict the browser Maps key by HTTP referrer.
+Firebase App Hosting or Vercel. Set the env vars above, and add the deployed domain under Firebase **Authentication → Settings → Authorized domains**.
+
+OpenStreetMap's public tile server is fine for a campus pilot but isn't meant for heavy traffic. To scale up, switch to a tile provider with a free tier (such as MapTiler or Stadia) by changing `TILE_URL` and `ATTRIBUTION` in [components/LeafletMap.tsx](components/LeafletMap.tsx).
