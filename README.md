@@ -18,7 +18,7 @@ The app runs without any keys: storage is in memory, the map uses free OpenStree
 | Env var | Needed for |
 |---|---|
 | `GEMINI_API_KEY` | Assistant and schedule import (AI Studio key) |
-| `GEMINI_MODEL` | Pinned model id, such as `gemini-2.5-flash`. Avoid the `gemini-flash-latest` alias: the current `@google/genai` SDK calls the v1 API, where that alias doesn't exist. |
+| `GEMINI_MODEL` | Flash model id, such as `gemini-2.5-flash`. The client uses the `v1beta` API ([lib/gemini/client.ts](lib/gemini/client.ts)) because the SDK's default `v1` rejects function calling and JSON mode. |
 | `ENABLE_MAPS_GROUNDING` | `1` lets the assistant answer place questions with Grounding with Google Maps. Needs billing on the Gemini key's project (the free tier returns 429), so it defaults to `0`. |
 | `NEXT_PUBLIC_FIREBASE_*` | Anonymous auth on the client |
 | `FIREBASE_SERVICE_ACCOUNT` | Firestore persistence and token verification on the server (**required for the pilot**) |
