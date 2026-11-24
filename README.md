@@ -103,6 +103,10 @@ There is no location tracking. Profile and schedule stay on the device, and scre
 
 ## Deploy
 
-Firebase App Hosting or Vercel. Set the env vars above, and add the deployed domain under Firebase **Authentication → Settings → Authorized domains**.
+Vercel's free Hobby plan (Firebase App Hosting needs the paid Blaze plan).
+
+1. Set every env var above in the host, with `VAPID_SUBJECT` set to the deployed URL.
+2. Add the deployed domain under Firebase **Authentication → Settings → Authorized domains**.
+3. Create the once-a-minute cron job described in [Check-ins](#check-ins). Without it, check-in notifications are never sent (students are still asked when they next open the app).
 
 OpenStreetMap's public tile server is fine for a campus pilot but isn't meant for heavy traffic. To scale up, switch to a tile provider with a free tier (such as MapTiler or Stadia) by changing `TILE_URL` and `ATTRIBUTION` in [components/LeafletMap.tsx](components/LeafletMap.tsx).
