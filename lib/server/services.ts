@@ -1,17 +1,26 @@
 import "server-only";
 // Shared server operations used by both the API routes and Gemini's tools,
 // so the assistant and the app UI always give the same answer.
-import { estimateLot, REPORT_MAX_AGE_MIN } from "../congestion/estimator";
+import { COUNT_MAX_AGE_MIN, estimateLot, OUTCOME_MAX_AGE_MIN, REPORT_MAX_AGE_MIN } from "../congestion/estimator";
 import { findBuilding, LOTS } from "../data";
 import { planTrip, type TripPlan } from "../planner/parkOrRide";
 import { campusParts, campusTimeOnDay, parseHHMM } from "../time";
 import type { ClassEntry, LotEstimate } from "../types";
+import { getBaselines } from "./baselines";
 import { getStore } from "./store";
 
 export async function estimatesFor(forTime: Date, now = new Date()): Promise<Map<string, LotEstimate>> {
   const since = new Date(Math.min(forTime.getTime(), now.getTime()) - REPORT_MAX_AGE_MIN * 60_000);
-  const reports = await getStore().reportsSince(since.toISOString());
-  return new Map(LOTS.map((lot) => [lot.id, estimateLot({ lot, forTime, now, reports })]));
+  const countsSince = new Date(Math.min(forTime.getTime(), now.getTime()) - COUNT_MAX_AGE_MIN * 60_000);
+  const outcomesSince = new Date(Math.min(forTime.getTime(), now.getTime()) - OUTCOME_MAX_AGE_MIN * 60_000);
+  const store = getStore();
+  const [reports, counts, outcomes, baselines] = await Promise.all([
+    store.reportsSince(since.toISOString()),
+    store.countsSince(countsSince.toISOString()),
+    store.outcomesSince(outcomesSince.toISOString()),
+    getBaselines(),
+  ]);
+  return new Map(LOTS.map((lot) => [lot.id, estimateLot({ lot, forTime, now, reports, counts, outcomes, baselines })]));
 }
 
 /**

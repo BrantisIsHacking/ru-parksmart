@@ -3,6 +3,7 @@
 // The server sees the permit type and class times per request, never stores them.
 import { useEffect, useState } from "react";
 import type { ClassEntry } from "../types";
+import { clearCheckinData } from "./checkin";
 
 export interface Profile {
   permitId: string | null;
@@ -46,6 +47,7 @@ export function clearProfile() {
     localStorage.removeItem(KEY);
     localStorage.removeItem("rups.anonId");
   } catch {}
+  clearCheckinData();
 }
 
 /** [profile | null while loading, update] */

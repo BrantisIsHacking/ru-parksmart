@@ -1,10 +1,21 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { CheckinCard } from "@/components/CheckinCard";
+import { CheckinOptIn } from "@/components/CheckinOptIn";
 import { Evidence } from "@/components/Evidence";
 import { LotMap, type LotRow } from "@/components/LotMap";
 import { SatisfactionPrompt } from "@/components/SatisfactionPrompt";
 import { StatusBadge } from "@/components/StatusBadge";
 import { api, track } from "@/lib/client/identity";
+import {
+  clearPending,
+  getPending,
+  optInState,
+  setOptInState,
+  setPending,
+  subscribePush,
+  type PendingTrip,
+} from "@/lib/client/checkin";
 import { clock } from "@/lib/client/format";
 import { useProfile } from "@/lib/client/profile";
 import buildingsData from "@/data/lots.json";
@@ -24,6 +35,8 @@ function routeSentence(o: TripOption): string {
   return `Park by ${clock(o.parkBy)}. Walk ${b.walkToStopMin} min to ${b.fromStop} and take the ${b.routeId} at ${clock(b.departAt)}, a ${b.rideMin} minute ride.`;
 }
 
+const FIVE_MIN = 5 * 60 * 1000;
+
 const shortName = (o: TripOption) => o.lotName.replace(/\s*\(placeholder\)/, "");
 
 export default function Home() {
@@ -34,6 +47,11 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [chosen, setChosen] = useState<TripOption | null>(null);
+  const tripCall = useRef(0);
+  const [askOptIn, setAskOptIn] = useState<TripOption | null>(null);
+  const [checkin, setCheckin] = useState<PendingTrip | null>(null);
+  /** The trip id this page stored as pending, so the check-in timer follows trip changes. */
+  const [pendingId, setPendingId] = useState<string | null>(null);
   const [manual, setManual] = useState({ destination: buildingsData.buildings[0].name, arriveBy: "" });
 
   const load = useCallback(
@@ -76,6 +94,68 @@ export default function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [profile?.permitId]);
 
+  // Show the check-in card when the student opened the notification, or when park time + 5 min has passed.
+  // Re-checked when the app comes back to the foreground, and by a timer while the page stays open.
+  useEffect(() => {
+    if (!profile?.permitId) return;
+    const check = () => {
+      const pending = getPending();
+      const url = new URL(window.location.href);
+      const fromLink = url.searchParams.get("checkin");
+      if (fromLink !== null) {
+        url.searchParams.delete("checkin");
+        window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+      }
+      if (pending && ((fromLink !== null && fromLink === pending.tripId) || Date.now() >= Date.parse(pending.parkBy) + FIVE_MIN)) {
+        setCheckin((cur) => (cur?.tripId === pending.tripId ? cur : pending));
+      }
+    };
+    check();
+    const onVisible = () => {
+      if (document.visibilityState === "visible") check();
+    };
+    document.addEventListener("visibilitychange", onVisible);
+    window.addEventListener("pageshow", check);
+    const pending = getPending();
+    const wait = pending ? Date.parse(pending.parkBy) + FIVE_MIN - Date.now() : -1;
+    // setTimeout overflows past ~24.8 days; trips are at most 24 h ahead.
+    const timer = wait > 0 && wait < 2 ** 31 - 1 ? window.setTimeout(check, wait + 1000) : undefined;
+    return () => {
+      document.removeEventListener("visibilitychange", onVisible);
+      window.removeEventListener("pageshow", check);
+      if (timer !== undefined) window.clearTimeout(timer);
+    };
+  }, [profile?.permitId, pendingId]);
+
+  // A failed trip never blocks the student.
+  const startTrip = async (opt: TripOption, wantPush: boolean, askPermission = false) => {
+    const mine = ++tripCall.current;
+    clearPending(); // the old trip is replaced even if this one fails
+    setCheckin(null);
+    try {
+      const push = wantPush ? await subscribePush(askPermission) : null;
+      if (askPermission && !push) setOptInState("off");
+      const { tripId } = await api<{ tripId: string }>("/api/trips", {
+        lotId: opt.lotId,
+        parkBy: opt.parkBy,
+        ...(push ? { push } : {}),
+      });
+      if (mine === tripCall.current) {
+        setPending({ tripId, lotId: opt.lotId, lotName: opt.lotName, parkBy: opt.parkBy });
+        setPendingId(tripId);
+      }
+    } catch {
+      /* swallowed */
+    }
+  };
+
+  const answerOptIn = (on: boolean) => {
+    const opt = askOptIn;
+    setOptInState(on ? "on" : "off");
+    setAskOptIn(null);
+    if (opt) void startTrip(opt, on, on);
+  };
+
   const choose = (opt: TripOption) => {
     const plan = rec?.plan;
     const followed = opt.lotId === plan?.recommended?.lotId;
@@ -83,6 +163,10 @@ export default function Home() {
     if (plan?.parkAndRide && followed) track("parkorride_followed", { mode: opt.mode }, opt.lotId);
     updateProfile({ lastLotId: opt.lotId, decisions: (profile?.decisions ?? 0) + 1 });
     setChosen(opt);
+    clearPending(); // a new choice replaces the old pending trip, even while the opt-in card is open
+    setCheckin(null);
+    if (optInState() === "unasked") setAskOptIn(opt);
+    else void startTrip(opt, optInState() === "on");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -94,6 +178,8 @@ export default function Home() {
 
   return (
     <div className="space-y-6">
+      {checkin && <CheckinCard trip={checkin} onDone={() => setCheckin(null)} />}
+
       {error && (
         <p className="panel panel-pad border-scarlet text-[15px]">
           {error} Tap Refresh below to try again.
@@ -178,6 +264,8 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      {askOptIn && <CheckinOptIn onChoose={answerOptIn} />}
 
       {chosen && profile.decisions >= 3 && !profile.ratedSatisfaction && (
         <SatisfactionPrompt onDone={() => updateProfile({ ratedSatisfaction: true })} />

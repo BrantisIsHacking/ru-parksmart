@@ -70,7 +70,7 @@ export interface PermitCheck {
 
 export type LotStatus = "green" | "yellow" | "red" | "gray";
 
-export type EvidenceKind = "historical_baseline" | "class_wave_prior" | "student_reports";
+export type EvidenceKind = "historical_baseline" | "class_wave_prior" | "student_reports" | "team_count" | "trip_outcome";
 
 export interface EvidenceSource {
   kind: EvidenceKind;
@@ -104,6 +104,40 @@ export interface Report {
   reporter: string;
   /** Reporter reliability at the time of the report, 0.2..1. */
   trust: number;
+  createdAt: string;
+}
+
+export type OutcomeValue = "easy" | "circled" | "full";
+
+export interface Trip {
+  id?: string;
+  /** Hashed anonymous id. */
+  reporter: string;
+  lotId: string;
+  /** ISO time the student planned to park. */
+  parkBy: string;
+  /** parkBy + 5 minutes: when to ask "did you find a spot?". */
+  notifyAt: string;
+  predictedStatus: LotStatus;
+  predictedFill: number | null;
+  /** Notification address, deleted (null) once sent, answered or expired. */
+  push: PushSubscriptionJSON | null;
+  state: "pending" | "notified" | "answered" | "expired";
+  createdAt: string;
+}
+
+export interface TripOutcome {
+  id?: string;
+  tripId: string;
+  reporter: string;
+  lotId: string;
+  value: OutcomeValue;
+  /** Answer time (ISO). */
+  at: string;
+  parkBy: string;
+  predictedStatus: LotStatus;
+  /** Reporter reliability (trustScore) when the answer was given, 0.2..1. Missing on old docs: treat as 0.5. */
+  trust?: number;
   createdAt: string;
 }
 
@@ -166,7 +200,8 @@ export interface MetricEvent {
     | "chat_message"
     | "schedule_import"
     | "report"
-    | "satisfaction";
+    | "satisfaction"
+    | "trip_outcome";
   reporter: string;
   lotId?: string | null;
   /** Small, non-identifying numeric/string properties only. */

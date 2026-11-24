@@ -63,7 +63,7 @@ export default function Pilot() {
         capacity: Number(count.capacity),
         counter: count.counter || "team",
       })).json()) as { reportersScored: number };
-      setSaved(`Saved. ${res.reportersScored} reporter reliability score(s) updated.`);
+      setSaved(`Saved. ${res.reportersScored} reporter reliability score(s) updated. The home screen now uses this count. Tap Refresh there.`);
       setCount((c) => ({ ...c, occupied: "" }));
       refresh();
     } catch (err) {
@@ -125,6 +125,7 @@ export default function Pilot() {
             <Stat label="Park-or-ride uptake" value={pct(s.parkOrRide.uptake)} sub={`${s.parkOrRide.followed} of ${s.parkOrRide.shown} suggestions`} />
             <Stat label="Prediction accuracy" value={pct(s.prediction.accuracy)} sub={`${s.prediction.evaluated} counts, ${pct(s.prediction.grayShare)} with not enough data`} />
             <Stat label="Report agreement" value={pct(s.reportReliability.agreementRate)} sub={`${s.reportReliability.matched} reports matched to counts`} />
+            <Stat label="Trip check-ins" value={pct(s.checkins.accuracy)} sub={`${s.checkins.count} answers, prediction matched`} />
             <Stat label="Satisfaction" value={num(s.satisfaction.average, " / 5")} sub={`${s.satisfaction.responses} ratings`} />
             <Stat label="Reports" value={String(s.reports.count)} sub={`${s.reports.reporters} reporters`} />
             <Stat label="Chat messages" value={String(s.chatMessages)} />
@@ -168,8 +169,8 @@ export default function Pilot() {
 
           <section className="panel panel-pad space-y-2">
             <h2 className="text-[17px] font-bold">Export for the case study</h2>
-            <div className="grid grid-cols-3 gap-2">
-              {["events", "reports", "counts"].map((k) => (
+            <div className="grid grid-cols-2 gap-2">
+              {["events", "reports", "counts", "outcomes"].map((k) => (
                 <button key={k} className="btn btn-quiet" onClick={() => download(k)}>{k}.csv</button>
               ))}
             </div>

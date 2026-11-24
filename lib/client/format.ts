@@ -18,6 +18,8 @@ export const SOURCE_LABEL: Record<EvidenceSource["kind"], string> = {
   historical_baseline: "Historical baseline",
   class_wave_prior: "Class-wave prediction",
   student_reports: "Student reports",
+  team_count: "Team count",
+  trip_outcome: "Trip check-ins",
 };
 
 export function clock(iso: string | null | undefined): string {

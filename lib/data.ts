@@ -19,9 +19,17 @@ export interface ClassWaveConfig {
 }
 export const CLASS_WAVES = classJson as unknown as ClassWaveConfig;
 
-export type BaselineSource = "placeholder" | "rts" | "manual";
+export type BaselineSource = "placeholder" | "rts" | "manual" | "learned";
 export interface LotBaseline {
   source: BaselineSource;
+  /** Overrides the default weight for `source` (learned curves grow with data). */
+  weight?: number;
+  /** Observations a learned curve was built from. */
+  observations?: number;
+  /** Learned curves: weight per hour key ("8" = 8:00), only for hours with observations. */
+  slotWeight?: Record<string, number>;
+  /** Learned curves: number of observations per hour key. */
+  slotObservations?: Record<string, number>;
   weekday: Record<string, number>;
 }
 export const BASELINES = baselineJson.lots as Record<string, LotBaseline>;

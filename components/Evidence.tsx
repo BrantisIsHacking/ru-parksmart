@@ -9,6 +9,10 @@ function describe(s: EvidenceSource): string {
       return "when classes start nearby";
     case "student_reports":
       return `${s.detail.split(",")[0].toLowerCase()}${s.asOf ? `, newest ${ago(s.asOf)}` : ""}`;
+    case "team_count":
+      return `a team count${s.asOf ? ` ${ago(s.asOf)}` : ""}`;
+    case "trip_outcome":
+      return `${s.detail}${s.asOf ? `, newest ${ago(s.asOf)}` : ""}`;
   }
 }
 

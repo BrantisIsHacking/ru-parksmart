@@ -5,7 +5,7 @@ import { getStore } from "@/lib/server/store";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-/** CSV export for the case-study analysis: ?kind=events|reports|counts */
+/** CSV export for the case-study analysis: ?kind=events|reports|counts|outcomes */
 export async function GET(req: Request) {
   try {
     requirePilotToken(req);
@@ -15,8 +15,9 @@ export async function GET(req: Request) {
       kind === "events" ? await store.listEvents()
       : kind === "reports" ? await store.listReports()
       : kind === "counts" ? await store.listCounts()
+      : kind === "outcomes" ? await store.listOutcomes()
       : null;
-    if (!rows) throw new HttpError(400, "kind must be events, reports or counts");
+    if (!rows) throw new HttpError(400, "kind must be events, reports, counts or outcomes");
     return new Response(toCsv(rows), {
       headers: {
         "content-type": "text/csv; charset=utf-8",

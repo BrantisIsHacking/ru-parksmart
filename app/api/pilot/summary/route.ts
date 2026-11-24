@@ -9,10 +9,15 @@ export async function GET(req: Request) {
   try {
     requirePilotToken(req);
     const store = getStore();
-    const [events, reports, counts] = await Promise.all([store.listEvents(), store.listReports(), store.listCounts()]);
+    const [events, reports, counts, outcomes] = await Promise.all([
+      store.listEvents(),
+      store.listReports(),
+      store.listCounts(),
+      store.listOutcomes(),
+    ]);
     return Response.json({
       storage: store.kind,
-      summary: summarizePilot(events, reports, counts),
+      summary: summarizePilot(events, reports, counts, outcomes),
       recentCounts: counts.slice(-10).reverse(),
     });
   } catch (e) {

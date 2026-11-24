@@ -4,7 +4,7 @@
 import { estimateLot, statusForFill } from "../congestion/estimator";
 import { lotById } from "../data";
 import { reportAgrees, reportsMatchingCount } from "../reports/trust";
-import type { LotStatus, ManualCount, MetricEvent, Report } from "../types";
+import type { LotStatus, ManualCount, MetricEvent, Report, TripOutcome } from "../types";
 
 export interface PilotSummary {
   participants: number;
@@ -21,6 +21,8 @@ export interface PilotSummary {
     confusion: Record<"green" | "yellow" | "red", Record<LotStatus, number>>;
   };
   reportReliability: { matched: number; agreementRate: number | null };
+  /** Trip check-ins: share of answers where the shown prediction matched (gray predictions excluded). */
+  checkins: { count: number; accuracy: number | null };
   chatMessages: number;
   scheduleImports: number;
 }
@@ -51,6 +53,7 @@ export function evaluatePredictions(counts: ManualCount[], reports: Report[]) {
     if (!lot) continue;
     const t = new Date(c.countedAt);
     const prior = reports.filter((r) => new Date(r.createdAt) < t);
+    // Intentionally placeholder baselines and no counts, so the evaluation is not circular.
     const predicted = estimateLot({ lot, forTime: t, now: t, reports: prior }).status;
     const observed = statusForFill(c.occupied / Math.max(1, c.capacity));
     confusion[observed][predicted]++;
@@ -67,7 +70,12 @@ export function evaluatePredictions(counts: ManualCount[], reports: Report[]) {
   };
 }
 
-export function summarizePilot(events: MetricEvent[], reports: Report[], counts: ManualCount[]): PilotSummary {
+export function summarizePilot(
+  events: MetricEvent[],
+  reports: Report[],
+  counts: ManualCount[],
+  outcomes: TripOutcome[] = [],
+): PilotSummary {
   const of = (type: MetricEvent["type"]) => events.filter((e) => e.type === type);
   const decisionSecs = of("decision")
     .map((e) => Number(e.props?.decisionMs) / 1000)
@@ -88,6 +96,10 @@ export function summarizePilot(events: MetricEvent[], reports: Report[], counts:
     }
   }
 
+  const expected = { easy: "green", circled: "yellow", full: "red" } as const;
+  const scored = outcomes.filter((o) => o.predictedStatus !== "gray");
+  const checkinMatches = scored.filter((o) => expected[o.value] === o.predictedStatus).length;
+
   return {
     participants: new Set(events.map((e) => e.reporter)).size,
     appOpens: of("app_open").length,
@@ -104,6 +116,7 @@ export function summarizePilot(events: MetricEvent[], reports: Report[], counts:
     reports: { count: reports.length, reporters: new Set(reports.map((r) => r.reporter)).size },
     prediction: evaluatePredictions(counts, reports),
     reportReliability: { matched, agreementRate: matched ? round3(agreed / matched) : null },
+    checkins: { count: outcomes.length, accuracy: scored.length ? round3(checkinMatches / scored.length) : null },
     chatMessages: of("chat_message").length,
     scheduleImports: of("schedule_import").length,
   };
