@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { ClassEditor, EMPTY_CLASS } from "@/components/ClassEditor";
+import { ClassEditor, EMPTY_CLASS, needsCheck } from "@/components/ClassEditor";
 import { useBuildings } from "@/lib/client/buildings";
 import { resolveClassBuilding } from "@/lib/classes";
 import { api } from "@/lib/client/identity";
@@ -131,10 +131,12 @@ export default function Onboarding() {
         setMsg("That image doesn't look like a class schedule. Try a clearer screenshot, or add classes by hand below.");
       } else {
         setClasses(res.classes);
-        const unresolved = res.classes.filter((c) => !c.buildingId).length;
+        const toCheck = res.classes.filter(needsCheck).length;
         setMsg(
-          `Found ${res.classes.length} class meeting${res.classes.length === 1 ? "" : "s"}. ` +
-            (unresolved ? `Pick the building for the ${unresolved} marked in red, then check the times.` : "Check the buildings and times below."),
+          `Found ${res.classes.length} class${res.classes.length === 1 ? "" : "es"}. ` +
+            (toCheck
+              ? `${toCheck} need${toCheck === 1 ? "s" : ""} a quick check: we weren't sure about part of ${toCheck === 1 ? "it" : "them"}, so it's outlined in yellow below.`
+              : "Give the rooms and times a quick look below."),
         );
       }
     } catch (e) {
@@ -269,6 +271,11 @@ export default function Onboarding() {
           Save and see my plan
         </button>
         {!permitId && <p className="text-[13px] text-muted">Choose a permit to continue.</p>}
+        {classes.some(needsCheck) && (
+          <p className="text-[13px] font-semibold">
+            {classes.filter(needsCheck).length} class{classes.filter(needsCheck).length === 1 ? " still needs" : "es still need"} a check (outlined in yellow). You can save now and fix {classes.filter(needsCheck).length === 1 ? "it" : "them"} later, but the plan may send you to the wrong building.
+          </p>
+        )}
         <p className="text-[13px] text-muted">
           ParkSmart doesn&apos;t track your location or ask for your name or student ID.{" "}
           <a href="/privacy" className="link">How your data is handled</a>

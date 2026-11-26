@@ -226,6 +226,7 @@ All four New Brunswick campuses are covered. The data comes from Rutgers and Ope
 node scripts/import-dots.mjs         # lots + permit rules from the DOTS permit catalog
 node scripts/import-campus-map.mjs   # buildings, lot/building outlines, bus stops
 node scripts/build-bus-routes.mjs    # weekday bus routes (edit the table in this script)
+node scripts/import-soc.mjs          # building codes + rooms classes meet in (run each semester)
 ```
 
 | Output | Source |
@@ -234,6 +235,7 @@ node scripts/build-bus-routes.mjs    # weekday bus routes (edit the table in thi
 | [data/buildings.json](data/buildings.json), [public/geo/](public/geo/) outlines, refined lot coordinates | The Rutgers campus map feed behind [maps.rutgers.edu](https://maps.rutgers.edu): about 700 NB buildings with official codes (TIL, ARC, HLL…) and addresses, plus lot outlines. Lots the catalog places only roughly get their coordinates from the matching outline. |
 | [data/busStops.json](data/busStops.json) | OpenStreetMap through Overpass (© OpenStreetMap contributors, ODbL). |
 | [data/busRoutes.json](data/busRoutes.json) | Weekday A, B, C, EE, F, H, LX, REXB and REXL from the DOTS route PDFs, transcribed into [scripts/build-bus-routes.mjs](scripts/build-bus-routes.mjs). |
+| [data/buildingCodes.json](data/buildingCodes.json) | The public Rutgers Schedule of Classes API (`https://classes.rutgers.edu/soc/api/courses.json?year=2026&term=9&campus=NB`, no key): every building code and room NB classes meet in, linked to campus-map buildings. Codes the map labels differently (ABW/ABE → Academic Building, PAB, RWH…) are linked in [data/buildingCodes.manual.json](data/buildingCodes.manual.json); the script lists any code still unlinked. Schedule import uses it to resolve codes, suggest the right building for a misread code ("LWH" → Lucy Stone Hall, LSH) and the right room for a misread room ("B209" → B269), and Gemini gets the code list as a reading aid. Defaults to Fall 2026 + Spring 2027; pass `year:term` pairs to change (term 1 = Spring, 9 = Fall). On Windows, use Node to fetch it: `curl` can fail Rutgers' certificate revocation check. |
 
 Permits work the way DOTS sells them: a primary (6 AM–12 AM every day in that campus's commuter lots), an optional secondary for another campus (10 AM–12 AM weekdays; College Ave has none), and flex time (other student lots 5 PM–12 AM weekdays and 6 AM–12 AM weekends). A combined permit id such as `commuter-livingston+secondary-busch` is allowed wherever either part is.
 

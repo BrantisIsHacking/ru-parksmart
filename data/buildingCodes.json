@@ -1,0 +1,1796 @@
+{
+ "_note": "Generated 2026-11-26 by scripts/import-soc.mjs from the Rutgers Schedule of Classes (Fall 2026, Spring 2027). Every building code New Brunswick classes meet in, its rooms, and the campus-map building it links to (null = not linked yet; add it to buildingCodes.manual.json).",
+ "codes": {
+  "AAC": {
+   "buildingId": "b4054",
+   "name": "49 Joyce Kilmer",
+   "campus": "livingston",
+   "rooms": [
+    "202"
+   ],
+   "meetings": 1
+  },
+  "ABE": {
+   "buildingId": "b3198",
+   "name": "Rutgers Academic Building",
+   "campus": "college_ave",
+   "rooms": [
+    "1180",
+    "1210",
+    "1220",
+    "1230",
+    "2200",
+    "2225",
+    "2250",
+    "3200",
+    "3450",
+    "4225",
+    "4400",
+    "4450"
+   ],
+   "meetings": 503
+  },
+  "ABW": {
+   "buildingId": "b3198",
+   "name": "Rutgers Academic Building",
+   "campus": "college_ave",
+   "rooms": [
+    "1100",
+    "1150",
+    "1170",
+    "2100",
+    "2125",
+    "2150",
+    "2160",
+    "3100",
+    "4050",
+    "4052",
+    "4140",
+    "4190",
+    "5050",
+    "5140",
+    "5141",
+    "5190",
+    "5191",
+    "6190"
+   ],
+   "meetings": 599
+  },
+  "ALB": {
+   "buildingId": "b7597",
+   "name": "120 Albany",
+   "campus": "college_ave",
+   "rooms": [
+    "200A",
+    "200B",
+    "209",
+    "402",
+    "403",
+    "415",
+    "418",
+    "E360",
+    "W316",
+    "W317",
+    "W318",
+    "W320",
+    "W328"
+   ],
+   "meetings": 253
+  },
+  "ALX": {
+   "buildingId": "b3107",
+   "name": "Alexander Library",
+   "campus": "college_ave",
+   "rooms": [
+    "049"
+   ],
+   "meetings": 3
+  },
+  "ARC": {
+   "buildingId": "b3878",
+   "name": "Allison Road Classroom Building ARC",
+   "campus": "busch",
+   "rooms": [
+    "103",
+    "105",
+    "107",
+    "108",
+    "110",
+    "116",
+    "118",
+    "119",
+    "204",
+    "205",
+    "206",
+    "207",
+    "247",
+    "307",
+    "309",
+    "326",
+    "328",
+    "332",
+    "333"
+   ],
+   "meetings": 1004
+  },
+  "ARH": {
+   "buildingId": "b8428",
+   "name": "Art History Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "100",
+    "200",
+    "201",
+    "202"
+   ],
+   "meetings": 115
+  },
+  "AUT": {
+   "buildingId": "b8445",
+   "name": "Rutgers Center for Adult Autism Services",
+   "campus": "cook_douglass",
+   "rooms": [
+    "104",
+    "106"
+   ],
+   "meetings": 8
+  },
+  "BE": {
+   "buildingId": "b4145",
+   "name": "Beck Hall",
+   "campus": "livingston",
+   "rooms": [
+    "003",
+    "011",
+    "013",
+    "050",
+    "051",
+    "052",
+    "053",
+    "100",
+    "101",
+    "111",
+    "119",
+    "121",
+    "151",
+    "152",
+    "153",
+    "201",
+    "213",
+    "214",
+    "219",
+    "221",
+    "250",
+    "251",
+    "252",
+    "253"
+   ],
+   "meetings": 986
+  },
+  "BIO": {
+   "buildingId": "b8304",
+   "name": "Biological Sciences Building",
+   "campus": "college_ave",
+   "rooms": [
+    "101",
+    "102",
+    "108",
+    "108A",
+    "109",
+    "205",
+    "206",
+    "301",
+    "302",
+    "315"
+   ],
+   "meetings": 166
+  },
+  "BL": {
+   "buildingId": "b6005",
+   "name": "Blake Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "101",
+    "128",
+    "129",
+    "131",
+    "147A",
+    "148",
+    "149",
+    "228",
+    "231",
+    "233",
+    "244",
+    "246"
+   ],
+   "meetings": 125
+  },
+  "BLC": {
+   "buildingId": "b3692",
+   "name": "Busch Lab Center",
+   "campus": "busch",
+   "rooms": [
+    "122",
+    "141",
+    "142",
+    "145",
+    "153",
+    "157",
+    "160"
+   ],
+   "meetings": 123
+  },
+  "BMD": {
+   "buildingId": "b3858",
+   "name": "CBIM Modular Building",
+   "campus": "busch",
+   "rooms": [
+    "022"
+   ],
+   "meetings": 2
+  },
+  "BME": {
+   "buildingId": "b3893",
+   "name": "Biomedical Engineering Building",
+   "campus": "busch",
+   "rooms": [
+    "102",
+    "107",
+    "116",
+    "121",
+    "122",
+    "126",
+    "128"
+   ],
+   "meetings": 147
+  },
+  "BRR": {
+   "buildingId": "b4181",
+   "name": "Rutgers Business School",
+   "campus": "livingston",
+   "rooms": [
+    "1071",
+    "1095",
+    "1144",
+    "2071",
+    "3031",
+    "3038",
+    "3071",
+    "3085",
+    "3087",
+    "4031",
+    "4071",
+    "4073",
+    "4085",
+    "4087",
+    "5031",
+    "5071",
+    "5073",
+    "5085",
+    "5087",
+    "5095",
+    "5101",
+    "5105",
+    "5109",
+    "5110",
+    "5113",
+    "5117"
+   ],
+   "meetings": 1033
+  },
+  "BRT": {
+   "buildingId": "b3065",
+   "name": "Brett Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "155"
+   ],
+   "meetings": 7
+  },
+  "BSC": {
+   "buildingId": "b3834",
+   "name": "Busch Student Center BSC",
+   "campus": "busch",
+   "rooms": [
+    "175"
+   ],
+   "meetings": 11
+  },
+  "BST": {
+   "buildingId": "b3905",
+   "name": "BEST West Residence Hall",
+   "campus": "busch",
+   "rooms": [
+    "114A"
+   ],
+   "meetings": 52
+  },
+  "BT": {
+   "buildingId": "b6024",
+   "name": "Bartlett Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "012",
+    "123",
+    "145",
+    "208"
+   ],
+   "meetings": 71
+  },
+  "CA": {
+   "buildingId": "b3121",
+   "name": "Campbell Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5"
+   ],
+   "meetings": 158
+  },
+  "CAB": {
+   "buildingId": "b3183",
+   "name": "Clinical Academic Building CAB",
+   "campus": "college_ave",
+   "rooms": [
+    "3405"
+   ],
+   "meetings": 2
+  },
+  "CAG": {
+   "buildingId": "b3097",
+   "name": "College Avenue Gym",
+   "campus": "college_ave",
+   "rooms": [
+    "101"
+   ],
+   "meetings": 1
+  },
+  "CBM": {
+   "buildingId": "b3866",
+   "name": "Center for Advanced Biotechnology & Medicine CABM",
+   "campus": "busch",
+   "rooms": [
+    "010"
+   ],
+   "meetings": 1
+  },
+  "CCB": {
+   "buildingId": "b3594",
+   "name": "Chemistry & Chemical Biology",
+   "campus": "busch",
+   "rooms": [
+    "1203",
+    "1209",
+    "1303",
+    "4217"
+   ],
+   "meetings": 146
+  },
+  "CCR": {
+   "buildingId": "b3861",
+   "name": "Center for Ceramic Research",
+   "campus": "busch",
+   "rooms": [
+    "201"
+   ],
+   "meetings": 12
+  },
+  "CDL": {
+   "buildingId": "b8840",
+   "name": "Cook Douglass Lecture Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "102",
+    "103",
+    "109",
+    "110"
+   ],
+   "meetings": 208
+  },
+  "CEL": {
+   "buildingId": "b3557",
+   "name": "Civil Engineering Laboratory",
+   "campus": "busch",
+   "rooms": [
+    "106"
+   ],
+   "meetings": 10
+  },
+  "CHF": {
+   "buildingId": "b6028",
+   "name": "Cattle Handling Facility",
+   "campus": "cook_douglass",
+   "rooms": [
+    "101"
+   ],
+   "meetings": 20
+  },
+  "CHI": {
+   "buildingId": "b3189",
+   "name": "Child Health Institute of New Jersey CHI",
+   "campus": "college_ave",
+   "rooms": [
+    "1355"
+   ],
+   "meetings": 2
+  },
+  "CI": {
+   "buildingId": "b3134",
+   "name": "School of Communication & Information SC&I",
+   "campus": "college_ave",
+   "rooms": [
+    "101",
+    "103",
+    "114A",
+    "114B",
+    "119",
+    "201",
+    "203",
+    "212",
+    "222",
+    "304",
+    "337"
+   ],
+   "meetings": 267
+  },
+  "CIN": {
+   "buildingId": "b3188",
+   "name": "Rutgers Cancer Institute RCI",
+   "campus": "college_ave",
+   "rooms": [
+    "1111",
+    "4539"
+   ],
+   "meetings": 4
+  },
+  "CIP": {
+   "buildingId": "b3903",
+   "name": "Center for Integrative Proteomics Research CIPR",
+   "campus": "busch",
+   "rooms": [
+    "120"
+   ],
+   "meetings": 2
+  },
+  "COB": {
+   "buildingId": "b6259",
+   "name": "Cook Office Building",
+   "campus": "cook_douglass",
+   "rooms": [
+    "118",
+    "226"
+   ],
+   "meetings": 9
+  },
+  "COR": {
+   "buildingId": "b3883",
+   "name": "Computing Research & Education Building CoRE",
+   "campus": "busch",
+   "rooms": [
+    "101",
+    "104",
+    "538",
+    "601",
+    "602"
+   ],
+   "meetings": 143
+  },
+  "CRW": {
+   "buildingId": "b8340",
+   "name": "Corwin Lodge",
+   "campus": "cook_douglass",
+   "rooms": [
+    "101"
+   ],
+   "meetings": 35
+  },
+  "CSB": {
+   "buildingId": "b3158",
+   "name": "Civic Square Building",
+   "campus": "college_ave",
+   "rooms": [
+    "110",
+    "112",
+    "113",
+    "119",
+    "168",
+    "170",
+    "202",
+    "203",
+    "203B",
+    "218",
+    "218C",
+    "220",
+    "224",
+    "225B",
+    "226",
+    "229",
+    "243",
+    "253",
+    "261",
+    "325B",
+    "326",
+    "327",
+    "331",
+    "334A",
+    "335",
+    "369",
+    "369A",
+    "372A",
+    "403",
+    "404",
+    "406",
+    "407",
+    "427",
+    "472",
+    "476",
+    "490",
+    "556",
+    "562"
+   ],
+   "meetings": 486
+  },
+  "CWP": {
+   "buildingId": "b8308",
+   "name": "Center For Women's Programs",
+   "campus": "cook_douglass",
+   "rooms": [
+    "110",
+    "214"
+   ],
+   "meetings": 13
+  },
+  "DAV": {
+   "buildingId": "b8322",
+   "name": "Davison Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "007",
+    "122",
+    "127",
+    "128",
+    "216A",
+    "219",
+    "220",
+    "228A"
+   ],
+   "meetings": 81
+  },
+  "DL": {
+   "buildingId": "b8313",
+   "name": "Mabel Smith Douglass Library",
+   "campus": "cook_douglass",
+   "rooms": [
+    "G006",
+    "G007"
+   ],
+   "meetings": 49
+  },
+  "EAS": {
+   "buildingId": null,
+   "name": null,
+   "campus": "college_ave",
+   "rooms": [
+    "316"
+   ],
+   "meetings": 4
+  },
+  "ECP": {
+   "buildingId": null,
+   "name": null,
+   "campus": "livingston",
+   "rooms": [
+    "KMW",
+    "KW1",
+    "KW2",
+    "KW3",
+    "KW4"
+   ],
+   "meetings": 8
+  },
+  "ED": {
+   "buildingId": "b3037",
+   "name": "Graduate School of Education Building",
+   "campus": "college_ave",
+   "rooms": [
+    "025A",
+    "025B",
+    "030",
+    "347"
+   ],
+   "meetings": 94
+  },
+  "EE": {
+   "buildingId": "b3859",
+   "name": "Electrical Engineering Building",
+   "campus": "busch",
+   "rooms": [
+    "103",
+    "107",
+    "109",
+    "203",
+    "205",
+    "207",
+    "209",
+    "240"
+   ],
+   "meetings": 104
+  },
+  "EN": {
+   "buildingId": "b3558",
+   "name": "School of Engineering",
+   "campus": "busch",
+   "rooms": [
+    "A107",
+    "A111",
+    "A209",
+    "B120",
+    "B125",
+    "C115",
+    "C217",
+    "C233",
+    "D110",
+    "D123",
+    "D124"
+   ],
+   "meetings": 303
+  },
+  "ENR": {
+   "buildingId": "b6330",
+   "name": "Environmental & Natural Resource Sciences",
+   "campus": "cook_douglass",
+   "rooms": [
+    "121",
+    "123",
+    "145",
+    "223",
+    "237A",
+    "323",
+    "334"
+   ],
+   "meetings": 139
+  },
+  "ENS": {
+   "buildingId": "b6279",
+   "name": "Environmental Science Building",
+   "campus": "cook_douglass",
+   "rooms": [
+    "101",
+    "104",
+    "203",
+    "205"
+   ],
+   "meetings": 26
+  },
+  "EOH": {
+   "buildingId": "b3882",
+   "name": "Environmental & Occupational Health Sciences Institute EOHSI",
+   "campus": "busch",
+   "rooms": [
+    "228",
+    "402"
+   ],
+   "meetings": 10
+  },
+  "FBO": {
+   "buildingId": "b3869",
+   "name": "Fiber Optic Materials Research Building",
+   "campus": "busch",
+   "rooms": [
+    "108"
+   ],
+   "meetings": 68
+  },
+  "FG": {
+   "buildingId": "b6002",
+   "name": "Floriculture Greenhouses",
+   "campus": "cook_douglass",
+   "rooms": [
+    "115"
+   ],
+   "meetings": 22
+  },
+  "FH": {
+   "buildingId": "b3117",
+   "name": "Frelinghuysen Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6"
+   ],
+   "meetings": 403
+  },
+  "FNH": {
+   "buildingId": "b6432",
+   "name": "Institute for Food Nutrition & Health IFNH",
+   "campus": "cook_douglass",
+   "rooms": [
+    "040",
+    "101",
+    "205"
+   ],
+   "meetings": 85
+  },
+  "FOR": {
+   "buildingId": "b6347",
+   "name": "Walter E. Foran Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "104",
+    "124",
+    "138A",
+    "138B",
+    "191B",
+    "193",
+    "194",
+    "262"
+   ],
+   "meetings": 167
+  },
+  "FSE": {
+   "buildingId": "b6328",
+   "name": "Food Science & Nutritional Sciences East",
+   "campus": "cook_douglass",
+   "rooms": [
+    "120"
+   ],
+   "meetings": 17
+  },
+  "FSW": {
+   "buildingId": "b6246",
+   "name": "Food Science & Nutritional Sciences West",
+   "campus": "cook_douglass",
+   "rooms": [
+    "017",
+    "101",
+    "102",
+    "105",
+    "107",
+    "109",
+    "201",
+    "209",
+    "211",
+    "303",
+    "305G",
+    "S002"
+   ],
+   "meetings": 196
+  },
+  "GH": {
+   "buildingId": "b3114",
+   "name": "Center for Latino Arts and Culture",
+   "campus": "college_ave",
+   "rooms": [
+    "103"
+   ],
+   "meetings": 11
+  },
+  "GOR": {
+   "buildingId": "b3863",
+   "name": "Gordon Road Office Building",
+   "campus": "livingston",
+   "rooms": [
+    "107",
+    "422"
+   ],
+   "meetings": 10
+  },
+  "GTW": {
+   "buildingId": "b3178",
+   "name": "Gateway Transit Village",
+   "campus": "college_ave",
+   "rooms": [
+    "444",
+    "524A",
+    "524B",
+    "735"
+   ],
+   "meetings": 32
+  },
+  "HC": {
+   "buildingId": "b3197",
+   "name": "Honors College",
+   "campus": "college_ave",
+   "rooms": [
+    "E128",
+    "N106",
+    "S120",
+    "S124",
+    "S126"
+   ],
+   "meetings": 133
+  },
+  "HCK": {
+   "buildingId": "b8311",
+   "name": "Hickman Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "101",
+    "112",
+    "113",
+    "114",
+    "115",
+    "117",
+    "118",
+    "119",
+    "122",
+    "123",
+    "126",
+    "127",
+    "129",
+    "130",
+    "131",
+    "132",
+    "138",
+    "201",
+    "202",
+    "204",
+    "205",
+    "206",
+    "207",
+    "209",
+    "210",
+    "211",
+    "213",
+    "214",
+    "216",
+    "218",
+    "313",
+    "612"
+   ],
+   "meetings": 1089
+  },
+  "HH": {
+   "buildingId": "b3119",
+   "name": "Hardenbergh Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6"
+   ],
+   "meetings": 500
+  },
+  "HLL": {
+   "buildingId": "b3752",
+   "name": "Hill Center for the Mathematical Sciences",
+   "campus": "busch",
+   "rooms": [
+    "005",
+    "009",
+    "114",
+    "116",
+    "248",
+    "254",
+    "423",
+    "425",
+    "525",
+    "552",
+    "705"
+   ],
+   "meetings": 540
+  },
+  "HRL": {
+   "buildingId": "b6120",
+   "name": "Headlee Research Laboratories",
+   "campus": "cook_douglass",
+   "rooms": [
+    "217"
+   ],
+   "meetings": 1
+  },
+  "HSB": {
+   "buildingId": "b8302",
+   "name": "Regina B. Heldrich Science Building",
+   "campus": "college_ave",
+   "rooms": [
+    "103",
+    "106",
+    "108",
+    "201",
+    "204",
+    "206",
+    "207",
+    "209",
+    "210"
+   ],
+   "meetings": 172
+  },
+  "HU": {
+   "buildingId": "b3169",
+   "name": "Huntington House",
+   "campus": "college_ave",
+   "rooms": [
+    "101"
+   ],
+   "meetings": 7
+  },
+  "HX1": {
+   "buildingId": "b3070",
+   "name": "HELIX H-1",
+   "campus": "college_ave",
+   "rooms": [
+    "8106"
+   ],
+   "meetings": 2
+  },
+  "JAM": {
+   "buildingId": "b8398",
+   "name": "Liberty National NJSGA Evans Scholars Scholarship House",
+   "campus": "cook_douglass",
+   "rooms": [
+    "004",
+    "009"
+   ],
+   "meetings": 6
+  },
+  "JDC": {
+   "buildingId": "b4147",
+   "name": "James Dickson Carr Library",
+   "campus": "livingston",
+   "rooms": [
+    "010"
+   ],
+   "meetings": 1
+  },
+  "JLB": {
+   "buildingId": "b4163",
+   "name": "Janice H Levin Building",
+   "campus": "livingston",
+   "rooms": [
+    "003",
+    "004",
+    "006",
+    "102",
+    "103",
+    "106",
+    "107C",
+    "219"
+   ],
+   "meetings": 95
+  },
+  "KLG": {
+   "buildingId": "b8444",
+   "name": "Kathleen W. Ludwig Global Village Living Learning Ctr",
+   "campus": "cook_douglass",
+   "rooms": [
+    "002",
+    "008",
+    "010",
+    "017"
+   ],
+   "meetings": 74
+  },
+  "LAB": {
+   "buildingId": "b4165",
+   "name": "MGSA Visual Arts Building",
+   "campus": "livingston",
+   "rooms": [
+    "114",
+    "115",
+    "146"
+   ],
+   "meetings": 18
+  },
+  "LAF": {
+   "buildingId": "b3160",
+   "name": "Health Outreach Promotion & Education HOPE",
+   "campus": "college_ave",
+   "rooms": [
+    "100"
+   ],
+   "meetings": 1
+  },
+  "LEC": {
+   "buildingId": "b6109",
+   "name": "Labor Education Center",
+   "campus": "cook_douglass",
+   "rooms": [
+    "133A",
+    "137"
+   ],
+   "meetings": 14
+  },
+  "LEV": {
+   "buildingId": "b8423",
+   "name": "Philip J. Levin Theater (Drama Building)",
+   "campus": "cook_douglass",
+   "rooms": [
+    "100",
+    "101",
+    "202",
+    "204"
+   ],
+   "meetings": 39
+  },
+  "LGM": {
+   "buildingId": "b8321",
+   "name": "Loree Gymnasium",
+   "campus": "cook_douglass",
+   "rooms": [
+    "115",
+    "121",
+    "123"
+   ],
+   "meetings": 53
+  },
+  "LH": {
+   "buildingId": "b6025",
+   "name": "Lipman Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "202",
+    "206",
+    "207",
+    "325"
+   ],
+   "meetings": 44
+  },
+  "LOR": {
+   "buildingId": "b8432",
+   "name": "Loree Classroom/Office Building",
+   "campus": "cook_douglass",
+   "rooms": [
+    "020",
+    "022",
+    "023",
+    "024",
+    "115"
+   ],
+   "meetings": 241
+  },
+  "LSH": {
+   "buildingId": "b4153",
+   "name": "Lucy Stone Hall",
+   "campus": "livingston",
+   "rooms": [
+    "A102",
+    "A121",
+    "A139",
+    "A140",
+    "A142",
+    "A143",
+    "A215",
+    "A232",
+    "A256",
+    "A326",
+    "B105",
+    "B109",
+    "B110",
+    "B111",
+    "B112",
+    "B115",
+    "B116",
+    "B117",
+    "B120",
+    "B121",
+    "B123",
+    "B205",
+    "B266",
+    "B267",
+    "B269"
+   ],
+   "meetings": 883
+  },
+  "LT": {
+   "buildingId": "b8339",
+   "name": "Little Theater",
+   "campus": "cook_douglass",
+   "rooms": [
+    "102"
+   ],
+   "meetings": 11
+  },
+  "LTR": {
+   "buildingId": "b6335",
+   "name": "Livestock Research & Teaching Facility",
+   "campus": "cook_douglass",
+   "rooms": [
+    "101",
+    "102"
+   ],
+   "meetings": 21
+  },
+  "MAR": {
+   "buildingId": "b6006",
+   "name": "Martin Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "109",
+    "320"
+   ],
+   "meetings": 2
+  },
+  "MED": {
+   "buildingId": "b3688",
+   "name": "RWJMS Research Tower",
+   "campus": "busch",
+   "rooms": [
+    "822",
+    "RB15",
+    "V12",
+    "V14"
+   ],
+   "meetings": 45
+  },
+  "MH": {
+   "buildingId": "b3103",
+   "name": "Miller Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "115",
+    "116"
+   ],
+   "meetings": 50
+  },
+  "MI": {
+   "buildingId": "b3010",
+   "name": "Milledoler Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "100"
+   ],
+   "meetings": 104
+  },
+  "MK": {
+   "buildingId": "b3042",
+   "name": "15 Bartlett",
+   "campus": "college_ave",
+   "rooms": [
+    "101"
+   ],
+   "meetings": 8
+  },
+  "MSB": {
+   "buildingId": "b6350",
+   "name": "Marine and Coastal Sciences Building",
+   "campus": "cook_douglass",
+   "rooms": [
+    "102",
+    "109",
+    "203"
+   ],
+   "meetings": 43
+  },
+  "MU": {
+   "buildingId": "b3011",
+   "name": "Murray Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "001",
+    "002",
+    "003",
+    "038",
+    "111",
+    "112",
+    "113",
+    "114",
+    "115",
+    "204",
+    "207",
+    "208",
+    "210",
+    "211",
+    "212",
+    "213",
+    "301",
+    "302",
+    "303",
+    "305"
+   ],
+   "meetings": 667
+  },
+  "MUS": {
+   "buildingId": "b8310",
+   "name": "Stephanie Morris Marryott Music Building",
+   "campus": "cook_douglass",
+   "rooms": [
+    "107",
+    "109",
+    "202",
+    "207"
+   ],
+   "meetings": 64
+  },
+  "MX": {
+   "buildingId": "b8438",
+   "name": "Music Annex",
+   "campus": "cook_douglass",
+   "rooms": [
+    "A002",
+    "A005"
+   ],
+   "meetings": 16
+  },
+  "NH": {
+   "buildingId": "b3559",
+   "name": "Nelson Biology Laboratories",
+   "campus": "busch",
+   "rooms": [
+    "A237",
+    "B126",
+    "B127",
+    "B130",
+    "B136",
+    "B137",
+    "B138",
+    "B228",
+    "B408",
+    "B437",
+    "D340",
+    "D406"
+   ],
+   "meetings": 144
+  },
+  "NIH": {
+   "buildingId": "b8434",
+   "name": "Nicholas Music Center",
+   "campus": "cook_douglass",
+   "rooms": [
+    "110",
+    "111",
+    "112",
+    "122"
+   ],
+   "meetings": 167
+  },
+  "NJ": {
+   "buildingId": "b3014",
+   "name": "New Jersey Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "101",
+    "105"
+   ],
+   "meetings": 6
+  },
+  "NUR": {
+   "buildingId": "b3166",
+   "name": "School of Nursing SON",
+   "campus": "college_ave",
+   "rooms": [
+    "102"
+   ],
+   "meetings": 30
+  },
+  "OTC": {
+   "buildingId": "b6072",
+   "name": "Operator Training Center",
+   "campus": "cook_douglass",
+   "rooms": [
+    "103A"
+   ],
+   "meetings": 2
+  },
+  "PAB": {
+   "buildingId": "b3865",
+   "name": "Physics & Astronomy Building",
+   "campus": "busch",
+   "rooms": [
+    "101",
+    "106",
+    "133",
+    "223",
+    "225",
+    "227",
+    "228",
+    "231",
+    "232",
+    "401"
+   ],
+   "meetings": 195
+  },
+  "PH": {
+   "buildingId": "b3750",
+   "name": "William Levine Hall - Ernest Mario School of Pharmacy",
+   "campus": "busch",
+   "rooms": [
+    "111",
+    "115",
+    "130",
+    "131",
+    "135",
+    "215",
+    "247",
+    "249",
+    "288",
+    "323A"
+   ],
+   "meetings": 300
+  },
+  "PHY": {
+   "buildingId": "b3562",
+   "name": "Physics Lecture Hall",
+   "campus": "busch",
+   "rooms": [
+    "001"
+   ],
+   "meetings": 345
+  },
+  "PSY": {
+   "buildingId": "b3757",
+   "name": "Psychology Building",
+   "campus": "busch",
+   "rooms": [
+    "101",
+    "105",
+    "301",
+    "307",
+    "333",
+    "A139",
+    "A223",
+    "A230",
+    "A258",
+    "A302",
+    "A317",
+    "A340",
+    "A341",
+    "A361"
+   ],
+   "meetings": 101
+  },
+  "RAB": {
+   "buildingId": "b8303",
+   "name": "Dr Ruth M. Adams Building",
+   "campus": "college_ave",
+   "rooms": [
+    "001",
+    "003",
+    "104",
+    "105",
+    "109B",
+    "110A",
+    "110B",
+    "204",
+    "206",
+    "207",
+    "208",
+    "209A",
+    "209B",
+    "305"
+   ],
+   "meetings": 281
+  },
+  "RC": {
+   "buildingId": null,
+   "name": null,
+   "campus": "livingston",
+   "rooms": [
+    "1"
+   ],
+   "meetings": 12
+  },
+  "RH": {
+   "buildingId": "b6013",
+   "name": "Round House",
+   "campus": "cook_douglass",
+   "rooms": [
+    "100"
+   ],
+   "meetings": 17
+  },
+  "RJC": {
+   "buildingId": "b8309",
+   "name": "Ruth Dill Johnson Crockett Building",
+   "campus": "cook_douglass",
+   "rooms": [
+    "011",
+    "103"
+   ],
+   "meetings": 7
+  },
+  "RLH": {
+   "buildingId": "b8422",
+   "name": "Rehearsal Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "101",
+    "104",
+    "201",
+    "205"
+   ],
+   "meetings": 98
+  },
+  "RMH": {
+   "buildingId": "b8443",
+   "name": "Robert E. Mortensen Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "002",
+    "026",
+    "101",
+    "209"
+   ],
+   "meetings": 105
+  },
+  "RWH": {
+   "buildingId": "b3913",
+   "name": "Richard Weeks Hall of Engineering",
+   "campus": "busch",
+   "rooms": [
+    "102",
+    "105",
+    "206",
+    "208",
+    "211",
+    "303",
+    "333",
+    "402",
+    "404"
+   ],
+   "meetings": 447
+  },
+  "RWJ": {
+   "buildingId": "b3689",
+   "name": "RWJMS Research Building & School of Public Health",
+   "campus": "busch",
+   "rooms": [
+    "104",
+    "204",
+    "234",
+    "238",
+    "304",
+    "334"
+   ],
+   "meetings": 32
+  },
+  "SC": {
+   "buildingId": "b3038",
+   "name": "Scott Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "101",
+    "102",
+    "103",
+    "104",
+    "105",
+    "106",
+    "114",
+    "115",
+    "116",
+    "119",
+    "120",
+    "121",
+    "123",
+    "135",
+    "201",
+    "202",
+    "203",
+    "204",
+    "205",
+    "206",
+    "207",
+    "214",
+    "215",
+    "216",
+    "219",
+    "220",
+    "221",
+    "332"
+   ],
+   "meetings": 1186
+  },
+  "SEC": {
+   "buildingId": "b3854",
+   "name": "T. Alexander Pond SERC Science & Engineering Resource Center",
+   "campus": "busch",
+   "rooms": [
+    "104",
+    "111",
+    "117",
+    "118",
+    "202",
+    "203",
+    "204",
+    "205",
+    "206",
+    "207",
+    "208",
+    "209",
+    "210",
+    "211",
+    "212",
+    "216",
+    "217",
+    "218",
+    "220",
+    "220A"
+   ],
+   "meetings": 1292
+  },
+  "SEM": {
+   "buildingId": "b3017",
+   "name": "Linguistics Department",
+   "campus": "college_ave",
+   "rooms": [
+    "108"
+   ],
+   "meetings": 19
+  },
+  "SFH": {
+   "buildingId": "b6022",
+   "name": "Swine Farrowing House",
+   "campus": "cook_douglass",
+   "rooms": [
+    "101",
+    "102"
+   ],
+   "meetings": 38
+  },
+  "SMH": {
+   "buildingId": "b3570",
+   "name": "Smithers Hall - Center of Alcohol Studies",
+   "campus": "busch",
+   "rooms": [
+    "200",
+    "219"
+   ],
+   "meetings": 35
+  },
+  "SPR": {
+   "buildingId": "b8823",
+   "name": "1 Spring",
+   "campus": "college_ave",
+   "rooms": [
+    "203",
+    "204",
+    "309",
+    "402",
+    "403",
+    "421"
+   ],
+   "meetings": 51
+  },
+  "SRN": {
+   "buildingId": "b3865",
+   "name": "Physics & Astronomy Building",
+   "campus": "busch",
+   "rooms": [
+    "385"
+   ],
+   "meetings": 5
+  },
+  "SWG": {
+   "buildingId": "b8862",
+   "name": "School of Social Work",
+   "campus": "college_ave",
+   "rooms": [
+    "307",
+    "312",
+    "314",
+    "703"
+   ],
+   "meetings": 19
+  },
+  "TH": {
+   "buildingId": "b6004",
+   "name": "Thompson Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "101",
+    "102",
+    "114",
+    "201",
+    "206"
+   ],
+   "meetings": 53
+  },
+  "TIL": {
+   "buildingId": "b4146",
+   "name": "Tillett Hall",
+   "campus": "livingston",
+   "rooms": [
+    "102",
+    "103A",
+    "103B",
+    "103C",
+    "103D",
+    "105",
+    "106J",
+    "106Z",
+    "111",
+    "116",
+    "123",
+    "125",
+    "127",
+    "204",
+    "205",
+    "207",
+    "209",
+    "224",
+    "226",
+    "230",
+    "232",
+    "242",
+    "246",
+    "251",
+    "252",
+    "253",
+    "254",
+    "257",
+    "258",
+    "264",
+    "605"
+   ],
+   "meetings": 1445
+  },
+  "VC": {
+   "buildingId": "b8307",
+   "name": "Voorhees Chapel",
+   "campus": "cook_douglass",
+   "rooms": [
+    "102"
+   ],
+   "meetings": 8
+  },
+  "VD": {
+   "buildingId": "b3016",
+   "name": "Van Dyck Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "011",
+    "211",
+    "301",
+    "308"
+   ],
+   "meetings": 87
+  },
+  "VH": {
+   "buildingId": "b3013",
+   "name": "Jane Voorhees Zimmerli Art Museum / Voorhees Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "001",
+    "006E",
+    "104",
+    "105"
+   ],
+   "meetings": 116
+  },
+  "VIX": {
+   "buildingId": "b4051",
+   "name": "Rutgers Makerspace",
+   "campus": "livingston",
+   "rooms": [
+    "109"
+   ],
+   "meetings": 2
+  },
+  "VJM": {
+   "buildingId": "b8439",
+   "name": "Victoria J. Mastrobuono Theater",
+   "campus": "cook_douglass",
+   "rooms": [
+    "107"
+   ],
+   "meetings": 7
+  },
+  "WAK": {
+   "buildingId": "b3573",
+   "name": "Waksman Institute of Microbiology",
+   "campus": "busch",
+   "rooms": [
+    "019",
+    "140",
+    "311",
+    "1001",
+    "1035"
+   ],
+   "meetings": 40
+  },
+  "WAL": {
+   "buildingId": "b6000",
+   "name": "Waller Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "108",
+    "210"
+   ],
+   "meetings": 10
+  },
+  "WD": {
+   "buildingId": "b8323",
+   "name": "Wood Lawn Mansion",
+   "campus": "cook_douglass",
+   "rooms": [
+    "102",
+    "103",
+    "204"
+   ],
+   "meetings": 23
+  },
+  "WIL": {
+   "buildingId": "b8394",
+   "name": "Willets Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "106"
+   ],
+   "meetings": 2
+  },
+  "WL": {
+   "buildingId": "b3556",
+   "name": "Wright Rieman Laboratories",
+   "campus": "busch",
+   "rooms": [
+    "126",
+    "128",
+    "142",
+    "142A",
+    "165",
+    "186",
+    "196A",
+    "231",
+    "260",
+    "331A",
+    "331B",
+    "339",
+    "378"
+   ],
+   "meetings": 134
+  },
+  "WLT": {
+   "buildingId": "b8419",
+   "name": "Walters Hall",
+   "campus": "cook_douglass",
+   "rooms": [
+    "106",
+    "107",
+    "120",
+    "123",
+    "126",
+    "129",
+    "130",
+    "131",
+    "213",
+    "216",
+    "240",
+    "250"
+   ],
+   "meetings": 120
+  },
+  "WRC": {
+   "buildingId": "b3881",
+   "name": "Sonny A. Werblin Recreation Center",
+   "campus": "busch",
+   "rooms": [
+    "POOL"
+   ],
+   "meetings": 14
+  },
+  "ZAM": {
+   "buildingId": "b3013",
+   "name": "Jane Voorhees Zimmerli Art Museum / Voorhees Hall",
+   "campus": "college_ave",
+   "rooms": [
+    "B204",
+    "B205",
+    "J001"
+   ],
+   "meetings": 25
+  }
+ }
+}

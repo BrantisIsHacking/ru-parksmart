@@ -219,7 +219,11 @@ export interface ClassEntry {
   start: string;
   /** End time "HH:MM", when known. */
   end?: string | null;
+  /** Fields the schedule reader wasn't sure about; the editor asks the student to check them. */
+  needsReview?: ClassReviewField[];
 }
+
+export type ClassReviewField = "course" | "building" | "room" | "days" | "time";
 
 export interface MetricEvent {
   id?: string;
