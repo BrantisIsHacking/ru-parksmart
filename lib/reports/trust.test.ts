@@ -32,12 +32,12 @@ describe("canReport", () => {
 
 describe("scoreReports", () => {
   it("credits reporters whose reports match a nearby manual count", () => {
-    const count: ManualCount = { lotId: "LIV-A", occupied: 380, capacity: 400, countedAt: "2026-11-24T15:00:00Z", counter: "team" };
+    const count: ManualCount = { lotId: "LIV-915", occupied: 380, capacity: 400, countedAt: "2026-11-24T15:00:00Z", counter: "team" };
     const reports: Report[] = [
-      { lotId: "LIV-A", value: "crowded", reporter: "good", trust: 0.5, createdAt: "2026-11-24T14:55:00Z" },
-      { lotId: "LIV-A", value: "spaces_open", reporter: "bad", trust: 0.5, createdAt: "2026-11-24T15:05:00Z" },
-      { lotId: "LIV-A", value: "spaces_open", reporter: "late", trust: 0.5, createdAt: "2026-11-24T16:00:00Z" },
-      { lotId: "LIV-B", value: "spaces_open", reporter: "other", trust: 0.5, createdAt: "2026-11-24T15:00:00Z" },
+      { lotId: "LIV-915", value: "crowded", reporter: "good", trust: 0.5, createdAt: "2026-11-24T14:55:00Z" },
+      { lotId: "LIV-915", value: "spaces_open", reporter: "bad", trust: 0.5, createdAt: "2026-11-24T15:05:00Z" },
+      { lotId: "LIV-915", value: "spaces_open", reporter: "late", trust: 0.5, createdAt: "2026-11-24T16:00:00Z" },
+      { lotId: "LIV-916", value: "spaces_open", reporter: "other", trust: 0.5, createdAt: "2026-11-24T15:00:00Z" },
     ];
     const out = scoreReports(reports, count, new Map());
     expect(out).toEqual([

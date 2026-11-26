@@ -36,10 +36,10 @@ describe("summarizePilot", () => {
   });
 
   it("scores report reliability against manual counts", () => {
-    const counts: ManualCount[] = [{ lotId: "LIV-A", occupied: 390, capacity: 400, countedAt: at(10, 15), counter: "t" }];
+    const counts: ManualCount[] = [{ lotId: "LIV-915", occupied: 390, capacity: 400, countedAt: at(10, 15), counter: "t" }];
     const reports: Report[] = [
-      { lotId: "LIV-A", value: "crowded", reporter: "a", trust: 0.5, createdAt: at(10, 10) },
-      { lotId: "LIV-A", value: "spaces_open", reporter: "b", trust: 0.5, createdAt: at(10, 12) },
+      { lotId: "LIV-915", value: "crowded", reporter: "a", trust: 0.5, createdAt: at(10, 10) },
+      { lotId: "LIV-915", value: "spaces_open", reporter: "b", trust: 0.5, createdAt: at(10, 12) },
     ];
     const s = summarizePilot([], reports, counts);
     expect(s.reportReliability).toEqual({ matched: 2, agreementRate: 0.5 });
@@ -48,10 +48,10 @@ describe("summarizePilot", () => {
 
 describe("evaluatePredictions", () => {
   it("only uses reports submitted before each count", () => {
-    const counts: ManualCount[] = [{ lotId: "LIV-A", occupied: 390, capacity: 400, countedAt: at(8, 30), counter: "t" }];
+    const counts: ManualCount[] = [{ lotId: "LIV-915", occupied: 390, capacity: 400, countedAt: at(8, 30), counter: "t" }];
     const before: Report[] = [
-      { lotId: "LIV-A", value: "crowded", reporter: "a", trust: 1, createdAt: at(8, 25) },
-      { lotId: "LIV-A", value: "crowded", reporter: "b", trust: 1, createdAt: at(8, 27) },
+      { lotId: "LIV-915", value: "crowded", reporter: "a", trust: 1, createdAt: at(8, 25) },
+      { lotId: "LIV-915", value: "crowded", reporter: "b", trust: 1, createdAt: at(8, 27) },
     ];
     const after: Report[] = before.map((r) => ({ ...r, createdAt: at(8, 45) }));
     expect(evaluatePredictions(counts, before).confusion.red.red).toBe(1);

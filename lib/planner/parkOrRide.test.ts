@@ -24,7 +24,7 @@ describe("latestDeparture", () => {
     const stop = route.stops[0];
     const dep = latestDeparture(route, stop, at(10, 47))!;
     const { minutes } = campusParts(dep);
-    expect(minutes).toBe(10 * 60 + 40);
+    expect(minutes).toBe(10 * 60 + 44); // 07:00 + 32 x 7 min
   });
   it("returns null before service starts", () => {
     const route = BUS_ROUTES.find((r) => r.id === "B")!;
@@ -32,39 +32,44 @@ describe("latestDeparture", () => {
   });
 });
 
+const LIVINGSTON_FLEX = ["LIV-915", "LIV-916", "LIV-107", "LIV-108", "LIV-111"];
+
 describe("planTrip", () => {
-  it("recommends the closest lot when it is likely open", () => {
-    const estimates = new Map([
-      ["LIV-A", est("LIV-A", "green")],
-      ["LIV-B", est("LIV-B", "green")],
-      ["BUS-A", est("BUS-A", "green")],
-    ]);
+  it("recommends the Yellow Lot for a Livingston commuter when it is likely open", () => {
+    const estimates = new Map([["LIV-915", est("LIV-915", "green")]]);
     const plan = planTrip({ permitId: "commuter-livingston", destination: tillett, arriveBy: at(11), estimates });
+    expect(plan.recommended?.lotId).toBe("LIV-915");
     expect(plan.recommended?.lotId).toBe(plan.usual?.lotId);
     expect(plan.parkAndRide).toBe(false);
     expect(plan.recommended?.mode).toBe("walk");
   });
 
-  it("suggests park-and-ride on Busch when Livingston lots are full", () => {
-    const estimates = new Map([
-      ["LIV-A", est("LIV-A", "red")],
-      ["LIV-B", est("LIV-B", "red")],
-      ["BUS-A", est("BUS-A", "green")],
-    ]);
+  it("has no daytime alternative for a Livingston commuter, even when the Yellow Lot is full", () => {
+    const estimates = new Map([["LIV-915", est("LIV-915", "red")]]);
     const plan = planTrip({ permitId: "commuter-livingston", destination: tillett, arriveBy: at(11), estimates });
-    expect(plan.recommended?.lotId).toBe("BUS-A");
+    expect(plan.recommended?.lotId).toBe("LIV-915");
+    expect(plan.alternatives).toEqual([]);
+    expect(plan.parkAndRide).toBe(false);
+  });
+
+  it("suggests a Busch flex lot and the B bus in the evening when Livingston lots are full", () => {
+    const estimates = new Map(LIVINGSTON_FLEX.map((id) => [id, est(id, "red")]));
+    const plan = planTrip({ permitId: "commuter-livingston", destination: tillett, arriveBy: at(18, 30), estimates });
+    expect(plan.recommended?.lotId.startsWith("BUS-")).toBe(true);
     expect(plan.recommended?.mode).toBe("bus");
     expect(plan.recommended?.bus?.routeId).toBe("B");
     expect(plan.parkAndRide).toBe(true);
-    // Bus must get the student there by 11:00.
+    // Bus must get the student there by 18:30.
     const bus = plan.recommended!.bus!;
     const arrive = new Date(bus.departAt).getTime() + (bus.rideMin + bus.walkFromStopMin) * 60_000;
-    expect(arrive).toBeLessThanOrEqual(at(11).getTime());
+    expect(arrive).toBeLessThanOrEqual(at(18, 30).getTime());
   });
 
   it("never offers a lot the permit does not allow", () => {
     const plan = planTrip({ permitId: "commuter-livingston", destination: tillett, arriveBy: at(11), estimates: new Map() });
     const ids = [plan.recommended, ...plan.alternatives].map((o) => o?.lotId);
-    expect(ids).not.toContain("LIV-C");
+    expect(ids).not.toContain("LIV-916"); // flex-only before 5 PM
+    expect(ids).not.toContain("LIV-103"); // resident lot
+    expect(ids).not.toContain("BUS-613"); // needs a Busch permit
   });
 });

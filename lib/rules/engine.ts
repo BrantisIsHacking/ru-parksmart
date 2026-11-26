@@ -3,8 +3,12 @@
 import type { PermitCheck, PermitRule, RulesFile } from "../types";
 import { campusParts, describeCampusTime, parseHHMM } from "../time";
 
+/** "commuter-livingston+secondary-busch" → ["commuter-livingston", "secondary-busch"]. */
+export const permitParts = (permitId: string) => permitId.split("+");
+
+// A primary + secondary permit ("a+b") is allowed wherever either part is.
 function permitMatches(rule: PermitRule, permitId: string): boolean {
-  if (rule.permits.includes(permitId)) return true;
+  if (permitParts(permitId).some((p) => rule.permits.includes(p))) return true;
   return rule.permits.includes("*") && permitId !== "none";
 }
 
@@ -83,7 +87,8 @@ export function eligibleLots(rules: RulesFile, permitId: string, when: Date): Pe
 /** Structural checks run in tests so a bad rules file fails loudly. */
 export function validateRules(rules: RulesFile): string[] {
   const errors: string[] = [];
-  const permitIds = new Set(rules.permits.map((p) => p.id));
+  // Rules may name a part of a combined permit (e.g. "secondary-busch").
+  const permitIds = new Set(rules.permits.flatMap((p) => permitParts(p.id)));
   const ruleIds = new Set<string>();
   for (const r of rules.rules) {
     if (ruleIds.has(r.id)) errors.push(`Duplicate rule id ${r.id}`);

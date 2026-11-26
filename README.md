@@ -9,7 +9,7 @@ Permit-aware parking help for Rutgers–New Brunswick commuters, built for the G
 ```bash
 npm install
 cp .env.example .env.local   # fill in keys (see below)
-npm test                     # 49 unit tests, including the permit-rules gate
+npm test                     # 60 unit tests, including the permit-rules gate
 npm run dev                  # http://localhost:3000
 ```
 
@@ -58,16 +58,25 @@ Firebase setup:
 
 Screens: `/` (leave-by time and recommendation), `/chat`, `/report` (one-tap report), `/onboarding` (permit, commute, schedule), `/privacy`, and `/pilot` (team only).
 
-## ⚠️ Before the pilot: replace the placeholder data
+## Pilot data: what's real and what's left
 
-Everything in `data/` is a **placeholder** and is marked `verified: false`. The app shows a "pilot draft" warning until you replace it.
+The lots, permit rules and bus schedules come from Rutgers DOTS and were transcribed on 2026-11-25. Rules stay `verified: false` until Rutgers Transportation Services confirms them, so the app keeps showing its "pilot draft" warning.
 
-1. **[data/lots.json](data/lots.json)**: the real Livingston pilot lots (lot numbers, coordinates, capacity) and the buildings.
-2. **[data/rules.v2026-fall.json](data/rules.v2026-fall.json)**: transcribe the rules from rudots.rutgers.edu for those lots, get them confirmed with Rutgers Transportation Services, then set `verified: true` and `verifiedOn`.
-3. **[lib/rules/engine.test.ts](lib/rules/engine.test.ts)**: update the test table so it matches the official rules. The roadmap gate is that every row passes.
-4. **[data/classTimes.json](data/classTimes.json)**: set per-block weights from Schedule of Classes enrollment for Livingston buildings.
-5. **[data/busRoutes.json](data/busRoutes.json)**: copy the published B/LX schedules (stops, offsets, headways).
-6. **[data/baseline.json](data/baseline.json)**: if RTS shares lot counts, enter them with `source: "rts"`. Otherwise, after the first pilot days, average your manual counts into it with `source: "manual"`.
+**Real now**
+
+- **[data/lots.json](data/lots.json)**: Livingston lots 915 (Yellow), 916 (Green), 107, 108, 111, 103 and 105, plus Busch lots 613 (Stadium West), 48, 50, 51B, 53A, 54, 60A, 60B, 63B and 64. Names and coordinates come from the DOTS permit catalog ([wcip.ipo.rutgers.edu](https://wcip.ipo.rutgers.edu/?catalog_filter=student)). The catalog loads its data from `data.json`; each permit's lots are base64-encoded HTML links that carry the coordinates. Lots the catalog only places to two decimals (Busch 51, 55, 58, 58A, 59, 63, 66B, 67, 602) are left out for now.
+- **[data/rules.v2026-fall.json](data/rules.v2026-fall.json)**: primary permits (6 AM–12 AM every day in the campus's commuter lot), secondary permits (10 AM–12 AM weekdays), flex time (any NB student permit in the Livingston and Busch student lots, 5 PM–12 AM weekdays and 6 AM–12 AM weekends), Livingston resident lots, and the Yellow Lot daily permit. A permit id joined with `+` (for example `commuter-livingston+secondary-busch`) is allowed wherever either part is.
+- **[lib/rules/engine.test.ts](lib/rules/engine.test.ts)**: the test table follows those rules.
+- **[data/busRoutes.json](data/busRoutes.json)**: weekday B, C and LX from the DOTS route PDFs, with first and last departures and the slowest daytime headway.
+
+**Still estimated**
+
+1. Lot **capacities**. Rutgers doesn't publish them. They only turn team counts into a fill fraction, and the counter can override them on `/pilot`.
+2. **Bus stop offsets** other than the published start-to-start times, and the **stop and building coordinates** (Stadium West uses the Lot 613 point).
+3. **[data/classTimes.json](data/classTimes.json)** block weights. The start times are the standard NB periods; the weights should come from Schedule of Classes enrollment.
+4. **[data/baseline.json](data/baseline.json)** curves for 915, 916 and 613. Replace them with RTS counts (`source: "rts"`) or averaged pilot counts (`source: "manual"`).
+
+What the real rules mean for the app: on a weekday before 5 PM, a Livingston commuter can park only in the Yellow Lot. A Busch secondary adds Stadium West from 10 AM, but no single bus links it to Livingston. Park-and-ride (a Busch flex lot plus the B bus) becomes possible after 5 PM.
 
 ## Check-ins
 

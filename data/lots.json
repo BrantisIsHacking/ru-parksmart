@@ -1,16 +1,32 @@
 {
-  "_note": "PLACEHOLDER pilot lots. Replace names, coordinates and capacities with the real Rutgers lots chosen for the pilot (see rudots.rutgers.edu maps), then set verified: true.",
+  "_note": "Real Rutgers–New Brunswick lots for the Livingston + Busch pilot. Lot numbers, names and coordinates come from the DOTS 'Where does my permit allow me to park' catalog (https://wcip.ipo.rutgers.edu/?catalog_filter=student), fetched 2026-11-25. Lots the catalog gives only 2-decimal coordinates for (Busch 51, 55, 58, 58A, 59, 63, 66B, 67, 602) are left out until their location is confirmed; Lot 61 is left out because the catalog lists it at the same point as 51B. CAPACITIES ARE ROUGH ESTIMATES: Rutgers does not publish them. They only convert team counts into a fill fraction, and the /pilot form lets the counter override them. Building coordinates are approximate.",
   "lots": [
-    { "id": "LIV-A", "name": "Livingston Lot A (placeholder)", "campus": "livingston", "center": { "lat": 40.5249, "lng": -74.4393 }, "capacity": 400, "verified": false },
-    { "id": "LIV-B", "name": "Livingston Lot B (placeholder)", "campus": "livingston", "center": { "lat": 40.5208, "lng": -74.4351 }, "capacity": 250, "verified": false },
-    { "id": "LIV-C", "name": "Livingston Lot C (placeholder)", "campus": "livingston", "center": { "lat": 40.5272, "lng": -74.4352 }, "capacity": 180, "verified": false },
-    { "id": "BUS-A", "name": "Busch Lot A (placeholder)", "campus": "busch", "center": { "lat": 40.5222, "lng": -74.4596 }, "capacity": 500, "verified": false }
+    { "id": "LIV-915", "name": "Lot 915 (Yellow Lot)", "campus": "livingston", "center": { "lat": 40.52778317, "lng": -74.43817055 }, "capacity": 1200, "verified": true },
+    { "id": "LIV-916", "name": "Lot 916 (Green Lot)", "campus": "livingston", "center": { "lat": 40.52623822, "lng": -74.44019474 }, "capacity": 600, "verified": true },
+    { "id": "LIV-107", "name": "Lot 107", "campus": "livingston", "center": { "lat": 40.52399817, "lng": -74.43129209 }, "capacity": 200, "verified": true },
+    { "id": "LIV-108", "name": "Lot 108", "campus": "livingston", "center": { "lat": 40.51402361, "lng": -74.43452893 }, "capacity": 200, "verified": true },
+    { "id": "LIV-111", "name": "Lot 111", "campus": "livingston", "center": { "lat": 40.51549563, "lng": -74.43319792 }, "capacity": 200, "verified": true },
+    { "id": "LIV-103", "name": "Lot 103 (residents)", "campus": "livingston", "center": { "lat": 40.5205194, "lng": -74.43247852 }, "capacity": 300, "verified": true },
+    { "id": "LIV-105", "name": "Lot 105 (residents)", "campus": "livingston", "center": { "lat": 40.52433308, "lng": -74.43375348 }, "capacity": 300, "verified": true },
+    { "id": "BUS-613", "name": "Lot 613 (Stadium West)", "campus": "busch", "center": { "lat": 40.51369, "lng": -74.46716 }, "capacity": 1500, "verified": true },
+    { "id": "BUS-48", "name": "Lot 48", "campus": "busch", "center": { "lat": 40.515064, "lng": -74.46072 }, "capacity": 200, "verified": true },
+    { "id": "BUS-50", "name": "Lot 50", "campus": "busch", "center": { "lat": 40.521857, "lng": -74.472582 }, "capacity": 200, "verified": true },
+    { "id": "BUS-51B", "name": "Lot 51B", "campus": "busch", "center": { "lat": 40.52614, "lng": -74.458538 }, "capacity": 150, "verified": true },
+    { "id": "BUS-53A", "name": "Lot 53A", "campus": "busch", "center": { "lat": 40.520561, "lng": -74.463178 }, "capacity": 150, "verified": true },
+    { "id": "BUS-54", "name": "Lot 54", "campus": "busch", "center": { "lat": 40.52554399, "lng": -74.46141719 }, "capacity": 150, "verified": true },
+    { "id": "BUS-60A", "name": "Lot 60A", "campus": "busch", "center": { "lat": 40.521269, "lng": -74.459917 }, "capacity": 200, "verified": true },
+    { "id": "BUS-60B", "name": "Lot 60B", "campus": "busch", "center": { "lat": 40.52157, "lng": -74.459269 }, "capacity": 200, "verified": true },
+    { "id": "BUS-63B", "name": "Lot 63B", "campus": "busch", "center": { "lat": 40.523503, "lng": -74.453972 }, "capacity": 150, "verified": true },
+    { "id": "BUS-64", "name": "Lot 64", "campus": "busch", "center": { "lat": 40.5206, "lng": -74.460349 }, "capacity": 200, "verified": true }
   ],
   "buildings": [
     { "id": "tillett", "name": "Tillett Hall", "campus": "livingston", "center": { "lat": 40.5225, "lng": -74.4369 }, "aliases": ["tillett", "til"] },
     { "id": "lucy-stone", "name": "Lucy Stone Hall", "campus": "livingston", "center": { "lat": 40.5243, "lng": -74.4339 }, "aliases": ["lucy stone", "lsh"] },
     { "id": "beck", "name": "Beck Hall", "campus": "livingston", "center": { "lat": 40.5259, "lng": -74.4374 }, "aliases": ["beck", "bk"] },
     { "id": "lsc", "name": "Livingston Student Center", "campus": "livingston", "center": { "lat": 40.5237, "lng": -74.4366 }, "aliases": ["livingston student center", "lsc"] },
-    { "id": "rbs", "name": "Rutgers Business School (100 Rockafeller Rd)", "campus": "livingston", "center": { "lat": 40.5229, "lng": -74.4378 }, "aliases": ["business school", "rbs", "100 rockafeller"] }
+    { "id": "rbs", "name": "Rutgers Business School (100 Rockafeller Rd)", "campus": "livingston", "center": { "lat": 40.5229, "lng": -74.4378 }, "aliases": ["business school", "rbs", "100 rockafeller"] },
+    { "id": "arc", "name": "Allison Road Classroom Building", "campus": "busch", "center": { "lat": 40.5236, "lng": -74.4648 }, "aliases": ["allison road classroom", "arc"] },
+    { "id": "hill", "name": "Hill Center", "campus": "busch", "center": { "lat": 40.5219, "lng": -74.463 }, "aliases": ["hill center", "hill", "hll"] },
+    { "id": "bsc", "name": "Busch Student Center", "campus": "busch", "center": { "lat": 40.5235, "lng": -74.4582 }, "aliases": ["busch student center", "bsc", "busch campus center"] }
   ]
 }

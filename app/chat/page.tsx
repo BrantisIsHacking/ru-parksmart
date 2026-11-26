@@ -19,8 +19,8 @@ const TOOL_LABEL: Record<string, string> = {
 
 const SUGGESTIONS = [
   "I have class in Tillett at 11. Where should I park?",
-  "Can I park in Livingston Lot C after 6 PM?",
-  "How full will Lot A be at 10:15?",
+  "Can I park in the Green Lot at 5:30 PM?",
+  "How full will the Yellow Lot be at 10:15?",
 ];
 
 export default function Chat() {

@@ -26,7 +26,7 @@ export const FUNCTION_DECLARATIONS: FunctionDeclaration[] = [
     parametersJsonSchema: {
       type: "object",
       properties: {
-        lot_id: { type: "string", description: "Lot id from list_lots, e.g. LIV-A" },
+        lot_id: { type: "string", description: "Lot id from list_lots, e.g. LIV-915" },
         permit_id: { type: "string", description: "Permit type id from list_lots, e.g. commuter-livingston" },
         time: { type: "string", description: TIME_DESC },
       },

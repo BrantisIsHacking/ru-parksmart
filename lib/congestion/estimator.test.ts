@@ -8,9 +8,9 @@ import { baselineFill, estimateLot, statusForFill } from "./estimator";
 const TUE = new Date("2026-11-24T17:00:00Z");
 const SAT = new Date("2026-11-28T17:00:00Z");
 const at = (ref: Date, h: number, m = 0) => campusTimeOnDay(ref, h * 60 + m);
-const LIV_A = lotById("LIV-A")!;
+const LIV_A = lotById("LIV-915")!;
 
-const report = (value: Report["value"], when: Date, trust = 1, lotId = "LIV-A"): Report => ({
+const report = (value: Report["value"], when: Date, trust = 1, lotId = "LIV-915"): Report => ({
   lotId,
   value,
   reporter: "anon",
@@ -84,7 +84,7 @@ describe("estimateLot", () => {
     const reports = [
       report("crowded", at(TUE, 6, 0)), // too old
       report("crowded", at(TUE, 8, 40)), // after now
-      report("crowded", now, 1, "LIV-B"), // other lot
+      report("crowded", now, 1, "LIV-916"), // other lot
     ];
     const e = estimateLot({ lot: LIV_A, forTime: now, now, reports });
     expect(e.sources.some((s) => s.kind === "student_reports")).toBe(false);
