@@ -1,11 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { Overpass } from "next/font/google";
+import localFont from "next/font/local";
 import { Nav } from "@/components/Nav";
 import { ServiceWorker } from "@/components/ServiceWorker";
 import "./globals.css";
 
 // Overpass descends from Highway Gothic, the lettering on US road signs.
-const overpass = Overpass({ subsets: ["latin"], variable: "--font-overpass", display: "swap" });
+const overpass = localFont({
+  src: [
+    { path: "./fonts/Overpass-Regular.ttf", weight: "400" },
+    { path: "./fonts/Overpass-Medium.ttf", weight: "500" },
+    { path: "./fonts/Overpass-SemiBold.ttf", weight: "600" },
+    { path: "./fonts/Overpass-Bold.ttf", weight: "700" },
+    { path: "./fonts/Overpass-ExtraBold.ttf", weight: "800" },
+    { path: "./fonts/Overpass-Black.ttf", weight: "900" },
+  ],
+  variable: "--font-overpass",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "RU ParkSmart",

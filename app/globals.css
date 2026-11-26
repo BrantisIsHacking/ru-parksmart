@@ -131,6 +131,26 @@ body {
     font-size: 1rem;
   }
 
+  .onboarding .field {
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+  }
+  .onboarding .field:focus {
+    border-color: var(--color-curb);
+    box-shadow: 0 2px 0 rgb(242 183 5 / 0.2);
+  }
+  .onboarding .btn {
+    transition: transform 160ms ease, box-shadow 160ms ease;
+  }
+  @media (hover: hover) {
+    .onboarding .btn:not(:disabled):hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.12);
+    }
+  }
+  .onboarding .btn:not(:disabled):active {
+    transform: translateY(1px) scale(0.99);
+  }
+
   /* Status swatches, painted like stall markings. */
   .swatch {
     display: inline-block;
@@ -220,6 +240,82 @@ body {
   background: #e9ecef;
 }
 
+/* The onboarding form arrives in the same measured rhythm as a wayfinding sign. */
+@keyframes onboarding-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes permit-tag-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) rotate(-2deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.onboarding-step {
+  opacity: 0;
+  animation: onboarding-reveal 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.permit-tag {
+  animation: permit-tag-arrive 520ms cubic-bezier(0.22, 1, 0.36, 1) 110ms both;
+  transform-origin: top center;
+}
+.permit-summary {
+  display: none;
+}
+@media (max-width: 639px) {
+  .permit-summary {
+    display: block;
+  }
+}
+
+@keyframes form-expand {
+  from {
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes form-collapse {
+  from {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+.form-presence {
+  display: grid;
+  grid-template-rows: 1fr;
+  animation: form-expand 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.form-presence > div {
+  min-height: 0;
+  overflow: hidden;
+}
+.form-presence.is-leaving {
+  pointer-events: none;
+  animation: form-collapse 200ms ease-in both;
+}
+
 /* The one orchestrated moment: the sign's action settles into a confirmation. */
 @keyframes settle {
   from {
@@ -235,7 +331,16 @@ body {
   animation: settle 260ms ease-out both;
 }
 @media (prefers-reduced-motion: reduce) {
-  .settle {
+  .settle,
+  .onboarding-step,
+  .permit-tag,
+  .form-presence {
     animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .onboarding .field,
+  .onboarding .btn {
+    transition: none;
   }
 }

@@ -43,13 +43,40 @@ const PRIMARY_GROUPS = [
   },
   { label: "Other", items: PERMITS.filter((p) => p.kind === "other") },
 ];
-/** Residents already live on campus, so a drive time to campus doesn't apply. */
-const drivesIn = (primary: string) => !!primary && !primary.startsWith("resident-");
+/** Drive-time planning and secondary permits apply to commuter permits. */
+const drivesIn = (primary: string) => primary.startsWith("commuter-");
 const SECONDARIES = PERMITS.filter((p) => p.kind === "secondary");
 /** "commuter-busch" ↔ "secondary-busch": you can't add a secondary for your own campus. */
 const campusOf = (id: string) => id.replace(/^(commuter|secondary|resident)-/, "");
 /** Secondary permits go with a commuter primary (DOTS sells them as an add-on). */
 const takesSecondary = (primary: string) => primary.startsWith("commuter-");
+
+function AnimatedPresence({ show, children }: { show: boolean; children: React.ReactNode }) {
+  const [rendered, setRendered] = useState(show);
+  const [leaving, setLeaving] = useState(false);
+
+  useEffect(() => {
+    if (show) {
+      setRendered(true);
+      setLeaving(false);
+    } else if (rendered) {
+      setLeaving(true);
+    }
+  }, [show, rendered]);
+
+  if (!rendered) return null;
+
+  return (
+    <div
+      className={`form-presence${leaving ? " is-leaving" : ""}`}
+      onAnimationEnd={(event) => {
+        if (!show && event.target === event.currentTarget) setRendered(false);
+      }}
+    >
+      <div>{children}</div>
+    </div>
+  );
+}
 
 /** Downscale to keep uploads small; output JPEG base64 without the data: prefix. */
 async function toJpegBase64(file: File): Promise<string> {
@@ -134,19 +161,19 @@ export default function Onboarding() {
         .join(" + ");
 
   return (
-    <div className="space-y-7">
-      <div className="space-y-1">
+    <div className="onboarding space-y-7">
+      <div className="onboarding-step space-y-1" style={{ animationDelay: "0ms" }}>
         <h1 className="text-[27px] font-extrabold leading-tight">Your commute</h1>
         <p className="text-muted">Three things, and the plan screen does the rest.</p>
       </div>
 
-      <section className="space-y-4">
+      <section className="onboarding-step space-y-4" style={{ animationDelay: "70ms" }}>
         <h2 className="text-[21px] font-bold">Permit</h2>
         <div className="flex items-center gap-4">
           {/* A hang tag showing the chosen permit. */}
-          <div className="relative grid h-24 w-16 flex-none place-items-end rounded-[8px] bg-scarlet px-1.5 pb-2 text-center text-[11px] font-bold leading-tight text-white" aria-hidden>
+          <div className="permit-tag relative flex h-32 w-20 flex-none flex-col items-center justify-end overflow-hidden rounded-[8px] bg-scarlet px-2 pb-3 pt-8 text-center text-[11px] font-bold leading-tight text-white" aria-hidden>
             <span className="absolute top-2 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full bg-concrete" />
-            {permitLabel || "No permit set"}
+            <span className="w-full break-words">{permitLabel || "No permit set"}</span>
           </div>
           <div className="flex-1 space-y-3">
             <label className="block space-y-1.5">
@@ -170,6 +197,7 @@ export default function Onboarding() {
                 ))}
               </select>
             </label>
+            {permitLabel && <p className="permit-summary text-[13px] font-semibold text-muted">Selected: {permitLabel}</p>}
             {pending && (
               <label className="block space-y-1.5">
                 <span className="text-[15px] font-semibold">{pending.question}</span>
@@ -184,7 +212,7 @@ export default function Onboarding() {
                 </span>
               </label>
             )}
-            {takesSecondary(primary) && (
+            <AnimatedPresence show={takesSecondary(primary)}>
               <label className="block space-y-1.5">
                 <span className="text-[15px] font-semibold">Secondary permit (optional)</span>
                 <select className="field" value={secondary} onChange={(e) => setSecondary(e.target.value)}>
@@ -195,23 +223,23 @@ export default function Onboarding() {
                 </select>
                 <span className="block text-[13px] text-muted">A secondary lets you park on another campus 10 AM – 12 AM on weekdays. College Ave has no secondary.</span>
               </label>
-            )}
+            </AnimatedPresence>
           </div>
         </div>
       </section>
 
-      {drivesIn(primary) && (
-        <section className="space-y-2">
+      <AnimatedPresence show={drivesIn(primary)}>
+        <section className="onboarding-step space-y-4" style={{ animationDelay: "140ms" }}>
           <h2 className="text-[21px] font-bold">Drive time</h2>
-          <label className="block space-y-1.5">
-            <span className="text-[15px] font-semibold">How many minutes is your usual drive to campus?</span>
-            <input className="field max-w-40 tabular-nums" inputMode="numeric" value={commute} onChange={(e) => setCommute(e.target.value.replace(/\D/g, ""))} placeholder="25" />
+          <label className="block">
+            <span className="block text-[15px] font-semibold">How many minutes is your usual drive to campus?</span>
+            <input className="field mt-3 max-w-40 tabular-nums" inputMode="numeric" value={commute} onChange={(e) => setCommute(e.target.value.replace(/\D/g, ""))} placeholder="25" />
           </label>
           <p className="text-[13px] text-muted">Optional. With it, the plan screen tells you when to leave home.</p>
         </section>
-      )}
+      </AnimatedPresence>
 
-      <section className="space-y-3">
+      <section className="onboarding-step space-y-3" style={{ animationDelay: "210ms" }}>
         <div className="space-y-1">
           <h2 className="text-[21px] font-bold">Classes</h2>
           <p className="text-[15px] text-muted">
@@ -236,7 +264,7 @@ export default function Onboarding() {
         </button>
       </section>
 
-      <div className="space-y-3 border-t border-line pt-5">
+      <div className="onboarding-step space-y-3 border-t border-line pt-5" style={{ animationDelay: "280ms" }}>
         <button className="btn btn-primary w-full" disabled={!permitId} onClick={save}>
           Save and see my plan
         </button>
