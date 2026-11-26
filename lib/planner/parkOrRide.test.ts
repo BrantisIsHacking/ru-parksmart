@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { BUS_ROUTES, findBuilding } from "../data";
+import { BUS_ROUTES, findBuilding, LOTS } from "../data";
 import { campusParts, campusTimeOnDay } from "../time";
 import type { LotEstimate, LotStatus } from "../types";
 import { latestDeparture, planTrip } from "./parkOrRide";
@@ -52,12 +52,12 @@ describe("planTrip", () => {
     expect(plan.parkAndRide).toBe(false);
   });
 
-  it("suggests a Busch flex lot and the B bus in the evening when Livingston lots are full", () => {
+  it("suggests another campus's flex lot and a bus in the evening when Livingston lots are full", () => {
     const estimates = new Map(LIVINGSTON_FLEX.map((id) => [id, est(id, "red")]));
     const plan = planTrip({ permitId: "commuter-livingston", destination: tillett, arriveBy: at(18, 30), estimates });
-    expect(plan.recommended?.lotId.startsWith("BUS-")).toBe(true);
+    expect(plan.recommended?.lotId.startsWith("LIV-")).toBe(false);
     expect(plan.recommended?.mode).toBe("bus");
-    expect(plan.recommended?.bus?.routeId).toBe("B");
+    expect(["B", "LX"]).toContain(plan.recommended?.bus?.routeId);
     expect(plan.parkAndRide).toBe(true);
     // Bus must get the student there by 18:30.
     const bus = plan.recommended!.bus!;
@@ -71,5 +71,29 @@ describe("planTrip", () => {
     expect(ids).not.toContain("LIV-916"); // flex-only before 5 PM
     expect(ids).not.toContain("LIV-103"); // resident lot
     expect(ids).not.toContain("BUS-613"); // needs a Busch permit
+  });
+
+  it("plans to a point picked on the map", () => {
+    const point = { name: "Dropped pin", center: { lat: 40.5232, lng: -74.4365 } }; // next to Tillett
+    const plan = planTrip({ permitId: "commuter-livingston", destination: point, arriveBy: at(11), estimates: new Map() });
+    expect(plan.destination).toBe("Dropped pin");
+    expect(plan.destinationCenter).toEqual(point.center);
+    expect(plan.recommended?.lotId).toBe("LIV-915");
+  });
+
+  it("takes the bus instead of a long walk when the bus is faster", () => {
+    const hill = findBuilding("HLL")!;
+    const plan = planTrip({ permitId: "commuter-busch", destination: hill, arriveBy: at(14), estimates: new Map() });
+    const stadium = [plan.recommended, ...plan.alternatives].find((o) => o?.lotId === "BUS-613")!;
+    expect(stadium.walkMin).toBeGreaterThan(12);
+    expect(stadium.mode).toBe("bus");
+    expect(stadium.totalMin).toBeLessThan(stadium.walkMin + 3);
+    expect(stadium.bus?.fromStop).toBe("Stadium West Lot");
+  });
+
+  it("never plans to a lot with only approximate coordinates", () => {
+    const lots = LOTS.map((l) => (l.id === "LIV-915" ? { ...l, coordsApprox: true } : l));
+    const plan = planTrip({ permitId: "commuter-livingston", destination: tillett, arriveBy: at(11), estimates: new Map(), lots });
+    expect(plan.recommended).toBeNull();
   });
 });

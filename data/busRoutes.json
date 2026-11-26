@@ -1,47 +1,738 @@
 {
-  "_note": "SCHEDULED (not live) weekday service from the DOTS route PDFs (https://ipo.rutgers.edu/transportation/buses/nb, fetched 2026-11-25; Thanksgiving week runs a special schedule). First/last departures and headways are from the PDFs; headwayMin is the slowest daytime frequency so plans err early. Only start-to-start offsets are published (B: LSC→BSC 18 min; C: Stadium West→ARC 7 min; LX: LSC→CASC 13 min); the other stop offsets are estimates. LX keeps running until about 2–3 AM; the planner stops at 23:45. Stop coordinates are approximate, except Stadium West, which uses the Lot 613 point. Track live buses in TripShot (https://rutgers.tripshot.com/).",
-  "routes": [
+ "_note": "SCHEDULED (not live) weekday service, generated 2026-11-26 by scripts/build-bus-routes.mjs from the DOTS route PDFs (https://ipo.rutgers.edu/transportation/buses/nb). First/last departures and headways are from the PDFs (headway = slowest daytime frequency). Only start-to-start offsets are published; other stop offsets are estimated. Stop coordinates are from OpenStreetMap. Thanksgiving week and weekends run different schedules. Live buses: TripShot (https://rutgers.tripshot.com/).",
+ "routes": [
+  {
+   "id": "A",
+   "name": "A (College Ave ↔ Busch)",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "firstDeparture": "07:00",
+   "lastDeparture": "21:00",
+   "headwayMin": 10,
+   "loopMin": 33,
+   "verified": false,
+   "stops": [
     {
-      "id": "B", "name": "B (Livingston ↔ Busch)", "days": [1, 2, 3, 4, 5],
-      "firstDeparture": "07:00", "lastDeparture": "22:21", "headwayMin": 7, "verified": false,
-      "stops": [
-        { "id": "liv-sc", "name": "Livingston Student Center", "center": { "lat": 40.5237, "lng": -74.4362 }, "offsetMin": 0 },
-        { "id": "liv-quads", "name": "Quads", "center": { "lat": 40.5222, "lng": -74.4332 }, "offsetMin": 3 },
-        { "id": "hill-n", "name": "Hill Center (North)", "center": { "lat": 40.5219, "lng": -74.4630 }, "offsetMin": 12 },
-        { "id": "busch-sci", "name": "Science Buildings", "center": { "lat": 40.5229, "lng": -74.4640 }, "offsetMin": 14 },
-        { "id": "busch-sc", "name": "Busch Student Center", "center": { "lat": 40.5235, "lng": -74.4582 }, "offsetMin": 18 },
-        { "id": "liv-plaza", "name": "Livingston Plaza", "center": { "lat": 40.5246, "lng": -74.4373 }, "offsetMin": 28 }
-      ]
+     "id": "college-avenue-student-center",
+     "name": "College Avenue Student Center",
+     "center": {
+      "lat": 40.503286,
+      "lng": -74.452097
+     },
+     "offsetMin": 0
     },
     {
-      "id": "C", "name": "C (Busch Commuter Shuttle)", "days": [1, 2, 3, 4],
-      "firstDeparture": "07:30", "lastDeparture": "21:54", "headwayMin": 12, "verified": false,
-      "stops": [
-        { "id": "stadium-west", "name": "Stadium West Lot", "center": { "lat": 40.51369, "lng": -74.46716 }, "offsetMin": 0 },
-        { "id": "hill-n", "name": "Hill Center (North)", "center": { "lat": 40.5219, "lng": -74.4630 }, "offsetMin": 4 },
-        { "id": "arc", "name": "Allison Road Classroom Building", "center": { "lat": 40.5236, "lng": -74.4648 }, "offsetMin": 7 },
-        { "id": "hill-s", "name": "Hill Center (South)", "center": { "lat": 40.5216, "lng": -74.4628 }, "offsetMin": 9 }
-      ]
+     "id": "the-yard",
+     "name": "The Yard",
+     "center": {
+      "lat": 40.499556,
+      "lng": -74.448343
+     },
+     "offsetMin": 3
     },
     {
-      "id": "C-FRI", "name": "C (Busch Commuter Shuttle, Friday)", "days": [5],
-      "firstDeparture": "07:30", "lastDeparture": "19:18", "headwayMin": 12, "verified": false,
-      "stops": [
-        { "id": "stadium-west", "name": "Stadium West Lot", "center": { "lat": 40.51369, "lng": -74.46716 }, "offsetMin": 0 },
-        { "id": "hill-n", "name": "Hill Center (North)", "center": { "lat": 40.5219, "lng": -74.4630 }, "offsetMin": 4 },
-        { "id": "arc", "name": "Allison Road Classroom Building", "center": { "lat": 40.5236, "lng": -74.4648 }, "offsetMin": 7 },
-        { "id": "hill-s", "name": "Hill Center (South)", "center": { "lat": 40.5216, "lng": -74.4628 }, "offsetMin": 9 }
-      ]
+     "id": "student-activities-center",
+     "name": "Student Activities Center",
+     "center": {
+      "lat": 40.504107,
+      "lng": -74.448985
+     },
+     "offsetMin": 6
     },
     {
-      "id": "LX", "name": "LX (College Ave ↔ Livingston)", "days": [1, 2, 3, 4, 5],
-      "firstDeparture": "06:00", "lastDeparture": "23:45", "headwayMin": 6, "verified": false,
-      "stops": [
-        { "id": "liv-sc", "name": "Livingston Student Center", "center": { "lat": 40.5237, "lng": -74.4362 }, "offsetMin": 0 },
-        { "id": "liv-quads", "name": "Quads", "center": { "lat": 40.5222, "lng": -74.4332 }, "offsetMin": 2 },
-        { "id": "cac-sc", "name": "College Ave Student Center", "center": { "lat": 40.5030, "lng": -74.4520 }, "offsetMin": 13 },
-        { "id": "liv-plaza", "name": "Livingston Plaza", "center": { "lat": 40.5246, "lng": -74.4373 }, "offsetMin": 25 }
-      ]
+     "id": "stadium-west-lot",
+     "name": "Stadium West Lot",
+     "center": {
+      "lat": 40.514572,
+      "lng": -74.465962
+     },
+     "offsetMin": 14
+    },
+    {
+     "id": "hill-center",
+     "name": "Hill Center",
+     "center": {
+      "lat": 40.521965,
+      "lng": -74.463186
+     },
+     "offsetMin": 18
+    },
+    {
+     "id": "science-buildings",
+     "name": "Science Buildings",
+     "center": {
+      "lat": 40.523892,
+      "lng": -74.464125
+     },
+     "offsetMin": 20
+    },
+    {
+     "id": "busch-student-center",
+     "name": "Busch Student Center",
+     "center": {
+      "lat": 40.52359,
+      "lng": -74.458109
+     },
+     "offsetMin": 23
+    },
+    {
+     "id": "werblin-recreation-center",
+     "name": "Werblin Recreation Center",
+     "center": {
+      "lat": 40.518714,
+      "lng": -74.460081
+     },
+     "offsetMin": 26
     }
-  ]
+   ]
+  },
+  {
+   "id": "B",
+   "name": "B (Livingston ↔ Busch)",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "firstDeparture": "07:00",
+   "lastDeparture": "22:21",
+   "headwayMin": 7,
+   "loopMin": 26,
+   "verified": false,
+   "stops": [
+    {
+     "id": "livingston-student-center",
+     "name": "Livingston Student Center",
+     "center": {
+      "lat": 40.523992,
+      "lng": -74.436589
+     },
+     "offsetMin": 0
+    },
+    {
+     "id": "quads",
+     "name": "Quads",
+     "center": {
+      "lat": 40.519952,
+      "lng": -74.433584
+     },
+     "offsetMin": 3
+    },
+    {
+     "id": "hill-center",
+     "name": "Hill Center",
+     "center": {
+      "lat": 40.521965,
+      "lng": -74.463186
+     },
+     "offsetMin": 13
+    },
+    {
+     "id": "science-buildings",
+     "name": "Science Buildings",
+     "center": {
+      "lat": 40.523892,
+      "lng": -74.464125
+     },
+     "offsetMin": 15
+    },
+    {
+     "id": "busch-student-center",
+     "name": "Busch Student Center",
+     "center": {
+      "lat": 40.52359,
+      "lng": -74.458109
+     },
+     "offsetMin": 18
+    },
+    {
+     "id": "livingston-plaza",
+     "name": "Livingston Plaza",
+     "center": {
+      "lat": 40.525065,
+      "lng": -74.438526
+     },
+     "offsetMin": 25
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "C (Busch Commuter Shuttle)",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "firstDeparture": "07:30",
+   "lastDeparture": "21:54",
+   "headwayMin": 12,
+   "loopMin": 13,
+   "verified": false,
+   "stops": [
+    {
+     "id": "stadium-west-lot",
+     "name": "Stadium West Lot",
+     "center": {
+      "lat": 40.514572,
+      "lng": -74.465962
+     },
+     "offsetMin": 0
+    },
+    {
+     "id": "hill-center",
+     "name": "Hill Center",
+     "center": {
+      "lat": 40.521965,
+      "lng": -74.463186
+     },
+     "offsetMin": 5
+    },
+    {
+     "id": "allison-road-classroom-building",
+     "name": "Allison Road Classroom Building",
+     "center": {
+      "lat": 40.523709,
+      "lng": -74.465084
+     },
+     "offsetMin": 7
+    },
+    {
+     "id": "hill-center",
+     "name": "Hill Center",
+     "center": {
+      "lat": 40.521965,
+      "lng": -74.463186
+     },
+     "offsetMin": 9
+    }
+   ]
+  },
+  {
+   "id": "C-FRI",
+   "name": "C (Busch Commuter Shuttle, Friday)",
+   "days": [
+    5
+   ],
+   "firstDeparture": "07:30",
+   "lastDeparture": "19:18",
+   "headwayMin": 12,
+   "loopMin": 13,
+   "verified": false,
+   "stops": [
+    {
+     "id": "stadium-west-lot",
+     "name": "Stadium West Lot",
+     "center": {
+      "lat": 40.514572,
+      "lng": -74.465962
+     },
+     "offsetMin": 0
+    },
+    {
+     "id": "hill-center",
+     "name": "Hill Center",
+     "center": {
+      "lat": 40.521965,
+      "lng": -74.463186
+     },
+     "offsetMin": 5
+    },
+    {
+     "id": "allison-road-classroom-building",
+     "name": "Allison Road Classroom Building",
+     "center": {
+      "lat": 40.523709,
+      "lng": -74.465084
+     },
+     "offsetMin": 7
+    },
+    {
+     "id": "hill-center",
+     "name": "Hill Center",
+     "center": {
+      "lat": 40.521965,
+      "lng": -74.463186
+     },
+     "offsetMin": 9
+    }
+   ]
+  },
+  {
+   "id": "EE",
+   "name": "EE (College Ave ↔ Cook/Douglass)",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "firstDeparture": "06:00",
+   "lastDeparture": "23:45",
+   "headwayMin": 7,
+   "loopMin": 34,
+   "verified": false,
+   "stops": [
+    {
+     "id": "red-oak-lane",
+     "name": "Red Oak Lane",
+     "center": {
+      "lat": 40.48282,
+      "lng": -74.437618
+     },
+     "offsetMin": 0
+    },
+    {
+     "id": "lipman-hall",
+     "name": "Lipman Hall",
+     "center": {
+      "lat": 40.481184,
+      "lng": -74.436416
+     },
+     "offsetMin": 2
+    },
+    {
+     "id": "biel-road",
+     "name": "Biel Road",
+     "center": {
+      "lat": 40.479927,
+      "lng": -74.432492
+     },
+     "offsetMin": 4
+    },
+    {
+     "id": "henderson-apartments",
+     "name": "Henderson Apartments",
+     "center": {
+      "lat": 40.481108,
+      "lng": -74.428785
+     },
+     "offsetMin": 6
+    },
+    {
+     "id": "gibbons",
+     "name": "Gibbons",
+     "center": {
+      "lat": 40.485247,
+      "lng": -74.431869
+     },
+     "offsetMin": 9
+    },
+    {
+     "id": "college-hall",
+     "name": "College Hall",
+     "center": {
+      "lat": 40.48568,
+      "lng": -74.437445
+     },
+     "offsetMin": 11
+    },
+    {
+     "id": "socam-apartments",
+     "name": "SoCam Apartments",
+     "center": {
+      "lat": 40.491924,
+      "lng": -74.443138
+     },
+     "offsetMin": 15
+    },
+    {
+     "id": "student-activities-center",
+     "name": "Student Activities Center",
+     "center": {
+      "lat": 40.504107,
+      "lng": -74.448985
+     },
+     "offsetMin": 21
+    },
+    {
+     "id": "college-avenue-student-center",
+     "name": "College Avenue Student Center",
+     "center": {
+      "lat": 40.503286,
+      "lng": -74.452097
+     },
+     "offsetMin": 23
+    },
+    {
+     "id": "the-yard",
+     "name": "The Yard",
+     "center": {
+      "lat": 40.499556,
+      "lng": -74.448343
+     },
+     "offsetMin": 26
+    }
+   ]
+  },
+  {
+   "id": "F",
+   "name": "F (College Ave ↔ Cook/Douglass)",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "firstDeparture": "07:00",
+   "lastDeparture": "20:36",
+   "headwayMin": 6,
+   "loopMin": 21,
+   "verified": false,
+   "stops": [
+    {
+     "id": "red-oak-lane",
+     "name": "Red Oak Lane",
+     "center": {
+      "lat": 40.48282,
+      "lng": -74.437618
+     },
+     "offsetMin": 0
+    },
+    {
+     "id": "lipman-hall",
+     "name": "Lipman Hall",
+     "center": {
+      "lat": 40.481184,
+      "lng": -74.436416
+     },
+     "offsetMin": 1
+    },
+    {
+     "id": "college-hall",
+     "name": "College Hall",
+     "center": {
+      "lat": 40.48568,
+      "lng": -74.437445
+     },
+     "offsetMin": 3
+    },
+    {
+     "id": "student-activities-center",
+     "name": "Student Activities Center",
+     "center": {
+      "lat": 40.504107,
+      "lng": -74.448985
+     },
+     "offsetMin": 10
+    },
+    {
+     "id": "the-yard",
+     "name": "The Yard",
+     "center": {
+      "lat": 40.499556,
+      "lng": -74.448343
+     },
+     "offsetMin": 13
+    }
+   ]
+  },
+  {
+   "id": "H",
+   "name": "H (College Ave ↔ Busch)",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "firstDeparture": "06:00",
+   "lastDeparture": "23:45",
+   "headwayMin": 8,
+   "loopMin": 32,
+   "verified": false,
+   "stops": [
+    {
+     "id": "busch-student-center",
+     "name": "Busch Student Center",
+     "center": {
+      "lat": 40.52359,
+      "lng": -74.458109
+     },
+     "offsetMin": 0
+    },
+    {
+     "id": "allison-road-classroom-building",
+     "name": "Allison Road Classroom Building",
+     "center": {
+      "lat": 40.523709,
+      "lng": -74.465084
+     },
+     "offsetMin": 3
+    },
+    {
+     "id": "hill-center",
+     "name": "Hill Center",
+     "center": {
+      "lat": 40.521965,
+      "lng": -74.463186
+     },
+     "offsetMin": 5
+    },
+    {
+     "id": "stadium-west-lot",
+     "name": "Stadium West Lot",
+     "center": {
+      "lat": 40.514572,
+      "lng": -74.465962
+     },
+     "offsetMin": 9
+    },
+    {
+     "id": "college-avenue-student-center",
+     "name": "College Avenue Student Center",
+     "center": {
+      "lat": 40.503286,
+      "lng": -74.452097
+     },
+     "offsetMin": 16
+    },
+    {
+     "id": "the-yard",
+     "name": "The Yard",
+     "center": {
+      "lat": 40.499556,
+      "lng": -74.448343
+     },
+     "offsetMin": 19
+    },
+    {
+     "id": "student-activities-center",
+     "name": "Student Activities Center",
+     "center": {
+      "lat": 40.504107,
+      "lng": -74.448985
+     },
+     "offsetMin": 21
+    },
+    {
+     "id": "werblin-recreation-center",
+     "name": "Werblin Recreation Center",
+     "center": {
+      "lat": 40.518714,
+      "lng": -74.460081
+     },
+     "offsetMin": 29
+    }
+   ]
+  },
+  {
+   "id": "LX",
+   "name": "LX (College Ave ↔ Livingston)",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "firstDeparture": "06:00",
+   "lastDeparture": "23:45",
+   "headwayMin": 6,
+   "loopMin": 29,
+   "verified": false,
+   "stops": [
+    {
+     "id": "livingston-student-center",
+     "name": "Livingston Student Center",
+     "center": {
+      "lat": 40.523992,
+      "lng": -74.436589
+     },
+     "offsetMin": 0
+    },
+    {
+     "id": "quads",
+     "name": "Quads",
+     "center": {
+      "lat": 40.519952,
+      "lng": -74.433584
+     },
+     "offsetMin": 3
+    },
+    {
+     "id": "college-avenue-student-center",
+     "name": "College Avenue Student Center",
+     "center": {
+      "lat": 40.503286,
+      "lng": -74.452097
+     },
+     "offsetMin": 13
+    },
+    {
+     "id": "the-yard",
+     "name": "The Yard",
+     "center": {
+      "lat": 40.499556,
+      "lng": -74.448343
+     },
+     "offsetMin": 16
+    },
+    {
+     "id": "student-activities-center",
+     "name": "Student Activities Center",
+     "center": {
+      "lat": 40.504107,
+      "lng": -74.448985
+     },
+     "offsetMin": 18
+    },
+    {
+     "id": "livingston-plaza",
+     "name": "Livingston Plaza",
+     "center": {
+      "lat": 40.525065,
+      "lng": -74.438526
+     },
+     "offsetMin": 28
+    }
+   ]
+  },
+  {
+   "id": "REXB",
+   "name": "REXB (Cook/Douglass ↔ Busch)",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "firstDeparture": "07:00",
+   "lastDeparture": "22:54",
+   "headwayMin": 12,
+   "loopMin": 35,
+   "verified": false,
+   "stops": [
+    {
+     "id": "red-oak-lane",
+     "name": "Red Oak Lane",
+     "center": {
+      "lat": 40.48282,
+      "lng": -74.437618
+     },
+     "offsetMin": 0
+    },
+    {
+     "id": "lipman-hall",
+     "name": "Lipman Hall",
+     "center": {
+      "lat": 40.481184,
+      "lng": -74.436416
+     },
+     "offsetMin": 1
+    },
+    {
+     "id": "college-hall",
+     "name": "College Hall",
+     "center": {
+      "lat": 40.48568,
+      "lng": -74.437445
+     },
+     "offsetMin": 3
+    },
+    {
+     "id": "hill-center",
+     "name": "Hill Center",
+     "center": {
+      "lat": 40.521965,
+      "lng": -74.463186
+     },
+     "offsetMin": 15
+    },
+    {
+     "id": "allison-road-classroom-building",
+     "name": "Allison Road Classroom Building",
+     "center": {
+      "lat": 40.523709,
+      "lng": -74.465084
+     },
+     "offsetMin": 16
+    },
+    {
+     "id": "hill-center",
+     "name": "Hill Center",
+     "center": {
+      "lat": 40.521965,
+      "lng": -74.463186
+     },
+     "offsetMin": 18
+    }
+   ]
+  },
+  {
+   "id": "REXL",
+   "name": "REXL (Cook/Douglass ↔ Livingston)",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "firstDeparture": "07:00",
+   "lastDeparture": "22:59",
+   "headwayMin": 12,
+   "loopMin": 32,
+   "verified": false,
+   "stops": [
+    {
+     "id": "red-oak-lane",
+     "name": "Red Oak Lane",
+     "center": {
+      "lat": 40.48282,
+      "lng": -74.437618
+     },
+     "offsetMin": 0
+    },
+    {
+     "id": "lipman-hall",
+     "name": "Lipman Hall",
+     "center": {
+      "lat": 40.481184,
+      "lng": -74.436416
+     },
+     "offsetMin": 1
+    },
+    {
+     "id": "college-hall",
+     "name": "College Hall",
+     "center": {
+      "lat": 40.48568,
+      "lng": -74.437445
+     },
+     "offsetMin": 3
+    },
+    {
+     "id": "livingston-plaza",
+     "name": "Livingston Plaza",
+     "center": {
+      "lat": 40.525065,
+      "lng": -74.438526
+     },
+     "offsetMin": 15
+    },
+    {
+     "id": "livingston-student-center",
+     "name": "Livingston Student Center",
+     "center": {
+      "lat": 40.523992,
+      "lng": -74.436589
+     },
+     "offsetMin": 16
+    }
+   ]
+  }
+ ]
 }

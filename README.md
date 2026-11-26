@@ -54,29 +54,38 @@ Firebase setup:
 | Trip check-ins ("Did you find a spot?"): trips, outcomes, push, cron | [app/api/trips/](app/api/trips/), [app/api/outcomes/](app/api/outcomes/), [app/api/cron/checkins/](app/api/cron/checkins/), [lib/server/push.ts](lib/server/push.ts) |
 | Learned typical-fill curves from counts + check-ins | [lib/congestion/learnedBaseline.ts](lib/congestion/learnedBaseline.ts), [lib/server/baselines.ts](lib/server/baselines.ts) |
 | Pilot metrics and CSV | [lib/metrics/analyze.ts](lib/metrics/analyze.ts), `/pilot` |
-| Congestion map (Leaflet + OpenStreetMap, loaded in the browser only) | [components/LotMap.tsx](components/LotMap.tsx), [components/LeafletMap.tsx](components/LeafletMap.tsx) |
+| Campus map home screen (Leaflet; lot and building outlines from the Rutgers campus map) | [app/page.tsx](app/page.tsx), [components/CampusMap.tsx](components/CampusMap.tsx) |
+| Building and lot search (codes like TIL-254, names, addresses) | [lib/search.ts](lib/search.ts), [lib/places.ts](lib/places.ts) |
 
-Screens: `/` (leave-by time and recommendation), `/chat`, `/report` (one-tap report), `/onboarding` (permit, commute, schedule), `/privacy`, and `/pilot` (team only).
+Screens: `/` (full-screen campus map with the plan in a bottom sheet; search or tap any building or spot to plan a trip), `/chat`, `/report` (one-tap report), `/onboarding` (permit, commute, schedule), `/privacy`, and `/pilot` (team only).
 
 ## Pilot data: what's real and what's left
 
-The lots, permit rules and bus schedules come from Rutgers DOTS and were transcribed on 2026-11-25. Rules stay `verified: false` until Rutgers Transportation Services confirms them, so the app keeps showing its "pilot draft" warning.
+All four New Brunswick campuses are covered. The data comes from Rutgers and OpenStreetMap through scripts that write committed JSON, so it can be refreshed each semester. Rules stay `verified: false` until Rutgers Transportation Services confirms them, so the app keeps showing its "pilot draft" warning.
 
-**Real now**
+```bash
+node scripts/import-dots.mjs         # lots + permit rules from the DOTS permit catalog
+node scripts/import-campus-map.mjs   # buildings, lot/building outlines, bus stops
+node scripts/build-bus-routes.mjs    # weekday bus routes (edit the table in this script)
+```
 
-- **[data/lots.json](data/lots.json)**: Livingston lots 915 (Yellow), 916 (Green), 107, 108, 111, 103 and 105, plus Busch lots 613 (Stadium West), 48, 50, 51B, 53A, 54, 60A, 60B, 63B and 64. Names and coordinates come from the DOTS permit catalog ([wcip.ipo.rutgers.edu](https://wcip.ipo.rutgers.edu/?catalog_filter=student)). The catalog loads its data from `data.json`; each permit's lots are base64-encoded HTML links that carry the coordinates. Lots the catalog only places to two decimals (Busch 51, 55, 58, 58A, 59, 63, 66B, 67, 602) are left out for now.
-- **[data/rules.v2026-fall.json](data/rules.v2026-fall.json)**: primary permits (6 AM–12 AM every day in the campus's commuter lot), secondary permits (10 AM–12 AM weekdays), flex time (any NB student permit in the Livingston and Busch student lots, 5 PM–12 AM weekdays and 6 AM–12 AM weekends), Livingston resident lots, and the Yellow Lot daily permit. A permit id joined with `+` (for example `commuter-livingston+secondary-busch`) is allowed wherever either part is.
-- **[lib/rules/engine.test.ts](lib/rules/engine.test.ts)**: the test table follows those rules.
-- **[data/busRoutes.json](data/busRoutes.json)**: weekday B, C and LX from the DOTS route PDFs, with first and last departures and the slowest daytime headway.
+| Output | Source |
+|---|---|
+| [data/lots.json](data/lots.json) lots, [data/rules.v2026-fall.json](data/rules.v2026-fall.json) | DOTS permit catalog `https://wcip.ipo.rutgers.edu/data.json`. Each permit's lots are base64-encoded HTML links with coordinates; the hours come from its schedule. Hand-written extras (the Yellow Lot daily permit) live in [data/rules.manual.json](data/rules.manual.json). |
+| [data/buildings.json](data/buildings.json), [public/geo/](public/geo/) outlines, refined lot coordinates | The Rutgers campus map feed behind [maps.rutgers.edu](https://maps.rutgers.edu): about 700 NB buildings with official codes (TIL, ARC, HLL…) and addresses, plus lot outlines. Lots the catalog places only roughly get their coordinates from the matching outline. |
+| [data/busStops.json](data/busStops.json) | OpenStreetMap through Overpass (© OpenStreetMap contributors, ODbL). |
+| [data/busRoutes.json](data/busRoutes.json) | Weekday A, B, C, EE, F, H, LX, REXB and REXL from the DOTS route PDFs, transcribed into [scripts/build-bus-routes.mjs](scripts/build-bus-routes.mjs). |
+
+Permits work the way DOTS sells them: a primary (6 AM–12 AM every day in that campus's commuter lots), an optional secondary for another campus (10 AM–12 AM weekdays; College Ave has none), and flex time (other student lots 5 PM–12 AM weekdays and 6 AM–12 AM weekends). A combined permit id such as `commuter-livingston+secondary-busch` is allowed wherever either part is.
 
 **Still estimated**
 
 1. Lot **capacities**. Rutgers doesn't publish them. They only turn team counts into a fill fraction, and the counter can override them on `/pilot`.
-2. **Bus stop offsets** other than the published start-to-start times, and the **stop and building coordinates** (Stadium West uses the Lot 613 point).
+2. **Bus stop offsets** other than the published start-to-start times (estimated from distance), and each route's loop time.
 3. **[data/classTimes.json](data/classTimes.json)** block weights. The start times are the standard NB periods; the weights should come from Schedule of Classes enrollment.
 4. **[data/baseline.json](data/baseline.json)** curves for 915, 916 and 613. Replace them with RTS counts (`source: "rts"`) or averaged pilot counts (`source: "manual"`).
 
-What the real rules mean for the app: on a weekday before 5 PM, a Livingston commuter can park only in the Yellow Lot. A Busch secondary adds Stadium West from 10 AM, but no single bus links it to Livingston. Park-and-ride (a Busch flex lot plus the B bus) becomes possible after 5 PM.
+What the real rules mean: on a weekday before 5 PM, a Livingston commuter can park only in the Yellow Lot, while Busch commuters at Stadium West often do better on the A, C or H bus than walking. After 5 PM, flex time opens other campuses' lots, so park-and-ride becomes common.
 
 ## Check-ins
 
@@ -118,4 +127,4 @@ Vercel's free Hobby plan (Firebase App Hosting needs the paid Blaze plan).
 2. Add the deployed domain under Firebase **Authentication → Settings → Authorized domains**.
 3. Create the once-a-minute cron job described in [Check-ins](#check-ins). Without it, check-in notifications are never sent (students are still asked when they next open the app).
 
-OpenStreetMap's public tile server is fine for a campus pilot but isn't meant for heavy traffic. To scale up, switch to a tile provider with a free tier (such as MapTiler or Stadia) by changing `TILE_URL` and `ATTRIBUTION` in [components/LeafletMap.tsx](components/LeafletMap.tsx).
+The map uses CARTO's basemap tiles (OpenStreetMap data) when `NEXT_PUBLIC_CARTO_KEY` is set. The key is free for non-commercial use up to 5M requests a month: request one at [carto.com/basemaps/apikey](https://carto.com/basemaps/apikey/). Without a key it falls back to the standard OpenStreetMap tiles. To change providers (for example Google Maps, if that gets funded), edit `TILE_URL`, `LABELS_URL` and `ATTRIBUTION` in [components/CampusMap.tsx](components/CampusMap.tsx); the lot and building layers don't depend on the tile provider.

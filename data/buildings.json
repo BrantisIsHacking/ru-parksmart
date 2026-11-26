@@ -1,0 +1,8375 @@
+{
+ "_note": "Generated 2026-11-26 by scripts/import-campus-map.mjs from the Rutgers campus map (maps.rutgers.edu, sync 1795608608426 (Nov 25, 2026, 7:10 AM EST)). Campus = campus of the nearest pilot lot.",
+ "buildings": [
+  {
+   "id": "b8823",
+   "name": "1 Spring",
+   "address": "1 Spring Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.49525,
+    "lng": -74.444875
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8863",
+   "name": "103 College Farm Road West",
+   "address": "103 College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473457,
+    "lng": -74.435089
+   },
+   "aliases": []
+  },
+  {
+   "id": "b7597",
+   "name": "120 Albany",
+   "code": "ALB",
+   "address": "120 Albany Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.496336,
+    "lng": -74.445004
+   },
+   "aliases": [
+    "alb"
+   ]
+  },
+  {
+   "id": "b8874",
+   "name": "123 Church",
+   "address": "123 Church Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.496049,
+    "lng": -74.444624
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3519",
+   "name": "1245 River Road",
+   "address": "1245 River Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.51358,
+    "lng": -74.459595
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8871",
+   "name": "1245 River Road Utility Building",
+   "address": "1245 River Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.513644,
+    "lng": -74.460521
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8318",
+   "name": "132 George",
+   "address": "132 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.486131,
+    "lng": -74.438978
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8301",
+   "name": "135 George",
+   "address": "135 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.486429,
+    "lng": -74.438679
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3173",
+   "name": "14 Lafayette",
+   "address": "14 Lafayette Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504957,
+    "lng": -74.45526
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3180",
+   "name": "14 Lafayette - Garage",
+   "address": "14 Lafayette Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504904,
+    "lng": -74.455093
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3042",
+   "name": "15 Bartlett",
+   "code": "MK",
+   "address": "15 Bartlett Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501917,
+    "lng": -74.451994
+   },
+   "aliases": [
+    "mk"
+   ]
+  },
+  {
+   "id": "b3167",
+   "name": "190 College Avenue - Garage",
+   "address": "190 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504677,
+    "lng": -74.454234
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3138",
+   "name": "191 College Avenue",
+   "address": "191 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.505491,
+    "lng": -74.453763
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3162",
+   "name": "195 College Avenue",
+   "address": "195 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.505666,
+    "lng": -74.453894
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3163",
+   "name": "195 College Avenue Garage",
+   "address": "195 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.505853,
+    "lng": -74.453721
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3141",
+   "name": "26 Mine",
+   "address": "26 Mine Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500168,
+    "lng": -74.450641
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3069",
+   "name": "3 Bartlett",
+   "address": "3 Bartlett Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.50216,
+    "lng": -74.45161
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3131",
+   "name": "31 Mine",
+   "address": "31 Mine Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500343,
+    "lng": -74.451209
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4053",
+   "name": "44 Road 3",
+   "address": "44 Road 3",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.523697,
+    "lng": -74.433119
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4054",
+   "name": "49 Joyce Kilmer",
+   "code": "AAC",
+   "address": "49 Joyce Kilmer Avenue",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.523468,
+    "lng": -74.433648
+   },
+   "aliases": [
+    "lac",
+    "aac"
+   ]
+  },
+  {
+   "id": "b3008",
+   "name": "536 George",
+   "code": "SW",
+   "address": "536 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501324,
+    "lng": -74.446247
+   },
+   "aliases": [
+    "sw"
+   ]
+  },
+  {
+   "id": "b3009",
+   "name": "542 George",
+   "address": "542 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501829,
+    "lng": -74.446591
+   },
+   "aliases": [
+    "riverstede doolittle demarest house"
+   ]
+  },
+  {
+   "id": "b3020",
+   "name": "56 College Avenue",
+   "address": "56 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.499852,
+    "lng": -74.448877
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4047",
+   "name": "6 Berrue",
+   "address": "6 Berrue Circle",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.525153,
+    "lng": -74.430533
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8416",
+   "name": "61 Nichol",
+   "address": "61 Nichol Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.483335,
+    "lng": -74.439359
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3046",
+   "name": "73 Easton",
+   "address": "73 Easton Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498602,
+    "lng": -74.45013
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3161",
+   "name": "8 Lafayette - Garage",
+   "address": "8 Lafayette Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.505067,
+    "lng": -74.454801
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6003",
+   "name": "80 Nichol",
+   "code": "MET",
+   "address": "80 Nichol Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.482382,
+    "lng": -74.43961
+   },
+   "aliases": [
+    "meteorology",
+    "met"
+   ]
+  },
+  {
+   "id": "b7599",
+   "name": "Administration Services Building ASB 2",
+   "address": "57 U.S. Highway 1",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479061,
+    "lng": -74.42482
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6065",
+   "name": "Agricultural Museum Storage Shed",
+   "address": "103 College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473238,
+    "lng": -74.435209
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3164",
+   "name": "Air Force ROTC",
+   "address": "190 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504828,
+    "lng": -74.454019
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3170",
+   "name": "Air Force ROTC Garage",
+   "address": "184 College Avenue (Rear)",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504675,
+    "lng": -74.454086
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3100",
+   "name": "Alexander Johnston Hall",
+   "address": "101 Somerset Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.497799,
+    "lng": -74.447326
+   },
+   "aliases": [
+    "rutgers preparatory school"
+   ]
+  },
+  {
+   "id": "b3107",
+   "name": "Alexander Library",
+   "code": "ALX",
+   "address": "169 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504982,
+    "lng": -74.452431
+   },
+   "aliases": [
+    "the hatchery east asian library",
+    "alx"
+   ]
+  },
+  {
+   "id": "b3828",
+   "name": "Allen Residence Hall",
+   "address": "32 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521432,
+    "lng": -74.453337
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3878",
+   "name": "Allison Road Classroom Building ARC",
+   "code": "ARC",
+   "address": "618 Allison Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523857,
+    "lng": -74.46526
+   },
+   "aliases": [
+    "arc"
+   ]
+  },
+  {
+   "id": "b6049",
+   "name": "Animal Nutrition Barn",
+   "address": "101A College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473861,
+    "lng": -74.435444
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6018",
+   "name": "Animal Shelter CK6018",
+   "address": "103B College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472328,
+    "lng": -74.433633
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6019",
+   "name": "Animal Shelter CK6019",
+   "address": "103C College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472392,
+    "lng": -74.433374
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6142",
+   "name": "Animal Shelter CK6142",
+   "address": "103A College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47275,
+    "lng": -74.43469
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6143",
+   "name": "Animal Shelter CK6143",
+   "address": "67 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475917,
+    "lng": -74.436381
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6144",
+   "name": "Animal Shelter CK6144",
+   "address": "67 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475994,
+    "lng": -74.435838
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6146",
+   "name": "Animal Shelter CK6146",
+   "address": "67 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475831,
+    "lng": -74.434971
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6147",
+   "name": "Animal Shelter CK6147",
+   "address": "67 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475837,
+    "lng": -74.434225
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6148",
+   "name": "Animal Shelter CK6148",
+   "address": "67 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475856,
+    "lng": -74.433195
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6149",
+   "name": "Animal Shelter CK6149",
+   "address": "67 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47593,
+    "lng": -74.432657
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6150",
+   "name": "Animal Shelter CK6150",
+   "address": "67 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475293,
+    "lng": -74.434394
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6151",
+   "name": "Animal Shelter CK6151",
+   "address": "101G College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.470199,
+    "lng": -74.428807
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6152",
+   "name": "Animal Shelter CK6152",
+   "address": "101F College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.470361,
+    "lng": -74.428133
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6153",
+   "name": "Animal Shelter CK6153",
+   "address": "101E College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.469279,
+    "lng": -74.427946
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6499",
+   "name": "Antilles Field",
+   "address": "5A Chapel Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.487374,
+    "lng": -74.435574
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3072",
+   "name": "Army ROTC",
+   "code": "ARM",
+   "address": "157 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504081,
+    "lng": -74.452242
+   },
+   "aliases": [
+    "arm"
+   ]
+  },
+  {
+   "id": "b3024",
+   "name": "Art History Annex",
+   "address": "60 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.499971,
+    "lng": -74.44897
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8428",
+   "name": "Art History Hall",
+   "code": "ARH",
+   "address": "4 Chapel Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.48621,
+    "lng": -74.435107
+   },
+   "aliases": [
+    "arh"
+   ]
+  },
+  {
+   "id": "b8315",
+   "name": "Arts Complex Bridge",
+   "address": "85 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.486149,
+    "lng": -74.434703
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6051",
+   "name": "Avian Research Building",
+   "address": "73D Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476418,
+    "lng": -74.439554
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3827",
+   "name": "Barr Residence Hall",
+   "address": "42 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522008,
+    "lng": -74.453751
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6024",
+   "name": "Bartlett Hall",
+   "code": "BT",
+   "address": "84 Lipman Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480125,
+    "lng": -74.43772
+   },
+   "aliases": [
+    "bt"
+   ]
+  },
+  {
+   "id": "b4001",
+   "name": "BEAST Center for Adv Infrastructure & Transportation CAIT",
+   "address": "93 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513713,
+    "lng": -74.435575
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4145",
+   "name": "Beck Hall",
+   "code": "BE",
+   "address": "99 Avenue E",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.522807,
+    "lng": -74.439448
+   },
+   "aliases": [
+    "be"
+   ]
+  },
+  {
+   "id": "b3909",
+   "name": "BEST Converter Building",
+   "address": "48 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.52265,
+    "lng": -74.454375
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3907",
+   "name": "BEST East Residence Hall",
+   "address": "46 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.52175,
+    "lng": -74.454662
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3906",
+   "name": "BEST North Residence Hall",
+   "address": "50 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522294,
+    "lng": -74.454625
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3905",
+   "name": "BEST West Residence Hall",
+   "address": "54 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522064,
+    "lng": -74.455249
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3578",
+   "name": "Bevier Equipment Shed",
+   "address": "24C Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521703,
+    "lng": -74.45213
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3579",
+   "name": "Bevier Hoop House 1",
+   "address": "24D Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521466,
+    "lng": -74.452219
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3580",
+   "name": "Bevier Hoop House 2",
+   "address": "24E Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521354,
+    "lng": -74.452271
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3844",
+   "name": "Bevier Storage Shed",
+   "address": "24A Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.5214,
+    "lng": -74.452667
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3577",
+   "name": "Bevier Storage Trailer Shed",
+   "address": "24B Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521816,
+    "lng": -74.452358
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3101",
+   "name": "Bildner Center for the Study of Jewish Life",
+   "code": "CJS",
+   "address": "12 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498125,
+    "lng": -74.447565
+   },
+   "aliases": [
+    "cla",
+    "cjs"
+   ]
+  },
+  {
+   "id": "b8304",
+   "name": "Biological Sciences Building",
+   "code": "BIO",
+   "address": "1 Chemistry Drive",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.487826,
+    "lng": -74.437584
+   },
+   "aliases": [
+    "bio"
+   ]
+  },
+  {
+   "id": "b3893",
+   "name": "Biomedical Engineering Building",
+   "code": "BME",
+   "address": "599 Taylor Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.524432,
+    "lng": -74.460588
+   },
+   "aliases": [
+    "bme"
+   ]
+  },
+  {
+   "id": "b6302",
+   "name": "Bioresource Engineering & Physical Plant Storage Building",
+   "address": "18 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472527,
+    "lng": -74.437208
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6361",
+   "name": "Bioresource Engineering Boiler Shed",
+   "address": "18 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472261,
+    "lng": -74.437355
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6359",
+   "name": "Bioresource Engineering Greenhouse No. 1",
+   "address": "18 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472104,
+    "lng": -74.437433
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6360",
+   "name": "Bioresource Engineering Greenhouse No. 2",
+   "address": "18 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472233,
+    "lng": -74.437476
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6058",
+   "name": "Bioresource Engineering Laboratory",
+   "address": "18 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472422,
+    "lng": -74.436605
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6061",
+   "name": "Bioresource Engineering Office",
+   "address": "22 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.471693,
+    "lng": -74.436282
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6068",
+   "name": "Bioresource Engineering Sewage Pumphouse",
+   "address": "14 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47259,
+    "lng": -74.435926
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6067",
+   "name": "Bioresource Engineering Storage Building",
+   "address": "14 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472322,
+    "lng": -74.435957
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3049",
+   "name": "Bishop House",
+   "code": "BH",
+   "address": "115 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503088,
+    "lng": -74.449762
+   },
+   "aliases": [
+    "james bishop house",
+    "bh"
+   ]
+  },
+  {
+   "id": "b6042",
+   "name": "Blacksmith Shop & Machinery Storage",
+   "address": "101B College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474071,
+    "lng": -74.435767
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6005",
+   "name": "Blake Hall",
+   "code": "BL",
+   "address": "93 Lipman Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481882,
+    "lng": -74.43938
+   },
+   "aliases": [
+    "bl"
+   ]
+  },
+  {
+   "id": "b6015",
+   "name": "Blau Wellness Center",
+   "address": "100 College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.467889,
+    "lng": -74.427635
+   },
+   "aliases": [
+    "brandt behavioral health treatment center"
+   ]
+  },
+  {
+   "id": "b7502",
+   "name": "Boathouse Class Of 1914",
+   "address": "5 Memorial Parkway",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.488141,
+    "lng": -74.433994
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8441",
+   "name": "Boathouse Storage",
+   "address": "5 Memorial Parkway",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.488274,
+    "lng": -74.434281
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6016",
+   "name": "Brandt Retreat",
+   "address": "102 College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.46769,
+    "lng": -74.428314
+   },
+   "aliases": [
+    "brandt behavioral health treatment center"
+   ]
+  },
+  {
+   "id": "b3065",
+   "name": "Brett Hall",
+   "code": "BRT",
+   "address": "23 Bishop Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.502659,
+    "lng": -74.449524
+   },
+   "aliases": [
+    "brt"
+   ]
+  },
+  {
+   "id": "b6047",
+   "name": "Brooder Building",
+   "address": "73B Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475757,
+    "lng": -74.43913
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3085",
+   "name": "Brower Commons",
+   "address": "145 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503704,
+    "lng": -74.451677
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3538",
+   "name": "Bruce and Phyllis Nicholas Engineering Student Projects Studio",
+   "address": "140 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525298,
+    "lng": -74.462773
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3850",
+   "name": "Buell Apartments & Residence Life Office",
+   "address": "55 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.52143,
+    "lng": -74.45609
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3851",
+   "name": "Buell Graduate Apartments - 325-348",
+   "address": "47 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520664,
+    "lng": -74.455761
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3852",
+   "name": "Buell Graduate Apartments - 349-372",
+   "address": "52 Brett Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520383,
+    "lng": -74.456642
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3853",
+   "name": "Buell Graduate Apartments - 373-396",
+   "address": "613 Bartholomew Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.5212,
+    "lng": -74.456691
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4131",
+   "name": "Bus Depot Main Auxiliary",
+   "address": "21 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.516907,
+    "lng": -74.430368
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4132",
+   "name": "Bus Depot Main Office",
+   "address": "21 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.516745,
+    "lng": -74.430341
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4133",
+   "name": "Bus Depot Maul Electric",
+   "address": "21 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.516673,
+    "lng": -74.430499
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3896",
+   "name": "Busch Campus Chiller Plant",
+   "address": "Strong Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526136,
+    "lng": -74.462853
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3880",
+   "name": "Busch Dining Hall",
+   "address": "608 Bartholomew Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522708,
+    "lng": -74.457841
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3901",
+   "name": "Busch Gas Pump",
+   "address": "122 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526906,
+    "lng": -74.460163
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3536",
+   "name": "Busch Grounds & Maintenance",
+   "address": "588 Titsworth Place",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526233,
+    "lng": -74.462286
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3692",
+   "name": "Busch Lab Center",
+   "code": "BLC",
+   "address": "663 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526635,
+    "lng": -74.469478
+   },
+   "aliases": [
+    "rwjms research annex",
+    "blc"
+   ]
+  },
+  {
+   "id": "b3555",
+   "name": "Busch Livingston Facilities Garage",
+   "address": "141 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526674,
+    "lng": -74.462586
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4157",
+   "name": "Busch Livingston Health Center",
+   "address": "110 Hospital Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.523905,
+    "lng": -74.442854
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3884",
+   "name": "Busch Potable Water Pumping Station",
+   "address": "580 Titsworth Place",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526738,
+    "lng": -74.462421
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3834",
+   "name": "Busch Student Center BSC",
+   "code": "BSC",
+   "address": "604 Bartholomew Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523298,
+    "lng": -74.458744
+   },
+   "aliases": [
+    "bsc"
+   ]
+  },
+  {
+   "id": "b3537",
+   "name": "Busch/Livingston Substation 69kV 1",
+   "address": "130 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527435,
+    "lng": -74.462469
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3543",
+   "name": "Busch/Livingston Substation 69kV 2",
+   "address": "130 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527427,
+    "lng": -74.462833
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3544",
+   "name": "Busch/Livingston Substation 69kV 3",
+   "address": "130 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527404,
+    "lng": -74.462791
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3539",
+   "name": "Busch/Livingston Substation 69kV 4",
+   "address": "130 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527331,
+    "lng": -74.462636
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3551",
+   "name": "Busch/Livingston Substation 69kV 5",
+   "address": "128 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527274,
+    "lng": -74.462284
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3560",
+   "name": "Busch/Livingston Substation 69kV 6",
+   "address": "128 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526994,
+    "lng": -74.461722
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3548",
+   "name": "Busch/Livingston Substation 69kV 7",
+   "address": "128 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527373,
+    "lng": -74.461436
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3549",
+   "name": "Busch/Livingston Substation Storage",
+   "address": "130 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527377,
+    "lng": -74.462844
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8393",
+   "name": "Cabaret Theatre",
+   "address": "41 Nichol Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.484014,
+    "lng": -74.438721
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3047",
+   "name": "CAC Facilities Garage",
+   "address": "73 Easton Avenue Rear",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498805,
+    "lng": -74.450021
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3121",
+   "name": "Campbell Hall",
+   "code": "CA",
+   "address": "617 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.505455,
+    "lng": -74.451119
+   },
+   "aliases": [
+    "ca"
+   ]
+  },
+  {
+   "id": "b8312",
+   "name": "Carpender Hall",
+   "code": "CPH",
+   "address": "105 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485496,
+    "lng": -74.43622
+   },
+   "aliases": [
+    "cph"
+   ]
+  },
+  {
+   "id": "b6164",
+   "name": "Carport 6164",
+   "address": "92 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474228,
+    "lng": -74.441154
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6165",
+   "name": "Carport 6165",
+   "address": "92 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474172,
+    "lng": -74.44108
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3520",
+   "name": "Carriage House - Storage",
+   "address": "1245 River Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.514425,
+    "lng": -74.460006
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6028",
+   "name": "Cattle Handling Facility",
+   "code": "SLT",
+   "address": "62 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47503,
+    "lng": -74.435176
+   },
+   "aliases": [
+    "slt"
+   ]
+  },
+  {
+   "id": "b3858",
+   "name": "CBIM Modular Building",
+   "code": "BMD",
+   "address": "617 Bowser Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521787,
+    "lng": -74.458229
+   },
+   "aliases": [
+    "bmd"
+   ]
+  },
+  {
+   "id": "b4109",
+   "name": "Center for Adv Infrastructure & Transportion CAIT",
+   "address": "93 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513683,
+    "lng": -74.435111
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4110",
+   "name": "Center for Adv Infrastructure Transport CAIT Asphalt Lab",
+   "address": "101 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513347,
+    "lng": -74.435401
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3866",
+   "name": "Center for Advanced Biotechnology & Medicine CABM",
+   "code": "CBM",
+   "address": "679 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523983,
+    "lng": -74.469891
+   },
+   "aliases": [
+    "cbm"
+   ]
+  },
+  {
+   "id": "b3899",
+   "name": "Center for Advanced Infrastructure & Transportation CAIT",
+   "address": "100 Brett Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522539,
+    "lng": -74.459837
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3861",
+   "name": "Center for Ceramic Research",
+   "code": "CCR",
+   "address": "607 Taylor Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523698,
+    "lng": -74.461071
+   },
+   "aliases": [
+    "ccr"
+   ]
+  },
+  {
+   "id": "b3098",
+   "name": "Center for Faculty Success",
+   "address": "24 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498596,
+    "lng": -74.44774
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3903",
+   "name": "Center for Integrative Proteomics Research CIPR",
+   "code": "CPR",
+   "address": "174 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.52375,
+    "lng": -74.469128
+   },
+   "aliases": [
+    "cpr"
+   ]
+  },
+  {
+   "id": "b3130",
+   "name": "Center for Islamic Life at Rutgers University CILRU",
+   "code": "CLA",
+   "address": "122 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.502398,
+    "lng": -74.451516
+   },
+   "aliases": [
+    "cjs",
+    "cla"
+   ]
+  },
+  {
+   "id": "b3114",
+   "name": "Center for Latino Arts and Culture",
+   "code": "GH",
+   "address": "172 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504203,
+    "lng": -74.453504
+   },
+   "aliases": [
+    "gh"
+   ]
+  },
+  {
+   "id": "b3043",
+   "name": "Center for Social Justice Education & LGBT Communities",
+   "address": "17 Bartlett Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501879,
+    "lng": -74.452077
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8308",
+   "name": "Center For Women's Programs",
+   "address": "160 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.482206,
+    "lng": -74.429487
+   },
+   "aliases": [
+    "institute for women's leadership"
+   ]
+  },
+  {
+   "id": "b3540",
+   "name": "Central Heating Plant",
+   "address": "592 Titsworth Place",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525631,
+    "lng": -74.462557
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3105",
+   "name": "Central Utility Plant",
+   "address": "24A College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498472,
+    "lng": -74.448059
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8794",
+   "name": "Chabad House",
+   "address": "170 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503959,
+    "lng": -74.453337
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3885",
+   "name": "Chemical Storage & Containment Facility",
+   "address": "126 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527518,
+    "lng": -74.460854
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6027",
+   "name": "Chemical Storage Building",
+   "address": "Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480604,
+    "lng": -74.434671
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3594",
+   "name": "Chemistry & Chemical Biology",
+   "address": "123 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.524328,
+    "lng": -74.462003
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3189",
+   "name": "Child Health Institute of New Jersey CHI",
+   "code": "CHI",
+   "address": "89 French Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.49452,
+    "lng": -74.451588
+   },
+   "aliases": [
+    "chi"
+   ]
+  },
+  {
+   "id": "b3158",
+   "name": "Civic Square Building",
+   "code": "CSB",
+   "address": "33 Livingston Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.492939,
+    "lng": -74.445165
+   },
+   "aliases": [
+    "csb"
+   ]
+  },
+  {
+   "id": "b3557",
+   "name": "Civil Engineering Laboratory",
+   "code": "CEL",
+   "address": "102 Brett Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522956,
+    "lng": -74.460183
+   },
+   "aliases": [
+    "cel"
+   ]
+  },
+  {
+   "id": "b3183",
+   "name": "Clinical Academic Building CAB",
+   "code": "CAB",
+   "address": "125 Paterson Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.49465,
+    "lng": -74.449261
+   },
+   "aliases": [
+    "cab"
+   ]
+  },
+  {
+   "id": "b3193",
+   "name": "Clinical Research Center CRC",
+   "address": "1 Robert Wood Johnson Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.495477,
+    "lng": -74.449567
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3064",
+   "name": "Clothier Hall",
+   "address": "590 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503231,
+    "lng": -74.448544
+   },
+   "aliases": [
+    "residence life office"
+   ]
+  },
+  {
+   "id": "b3590",
+   "name": "Cogeneration Plant",
+   "address": "532 Titsworth Place",
+   "campus": "busch",
+   "center": {
+    "lat": 40.5259,
+    "lng": -74.462546
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3082",
+   "name": "College Ave Central Heating Plant",
+   "address": "620 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504309,
+    "lng": -74.450768
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3144",
+   "name": "College Ave Parking Deck",
+   "address": "622 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504401,
+    "lng": -74.451366
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3194",
+   "name": "College Avenue Campus Substation",
+   "address": "595 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503019,
+    "lng": -74.446927
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3097",
+   "name": "College Avenue Gym",
+   "code": "CAG",
+   "address": "130 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503219,
+    "lng": -74.452789
+   },
+   "aliases": [
+    "cag"
+   ]
+  },
+  {
+   "id": "b3133",
+   "name": "College Avenue Student Center CASC",
+   "code": "RSC",
+   "address": "126 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.502639,
+    "lng": -74.452183
+   },
+   "aliases": [
+    "rsc"
+   ]
+  },
+  {
+   "id": "b6154",
+   "name": "College Farm Road East Trailer",
+   "address": "101B College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.468976,
+    "lng": -74.428401
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8858",
+   "name": "College Farm Road West Pavilion",
+   "address": "103 College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47335,
+    "lng": -74.435089
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6141",
+   "name": "College Farm Road West Shed",
+   "address": "103D College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.470991,
+    "lng": -74.43422
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8300",
+   "name": "College Hall",
+   "code": "CH",
+   "address": "125 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.486594,
+    "lng": -74.437226
+   },
+   "aliases": [
+    "levi d. jarrad house",
+    "ch"
+   ]
+  },
+  {
+   "id": "b3883",
+   "name": "Computing Research & Education Building CoRE",
+   "code": "COR",
+   "address": "96 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521381,
+    "lng": -74.46136
+   },
+   "aliases": [
+    "cor"
+   ]
+  },
+  {
+   "id": "b8337",
+   "name": "Continuing Education Center Barn",
+   "address": "174 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.483458,
+    "lng": -74.429564
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6297",
+   "name": "Cook Chiller Plant",
+   "address": "90 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.478956,
+    "lng": -74.439079
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8840",
+   "name": "Cook Douglass Lecture Hall",
+   "code": "CDL",
+   "address": "3 College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480058,
+    "lng": -74.436111
+   },
+   "aliases": [
+    "cdl"
+   ]
+  },
+  {
+   "id": "b6258",
+   "name": "Cook Douglass Recreation Center",
+   "code": "CDR",
+   "address": "50 Biel Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.478543,
+    "lng": -74.432688
+   },
+   "aliases": [
+    "cdr"
+   ]
+  },
+  {
+   "id": "b8417",
+   "name": "Cook Douglass Storage",
+   "address": "61 Nichol Avenue Rear",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.483432,
+    "lng": -74.439469
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6089",
+   "name": "Cook Electrical Substation",
+   "address": "1 Biel Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.478938,
+    "lng": -74.428449
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6278",
+   "name": "Cook Laundry-Administration-Mail Facilities",
+   "address": "45 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477489,
+    "lng": -74.431569
+   },
+   "aliases": [
+    "residence life office"
+   ]
+  },
+  {
+   "id": "b6259",
+   "name": "Cook Office Building",
+   "address": "55 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480108,
+    "lng": -74.434096
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6290",
+   "name": "Cook Student Center CSC",
+   "address": "59 Biel Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479091,
+    "lng": -74.431358
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6351",
+   "name": "Cook Student Center Storage Shed",
+   "address": "59 Biel Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.478883,
+    "lng": -74.430634
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8340",
+   "name": "Corwin Lodge",
+   "code": "CRW",
+   "address": "158 Nichol Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480227,
+    "lng": -74.441858
+   },
+   "aliases": [
+    "crw"
+   ]
+  },
+  {
+   "id": "b8341",
+   "name": "Corwin Residence Hall - AA",
+   "address": "102 Nichol Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481398,
+    "lng": -74.440727
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4107",
+   "name": "Crew Practice Facility & Material Svcs Storage",
+   "address": "81 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.514408,
+    "lng": -74.434491
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3873",
+   "name": "Crosby Residence Hall",
+   "address": "109 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.52581,
+    "lng": -74.459569
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6023",
+   "name": "Dairy Barn & Creamery",
+   "address": "18 College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475438,
+    "lng": -74.437189
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6009",
+   "name": "Dairy Boarding House",
+   "address": "16 College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476064,
+    "lng": -74.437121
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3910",
+   "name": "Daniel I. Kessler Teaching Laboratories",
+   "code": "KTL",
+   "address": "675 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.524584,
+    "lng": -74.468492
+   },
+   "aliases": [
+    "ktl"
+   ]
+  },
+  {
+   "id": "b3567",
+   "name": "Davidson Hall",
+   "address": "96 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526207,
+    "lng": -74.457948
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3564",
+   "name": "Davidson Hall B",
+   "address": "100 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527053,
+    "lng": -74.45776
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3565",
+   "name": "Davidson Hall C",
+   "address": "88 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526776,
+    "lng": -74.456868
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3566",
+   "name": "Davidson Hall D",
+   "address": "90 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525954,
+    "lng": -74.457303
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8322",
+   "name": "Davison Hall",
+   "code": "DAV",
+   "address": "26 Nichol Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.484191,
+    "lng": -74.437464
+   },
+   "aliases": [
+    "dav"
+   ]
+  },
+  {
+   "id": "b3027",
+   "name": "Dean of Students",
+   "address": "88 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500879,
+    "lng": -74.449991
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3157",
+   "name": "Deiner Park Facilities Building",
+   "address": "615 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.505342,
+    "lng": -74.450396
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3060",
+   "name": "Demarest Hall",
+   "address": "125 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503466,
+    "lng": -74.450306
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4113",
+   "name": "Dining Services Warehouse",
+   "address": "94 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513565,
+    "lng": -74.434605
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8370",
+   "name": "Douglass Developmental Disabilities Center One DDDC1",
+   "code": "DDC",
+   "address": "25 Gibbons Circle",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.48587,
+    "lng": -74.429977
+   },
+   "aliases": [
+    "ddc"
+   ]
+  },
+  {
+   "id": "b8440",
+   "name": "Douglass Developmental Disabilities Center Two DDDC2",
+   "address": "151 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480141,
+    "lng": -74.428763
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8404",
+   "name": "Douglass House",
+   "address": "23 Nichol Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.484761,
+    "lng": -74.438152
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8405",
+   "name": "Douglass House Garage",
+   "address": "23 Nichol Avenue (Rear)",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485167,
+    "lng": -74.43833
+   },
+   "aliases": []
+  },
+  {
+   "id": "b5023",
+   "name": "Douglass Modular Prefab Chemistry Addition",
+   "code": "CHX",
+   "address": "35 Chemistry Drive",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.486551,
+    "lng": -74.438559
+   },
+   "aliases": [
+    "chx"
+   ]
+  },
+  {
+   "id": "b8433",
+   "name": "Douglass Parking Deck",
+   "address": "62 Lipman Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.483816,
+    "lng": -74.436531
+   },
+   "aliases": []
+  },
+  {
+   "id": "b5024",
+   "name": "Douglass Psychology Department Trailer",
+   "address": "26A Nichol Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.483914,
+    "lng": -74.437517
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8320",
+   "name": "Douglass Student Center",
+   "address": "100 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.484709,
+    "lng": -74.436634
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8303",
+   "name": "Dr Ruth M. Adams Building",
+   "code": "RAB",
+   "address": "12 Chemistry Drive",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.487419,
+    "lng": -74.437396
+   },
+   "aliases": [
+    "rab"
+   ]
+  },
+  {
+   "id": "b3751",
+   "name": "Dr. Samuel DeWitt Proctor Hall",
+   "address": "65 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523326,
+    "lng": -74.455726
+   },
+   "aliases": [
+    "asb 1 administrative services building"
+   ]
+  },
+  {
+   "id": "b4166",
+   "name": "Edison Sewer Meter",
+   "address": "Cedar Lane",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.515859,
+    "lng": -74.429275
+   },
+   "aliases": [
+    "sewer meter"
+   ]
+  },
+  {
+   "id": "b3859",
+   "name": "Electrical Engineering Building",
+   "code": "ELE",
+   "address": "94 Brett Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521804,
+    "lng": -74.460831
+   },
+   "aliases": [
+    "ee",
+    "ele"
+   ]
+  },
+  {
+   "id": "b9005",
+   "name": "Ellipse Plaza / Tent",
+   "address": "22 Bishop Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.502426,
+    "lng": -74.448517
+   },
+   "aliases": [
+    "president's tent"
+   ]
+  },
+  {
+   "id": "b3542",
+   "name": "Emergency Services Headquarters",
+   "address": "129 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526304,
+    "lng": -74.46147
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6405",
+   "name": "Endocrine Research Facility",
+   "address": "67 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475991,
+    "lng": -74.438203
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6115",
+   "name": "Entomology Laboratory & Greenhouses",
+   "address": "175 Jones Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479547,
+    "lng": -74.44357
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6284",
+   "name": "Entomology Solvent Storage",
+   "address": "174 Jones Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479279,
+    "lng": -74.44406
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6330",
+   "name": "Environmental & Natural Resource Sciences",
+   "code": "ENR",
+   "address": "14 College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476576,
+    "lng": -74.438312
+   },
+   "aliases": [
+    "enr"
+   ]
+  },
+  {
+   "id": "b3882",
+   "name": "Environmental & Occupational Health Sciences Institute EOHSI",
+   "address": "170 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523815,
+    "lng": -74.468307
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6031",
+   "name": "Environmental Resources Research",
+   "address": "98 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474726,
+    "lng": -74.441671
+   },
+   "aliases": []
+  },
+  {
+   "id": "b5026",
+   "name": "Environmental Resources Research Trailers",
+   "address": "96 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474656,
+    "lng": -74.441573
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6279",
+   "name": "Environmental Science Building",
+   "code": "ENR",
+   "address": "14 College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476347,
+    "lng": -74.437702
+   },
+   "aliases": [
+    "enr"
+   ]
+  },
+  {
+   "id": "b3892",
+   "name": "Environmental Services Building",
+   "address": "126 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527006,
+    "lng": -74.46088
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6145",
+   "name": "Equine Training Ring",
+   "address": "67 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475907,
+    "lng": -74.435622
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3190",
+   "name": "Eric B. Chandler Health Center",
+   "address": "277 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.491723,
+    "lng": -74.442515
+   },
+   "aliases": []
+  },
+  {
+   "id": "b9824",
+   "name": "Eva & Arie Halpern Hillel House",
+   "address": "70 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500277,
+    "lng": -74.449674
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3532",
+   "name": "Facilities - Busch Maintenance Shop 3",
+   "address": "140 Strong Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526367,
+    "lng": -74.46275
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4172",
+   "name": "Facilities Annex 1",
+   "address": "82A Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.514478,
+    "lng": -74.434079
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6059",
+   "name": "Facilities Machine Shop",
+   "address": "14 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472517,
+    "lng": -74.436102
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8328",
+   "name": "Facilities Operations & Services - Cook/Douglass",
+   "address": "51 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480102,
+    "lng": -74.43335
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8429",
+   "name": "Facilities Storage Douglass",
+   "address": "68 Bishop Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.486845,
+    "lng": -74.438554
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4120",
+   "name": "Facilities Trades Shop - Carpenters & Painters",
+   "address": "97 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513172,
+    "lng": -74.434211
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4121",
+   "name": "Facilities Trades Shop - Electricians & Signage",
+   "address": "103 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.512815,
+    "lng": -74.434517
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4101",
+   "name": "Facilities Utilities",
+   "address": "45 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.515495,
+    "lng": -74.431315
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4099",
+   "name": "Facilities Utilities Shops",
+   "address": "54 Warehouse Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.514966,
+    "lng": -74.431517
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4118",
+   "name": "Facilities Warehouse",
+   "address": "83 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513877,
+    "lng": -74.433609
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4119",
+   "name": "Facilities Warehouse & Identity Access Management",
+   "address": "91 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.51353,
+    "lng": -74.433906
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6008",
+   "name": "Farm Crop Greenhouses",
+   "address": "86 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479299,
+    "lng": -74.439237
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6244",
+   "name": "Farmers Market Pavilion",
+   "address": "112 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.471403,
+    "lng": -74.426426
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8317",
+   "name": "Federation Hall",
+   "address": "4 Jones Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485831,
+    "lng": -74.438621
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3869",
+   "name": "Fiber Optic Materials Research Building",
+   "code": "FBO",
+   "address": "101 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523557,
+    "lng": -74.460446
+   },
+   "aliases": [
+    "fbo"
+   ]
+  },
+  {
+   "id": "b3083",
+   "name": "Field House",
+   "address": "620 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504609,
+    "lng": -74.451087
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3569",
+   "name": "Fire & Emergency Services - First Aid Squad",
+   "address": "135 Morris Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526278,
+    "lng": -74.462116
+   },
+   "aliases": []
+  },
+  {
+   "id": "b5003",
+   "name": "Fire & Emergency Services Trailer",
+   "address": "127 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526225,
+    "lng": -74.461254
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6002",
+   "name": "Floriculture Greenhouses",
+   "code": "FG",
+   "address": "64 Nichol Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.482683,
+    "lng": -74.438772
+   },
+   "aliases": [
+    "fg"
+   ]
+  },
+  {
+   "id": "b6328",
+   "name": "Food Science & Nutritional Sciences East",
+   "code": "CAF",
+   "address": "63 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479273,
+    "lng": -74.435607
+   },
+   "aliases": [
+    "caf"
+   ]
+  },
+  {
+   "id": "b6246",
+   "name": "Food Science & Nutritional Sciences West",
+   "code": "FS",
+   "address": "65 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479414,
+    "lng": -74.436127
+   },
+   "aliases": [
+    "fs"
+   ]
+  },
+  {
+   "id": "b6362",
+   "name": "Foran Hall Pump House",
+   "address": "59 Dudley Road Loading Dock",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481134,
+    "lng": -74.43483
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6366",
+   "name": "Foran Hall Solvent Storage",
+   "address": "59 Dudley Road Loading Dock",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481129,
+    "lng": -74.434787
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3018",
+   "name": "Ford Hall",
+   "address": "63 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500489,
+    "lng": -74.448719
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3506",
+   "name": "Frank R. Burns Pavilion",
+   "address": "11 Scarlet Knight Way",
+   "campus": "busch",
+   "center": {
+    "lat": 40.51567,
+    "lng": -74.464377
+   },
+   "aliases": [
+    "athletes glen"
+   ]
+  },
+  {
+   "id": "b3039",
+   "name": "Fraternity and Sorority Affairs",
+   "address": "84 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500799,
+    "lng": -74.449868
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4186",
+   "name": "Fred Hill (baseball/softball) Training Complex",
+   "address": "55 Hospital Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.526644,
+    "lng": -74.441716
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3117",
+   "name": "Frelinghuysen Hall",
+   "code": "FH",
+   "address": "611 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503959,
+    "lng": -74.448439
+   },
+   "aliases": [
+    "fh"
+   ]
+  },
+  {
+   "id": "b9003",
+   "name": "Gardner A. Sage Library",
+   "address": "21 Seminary Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501698,
+    "lng": -74.448922
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3891",
+   "name": "Gary and Barbara Rodkin Academic Success Center",
+   "address": "201 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.516041,
+    "lng": -74.463718
+   },
+   "aliases": [
+    "soccer/lacrosse training complex"
+   ]
+  },
+  {
+   "id": "b6155",
+   "name": "Gatehouse 1",
+   "address": "200A College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.470524,
+    "lng": -74.434678
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6156",
+   "name": "Gatehouse 2",
+   "address": "200B College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.470561,
+    "lng": -74.434524
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3178",
+   "name": "Gateway Transit Village",
+   "code": "GTW",
+   "address": "106 Somerset Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.497238,
+    "lng": -74.446906
+   },
+   "aliases": [
+    "rutgers bookstore",
+    "gtw"
+   ]
+  },
+  {
+   "id": "b4106",
+   "name": "Geological Core Repository 1",
+   "address": "73 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.514809,
+    "lng": -74.434149
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4108",
+   "name": "Geological Core Repository 2",
+   "address": "87 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.514031,
+    "lng": -74.434814
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4129",
+   "name": "Geological Sciences Storage",
+   "address": "Warehouse Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513227,
+    "lng": -74.433363
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3002",
+   "name": "Geology Hall",
+   "address": "85 Somerset Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.49865,
+    "lng": -74.446699
+   },
+   "aliases": [
+    "geology museum"
+   ]
+  },
+  {
+   "id": "b3079",
+   "name": "George Street Switchgear",
+   "address": "620 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504493,
+    "lng": -74.450297
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6113",
+   "name": "Georges Road Laboratories Annex",
+   "address": "31 Pine Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479363,
+    "lng": -74.444646
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8411",
+   "name": "Gibbons Residence Hall A1 and A2",
+   "address": "91 Gibbons Circle",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485282,
+    "lng": -74.431125
+   },
+   "aliases": [
+    "new gibbons"
+   ]
+  },
+  {
+   "id": "b8410",
+   "name": "Gibbons Residence Hall A3 and A4",
+   "address": "91 Gibbons Circle",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485561,
+    "lng": -74.431321
+   },
+   "aliases": [
+    "new gibbons"
+   ]
+  },
+  {
+   "id": "b8409",
+   "name": "Gibbons Residence Hall A5 and A6",
+   "address": "91 Gibbons Circle",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485443,
+    "lng": -74.431747
+   },
+   "aliases": [
+    "new gibbons"
+   ]
+  },
+  {
+   "id": "b8408",
+   "name": "Gibbons Residence Hall AL",
+   "address": "91 Gibbons Circle",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.48512,
+    "lng": -74.431523
+   },
+   "aliases": [
+    "new gibbons"
+   ]
+  },
+  {
+   "id": "b8413",
+   "name": "Gibbons Residence Hall B1 and B2",
+   "address": "93 Gibbons Circle",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.486153,
+    "lng": -74.43114
+   },
+   "aliases": [
+    "new gibbons"
+   ]
+  },
+  {
+   "id": "b8414",
+   "name": "Gibbons Residence Hall B3 and B4",
+   "address": "93 Gibbons Circle",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485849,
+    "lng": -74.431247
+   },
+   "aliases": [
+    "new gibbons"
+   ]
+  },
+  {
+   "id": "b8415",
+   "name": "Gibbons Residence Hall B5 and B6",
+   "address": "93 Gibbons Circle",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485888,
+    "lng": -74.431697
+   },
+   "aliases": [
+    "new gibbons"
+   ]
+  },
+  {
+   "id": "b8412",
+   "name": "Gibbons Residence Hall BL",
+   "address": "93 Gibbons Circle",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.486244,
+    "lng": -74.431575
+   },
+   "aliases": [
+    "new gibbons"
+   ]
+  },
+  {
+   "id": "b3513",
+   "name": "Golf Course Electrical Shed",
+   "address": "779 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519617,
+    "lng": -74.474309
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3761",
+   "name": "Golf Course Hazardous Storage",
+   "address": "700 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.515037,
+    "lng": -74.468044
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3832",
+   "name": "Golf Course Maintenance",
+   "address": "700 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.514799,
+    "lng": -74.467851
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3514",
+   "name": "Golf Course Pavilion",
+   "address": "778 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519971,
+    "lng": -74.474749
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3895",
+   "name": "Golf Course Practice & Teaching Facility",
+   "address": "752 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520705,
+    "lng": -74.475194
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3508",
+   "name": "Golf Course Pro Shop",
+   "address": "777 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519835,
+    "lng": -74.473947
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3742",
+   "name": "Golf Course Pump House",
+   "address": "704 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.51962,
+    "lng": -74.469666
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3758",
+   "name": "Golf Course Pump House 2",
+   "address": "702 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519532,
+    "lng": -74.469663
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3743",
+   "name": "Golf Course Shed",
+   "address": "704 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519582,
+    "lng": -74.469642
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3836",
+   "name": "Golf Course Shipping Container 1",
+   "address": "700 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.514957,
+    "lng": -74.467868
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3837",
+   "name": "Golf Course Shipping Container 2",
+   "address": "700 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.514994,
+    "lng": -74.467963
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3512",
+   "name": "Golf Course Starters Booth",
+   "address": "775 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520059,
+    "lng": -74.47399
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3509",
+   "name": "Golf Course Storage",
+   "address": "781 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519558,
+    "lng": -74.474426
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3515",
+   "name": "Golf Course Storage 2",
+   "address": "750 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521775,
+    "lng": -74.47418
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3762",
+   "name": "Golf Course Storage Container",
+   "address": "700 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.515066,
+    "lng": -74.46815
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3760",
+   "name": "Golf Course Storage Garage",
+   "address": "700 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.51506,
+    "lng": -74.4681
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3863",
+   "name": "Gordon Road Office Building",
+   "code": "GOR",
+   "address": "41 Gordon Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.52814,
+    "lng": -74.428097
+   },
+   "aliases": [
+    "gor"
+   ]
+  },
+  {
+   "id": "b8306",
+   "name": "Graduate Music House",
+   "code": "GMH",
+   "address": "7 Chapel Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.48632,
+    "lng": -74.436231
+   },
+   "aliases": [
+    "gmh"
+   ]
+  },
+  {
+   "id": "b3037",
+   "name": "Graduate School of Education Building",
+   "code": "ED",
+   "address": "10 Seminary Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501484,
+    "lng": -74.447059
+   },
+   "aliases": [
+    "ed"
+   ]
+  },
+  {
+   "id": "b3056",
+   "name": "Graduate School Office",
+   "address": "25 Bishop Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.502118,
+    "lng": -74.450194
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6489",
+   "name": "Greenhouse 1",
+   "address": "12 College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477211,
+    "lng": -74.439308
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6490",
+   "name": "Greenhouse 2",
+   "address": "12 College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477232,
+    "lng": -74.439037
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3860",
+   "name": "Greenhouse/Headhouse - Waksman Hall",
+   "address": "662 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523286,
+    "lng": -74.47275
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4100",
+   "name": "Grounds Maintenance Shop",
+   "address": "51 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.515304,
+    "lng": -74.431766
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4183",
+   "name": "Gruninger Baseball Stadium",
+   "address": "Hospital Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.527937,
+    "lng": -74.443669
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4184",
+   "name": "Gruninger Softball Stadium",
+   "address": "Hospital Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.528504,
+    "lng": -74.441575
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4049",
+   "name": "Gruninger Storage 1",
+   "address": "Hospital Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.528419,
+    "lng": -74.442271
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4050",
+   "name": "Gruninger Storage 2",
+   "address": "Hospital Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.529192,
+    "lng": -74.441801
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3511",
+   "name": "GSAPP Center for Youth Social Emotional Wellness",
+   "address": "797 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519051,
+    "lng": -74.474674
+   },
+   "aliases": [
+    "graduate school of applied and professional psychology cysew"
+   ]
+  },
+  {
+   "id": "b8902",
+   "name": "Hardenberg Street Parking Deck",
+   "address": "18 Hardenberg Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.496964,
+    "lng": -74.45085
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3034",
+   "name": "Hardenbergh Generator",
+   "address": "615A George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504782,
+    "lng": -74.449425
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3119",
+   "name": "Hardenbergh Hall",
+   "code": "HH",
+   "address": "615 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504689,
+    "lng": -74.449812
+   },
+   "aliases": [
+    "hh"
+   ]
+  },
+  {
+   "id": "b3032",
+   "name": "Hardenbergh Shed 1",
+   "address": "615B George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504983,
+    "lng": -74.449707
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6055",
+   "name": "Hay Drier Building",
+   "address": "101D College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474322,
+    "lng": -74.435512
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6120",
+   "name": "Headlee Research Laboratories",
+   "address": "180 Jones Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479617,
+    "lng": -74.443875
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3160",
+   "name": "Health Outreach Promotion & Education HOPE",
+   "address": "8 Lafayette Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.505168,
+    "lng": -74.454911
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3051",
+   "name": "Hegeman Hall",
+   "address": "600 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503435,
+    "lng": -74.449051
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6398",
+   "name": "Heifer Metal Barn",
+   "address": "60 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474848,
+    "lng": -74.434569
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3070",
+   "name": "HELIX H-1",
+   "address": "20 French Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.495611,
+    "lng": -74.44648
+   },
+   "aliases": [
+    "hub health & life science exchange"
+   ]
+  },
+  {
+   "id": "b3071",
+   "name": "HELIX H-3 (under construction)",
+   "address": "20 French Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.495048,
+    "lng": -74.446176
+   },
+   "aliases": [
+    "hub health & life science exchange"
+   ]
+  },
+  {
+   "id": "b6239",
+   "name": "Helyar House",
+   "address": "20 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47191,
+    "lng": -74.435552
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8424",
+   "name": "Henderson Apartments  1-24",
+   "address": "51 Labor Center Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481801,
+    "lng": -74.427674
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8425",
+   "name": "Henderson Apartments 25-48",
+   "address": "49 Labor Center Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481409,
+    "lng": -74.427229
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8426",
+   "name": "Henderson Apartments 49-72",
+   "address": "47 Labor Center Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481051,
+    "lng": -74.426799
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8442",
+   "name": "Henderson Lounge & Community Center",
+   "address": "51 Labor Center Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481635,
+    "lng": -74.427454
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8311",
+   "name": "Hickman Hall",
+   "code": "HCK",
+   "address": "89 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.484797,
+    "lng": -74.43423
+   },
+   "aliases": [
+    "hck"
+   ]
+  },
+  {
+   "id": "b3752",
+   "name": "Hill Center for the Mathematical Sciences",
+   "code": "HLL",
+   "address": "110 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521872,
+    "lng": -74.462421
+   },
+   "aliases": [
+    "math & physics library",
+    "hll"
+   ]
+  },
+  {
+   "id": "b3197",
+   "name": "Honors College",
+   "code": "HC",
+   "address": "5 Seminary Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.50243,
+    "lng": -74.44723
+   },
+   "aliases": [
+    "hc"
+   ]
+  },
+  {
+   "id": "b6352",
+   "name": "Hort Farm 1 - Covered Potting Shed",
+   "address": "135 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47379,
+    "lng": -74.423431
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6100",
+   "name": "Hort Farm 1 - Field Building",
+   "address": "128 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473023,
+    "lng": -74.425309
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6103",
+   "name": "Hort Farm 1 - Field House",
+   "address": "138 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474662,
+    "lng": -74.42228
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6101",
+   "name": "Hort Farm 1 - Gazebo",
+   "address": "140 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473923,
+    "lng": -74.422291
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6091",
+   "name": "Hort Farm 1 - Glass Greenhouse",
+   "address": "132 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472248,
+    "lng": -74.424455
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6358",
+   "name": "Hort Farm 1 - Gray Shed",
+   "address": "132 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473223,
+    "lng": -74.42473
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6098",
+   "name": "Hort Farm 1 - Greenhouse 3",
+   "address": "132 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472037,
+    "lng": -74.424256
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6102",
+   "name": "Hort Farm 1 - Holly House - NJ Garden Club Hdq",
+   "address": "130 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473624,
+    "lng": -74.425347
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6214",
+   "name": "Hort Farm 1 - Lath House",
+   "address": "132 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473339,
+    "lng": -74.424517
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6296",
+   "name": "Hort Farm 1 - Meteorology Weather Station",
+   "address": "144 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472824,
+    "lng": -74.422456
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6238",
+   "name": "Hort Farm 1 - Net House",
+   "address": "132 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472305,
+    "lng": -74.424083
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6391",
+   "name": "Hort Farm 1 - Nut Greenhouse I 2000",
+   "address": "132 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472384,
+    "lng": -74.424166
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6392",
+   "name": "Hort Farm 1 - Nut Greenhouse II 2000",
+   "address": "132 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47212,
+    "lng": -74.424109
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6248",
+   "name": "Hort Farm 1 - Ornamental Hort Field Lab & Greenhouse",
+   "address": "132 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473097,
+    "lng": -74.424779
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6357",
+   "name": "Hort Farm 1 - Poly House",
+   "address": "135 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473736,
+    "lng": -74.423419
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6318",
+   "name": "Hort Farm 1 - Red Shed",
+   "address": "135 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473923,
+    "lng": -74.423788
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6303",
+   "name": "Hort Farm 1 - Restrooms",
+   "address": "131 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474569,
+    "lng": -74.424452
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6099",
+   "name": "Hort Farm 1 - Shop",
+   "address": "128 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472878,
+    "lng": -74.425255
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6298",
+   "name": "Hort Farm 1 - Weather Station Auxiliary Building",
+   "address": "144 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472827,
+    "lng": -74.422393
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6223",
+   "name": "Hort Farm 1 - Winter Greenhouse",
+   "address": "132 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47309,
+    "lng": -74.424518
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6375",
+   "name": "Hort Farm 2 - C. Reed Funk Storage",
+   "address": "102 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.468666,
+    "lng": -74.425344
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6076",
+   "name": "Hort Farm 2 - Cook Silo 1",
+   "address": "101A College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.468833,
+    "lng": -74.428713
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6390",
+   "name": "Hort Farm 2 - Deer Research Barn",
+   "address": "10 College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.46516,
+    "lng": -74.434001
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6039",
+   "name": "Hort Farm 2 - Deer Research Shed",
+   "address": "10 College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.465197,
+    "lng": -74.433883
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6087",
+   "name": "Hort Farm 2 - Equine Loafing Barn",
+   "address": "101D College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.469234,
+    "lng": -74.429174
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6073",
+   "name": "Hort Farm 2 - Equine Research Facility",
+   "address": "101 College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.468691,
+    "lng": -74.428741
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6369",
+   "name": "Hort Farm 2 - Irrigation Pump House",
+   "address": "102 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.471226,
+    "lng": -74.420094
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6094",
+   "name": "Hort Farm 2 - Laws House",
+   "address": "102 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.468995,
+    "lng": -74.42645
+   },
+   "aliases": []
+  },
+  {
+   "id": "b5029",
+   "name": "Hort Farm 2 - Office Trailer - Laws House",
+   "address": "102 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.468987,
+    "lng": -74.426274
+   },
+   "aliases": []
+  },
+  {
+   "id": "b5030",
+   "name": "Hort Farm 2 - Office Trailer 2 - Laws House",
+   "address": "102 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.469152,
+    "lng": -74.426356
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6026",
+   "name": "Hort Farm 2 - Rainout Shelter",
+   "address": "102 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.46996,
+    "lng": -74.42044
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6314",
+   "name": "Hort Farm 2 - Ralph Geiger Turfgrass Education Center",
+   "code": "GEI",
+   "address": "20 Indyk-Engel Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.469192,
+    "lng": -74.424658
+   },
+   "aliases": [
+    "gei"
+   ]
+  },
+  {
+   "id": "b6086",
+   "name": "Hort Farm 2 - Self-Feeder Hay Barn",
+   "address": "101C College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.468999,
+    "lng": -74.429192
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6034",
+   "name": "Hort Farm 2 - Storage Container 1",
+   "address": "102 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.468561,
+    "lng": -74.425458
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6035",
+   "name": "Hort Farm 2 - Storage Container 2",
+   "address": "102 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.468583,
+    "lng": -74.425324
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6036",
+   "name": "Hort Farm 2 - Storage Container 3",
+   "address": "102 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.468561,
+    "lng": -74.425319
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6037",
+   "name": "Hort Farm 2 - Storage Container 4",
+   "address": "102 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.468539,
+    "lng": -74.425314
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3169",
+   "name": "Huntington House",
+   "code": "HU",
+   "address": "184 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504705,
+    "lng": -74.453904
+   },
+   "aliases": [
+    "hu"
+   ]
+  },
+  {
+   "id": "b3061",
+   "name": "Hurtado Health Center",
+   "address": "11 Bishop Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.502861,
+    "lng": -74.449068
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4188",
+   "name": "IBM Modular Data Center MDC",
+   "address": "120 Avenue E (& Hospital Rd)",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.523012,
+    "lng": -74.444913
+   },
+   "aliases": [
+    "mobile"
+   ]
+  },
+  {
+   "id": "b5035",
+   "name": "Identity Access Management Storage",
+   "address": "Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.51335,
+    "lng": -74.433825
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6050",
+   "name": "Implement & Fertilizer Shed",
+   "address": "101C College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473715,
+    "lng": -74.435698
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3522",
+   "name": "Indoor Practice & Conditioning Facility",
+   "address": "104 Sutphen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.515552,
+    "lng": -74.465505
+   },
+   "aliases": [
+    "the bubble"
+   ]
+  },
+  {
+   "id": "b3523",
+   "name": "Indoor Practice & Conditioning Facility Service",
+   "address": "104 Sutphen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.514966,
+    "lng": -74.465947
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6432",
+   "name": "Institute for Food Nutrition & Health IFNH",
+   "address": "61 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479609,
+    "lng": -74.434963
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3172",
+   "name": "Institute for Health - Health Care Policy & Aging Rsrch IHHCPAR",
+   "code": "IHC",
+   "address": "112 Paterson Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.493964,
+    "lng": -74.448749
+   },
+   "aliases": [
+    "ihc"
+   ]
+  },
+  {
+   "id": "b3595",
+   "name": "Intramural Fields Maintenance",
+   "address": "651 Bartholomew Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.517919,
+    "lng": -74.457765
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3591",
+   "name": "Intramural Fields Storage",
+   "address": "657 Bartholomew Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.517626,
+    "lng": -74.459339
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6043",
+   "name": "IP&O Operations Metal Shed",
+   "address": "Behind Voorhees Hall # 6283",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476194,
+    "lng": -74.433777
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8435",
+   "name": "IP&O Operations Storage Shed",
+   "address": "Behind Voorhees Hall # 6283",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476208,
+    "lng": -74.433297
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4173",
+   "name": "IP&O Training Center",
+   "address": "82B Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.514327,
+    "lng": -74.434213
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3181",
+   "name": "Jack and Sheryl Morris Cancer Center",
+   "address": "165 Somerset Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.496295,
+    "lng": -74.450524
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4147",
+   "name": "James Dickson Carr Library",
+   "address": "75 Avenue E",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.522486,
+    "lng": -74.437401
+   },
+   "aliases": [
+    "kilmer library"
+   ]
+  },
+  {
+   "id": "b8395",
+   "name": "Jameson Residence Hall A",
+   "address": "7 Suydam Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.484116,
+    "lng": -74.438952
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8396",
+   "name": "Jameson Residence Hall B",
+   "address": "15 Suydam Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.484551,
+    "lng": -74.439657
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8397",
+   "name": "Jameson Residence Hall C",
+   "address": "36 Jones Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.484889,
+    "lng": -74.439624
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8400",
+   "name": "Jameson Residence Hall H",
+   "address": "35 Nichol Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.484182,
+    "lng": -74.438486
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3013",
+   "name": "Jane Voorhees Zimmerli Art Museum / Voorhees Hall",
+   "code": "VH",
+   "address": "71 Hamilton Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500039,
+    "lng": -74.445995
+   },
+   "aliases": [
+    "art library zam al",
+    "vh"
+   ]
+  },
+  {
+   "id": "b4163",
+   "name": "Janice H Levin Building",
+   "code": "JLB",
+   "address": "94 Rockafeller Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.52364,
+    "lng": -74.439488
+   },
+   "aliases": [
+    "bsn",
+    "jlb"
+   ]
+  },
+  {
+   "id": "b4156",
+   "name": "Jersey Mike's Arena",
+   "address": "83 Rockafeller Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.525242,
+    "lng": -74.441311
+   },
+   "aliases": [
+    "rac basketball jma"
+   ]
+  },
+  {
+   "id": "b6213",
+   "name": "John B. Smith Classroom Building",
+   "code": "JS",
+   "address": "27 Pine Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479175,
+    "lng": -74.444347
+   },
+   "aliases": [
+    "js"
+   ]
+  },
+  {
+   "id": "b8853",
+   "name": "John J. Heldrich Center for Workforce Development",
+   "address": "30 Livingston Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.492711,
+    "lng": -74.44394
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3733",
+   "name": "Johnson Apartments 800-815",
+   "address": "175 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.52736,
+    "lng": -74.465795
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3734",
+   "name": "Johnson Apartments 816-831",
+   "address": "171 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527698,
+    "lng": -74.465453
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3735",
+   "name": "Johnson Apartments 832-851",
+   "address": "165 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527585,
+    "lng": -74.464879
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3736",
+   "name": "Johnson Apartments 852-867",
+   "address": "159 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527414,
+    "lng": -74.464339
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3737",
+   "name": "Johnson Apartments 868-883",
+   "address": "153 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527153,
+    "lng": -74.463897
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3738",
+   "name": "Johnson Apartments 884-899",
+   "address": "149 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526729,
+    "lng": -74.463598
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3874",
+   "name": "Judson Residence Hall",
+   "address": "103 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525556,
+    "lng": -74.458992
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8444",
+   "name": "Kathleen W. Ludwig Global Village Living Learning Ctr",
+   "code": "KLG",
+   "address": "9 Suydam Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.484662,
+    "lng": -74.438921
+   },
+   "aliases": [
+    "klg"
+   ]
+  },
+  {
+   "id": "b8331",
+   "name": "Katzenbach Residence Hall",
+   "address": "173 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.482503,
+    "lng": -74.431359
+   },
+   "aliases": []
+  },
+  {
+   "id": "b7325",
+   "name": "KinderCare Learning Center CCLC at Piscataway",
+   "address": "659 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527265,
+    "lng": -74.469594
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3003",
+   "name": "Kirkpatrick Chapel",
+   "code": "KC",
+   "address": "81 Somerset Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498922,
+    "lng": -74.445844
+   },
+   "aliases": [
+    "kc"
+   ]
+  },
+  {
+   "id": "b6106",
+   "name": "Krueger Collection Storage",
+   "address": "18 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472422,
+    "lng": -74.43773
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6109",
+   "name": "Labor Education Center",
+   "code": "LEC",
+   "address": "50 Labor Center Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480056,
+    "lng": -74.427459
+   },
+   "aliases": [
+    "smlr center for women & work",
+    "lec"
+   ]
+  },
+  {
+   "id": "b3835",
+   "name": "Lawn Maintenance Garage",
+   "address": "41 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523828,
+    "lng": -74.453254
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6041",
+   "name": "Lawn Shop",
+   "address": "18 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472119,
+    "lng": -74.437797
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6054",
+   "name": "Laws House Modular Building",
+   "address": "102 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.469162,
+    "lng": -74.426178
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3054",
+   "name": "Leupp Hall",
+   "address": "604 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.50383,
+    "lng": -74.44964
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8398",
+   "name": "Liberty National NJSGA Evans Scholars Scholarship House",
+   "code": "JAM",
+   "address": "30 Jones Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485164,
+    "lng": -74.439333
+   },
+   "aliases": [
+    "jameson residence hall d",
+    "jam"
+   ]
+  },
+  {
+   "id": "b3187",
+   "name": "Liberty Plaza",
+   "code": "LBT",
+   "address": "335 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.494103,
+    "lng": -74.443255
+   },
+   "aliases": [
+    "lbt"
+   ]
+  },
+  {
+   "id": "b3845",
+   "name": "Libraries Technical Services",
+   "address": "47 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523268,
+    "lng": -74.453609
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3846",
+   "name": "Library Annex (Davidson Rd)",
+   "address": "47 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522956,
+    "lng": -74.454057
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3749",
+   "name": "Library of Science & Medicine LSM",
+   "address": "165 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.524799,
+    "lng": -74.467186
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3894",
+   "name": "Life Sciences Building",
+   "code": "LSB",
+   "address": "145 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.524539,
+    "lng": -74.463396
+   },
+   "aliases": [
+    "lsb"
+   ]
+  },
+  {
+   "id": "b3017",
+   "name": "Linguistics Department",
+   "code": "SEM",
+   "address": "18 Seminary Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500978,
+    "lng": -74.448293
+   },
+   "aliases": [
+    "sem"
+   ]
+  },
+  {
+   "id": "b6025",
+   "name": "Lipman Hall",
+   "code": "LH",
+   "address": "76 Lipman Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480964,
+    "lng": -74.435905
+   },
+   "aliases": [
+    "lh"
+   ]
+  },
+  {
+   "id": "b6010",
+   "name": "Lipman Learning House",
+   "code": "LP",
+   "address": "71 Lipman Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481839,
+    "lng": -74.436195
+   },
+   "aliases": [
+    "lp"
+   ]
+  },
+  {
+   "id": "b8332",
+   "name": "Lippincott Residence Hall",
+   "address": "33 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481546,
+    "lng": -74.430505
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8339",
+   "name": "Little Theater",
+   "code": "LT",
+   "address": "112 Nichol Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481076,
+    "lng": -74.44091
+   },
+   "aliases": [
+    "lt"
+   ]
+  },
+  {
+   "id": "b6048",
+   "name": "Livestock Barn",
+   "address": "64 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474989,
+    "lng": -74.435539
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6012",
+   "name": "Livestock Granary",
+   "address": "63 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475356,
+    "lng": -74.435227
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6335",
+   "name": "Livestock Research & Teaching Facility",
+   "address": "67 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475674,
+    "lng": -74.435779
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4177",
+   "name": "Livingston Apartments Building A",
+   "address": "55 Rockafeller Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.525561,
+    "lng": -74.438975
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4178",
+   "name": "Livingston Apartments Building B",
+   "code": "LRB",
+   "address": "105 Joyce Kilmer Avenue",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.525523,
+    "lng": -74.437287
+   },
+   "aliases": [
+    "rc",
+    "lrb"
+   ]
+  },
+  {
+   "id": "b4179",
+   "name": "Livingston Apartments Building C",
+   "address": "95 Joyce Kilmer Avenue",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.52478,
+    "lng": -74.435982
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4180",
+   "name": "Livingston Converter Compactor House Building D",
+   "address": "59 Rockafeller Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.525807,
+    "lng": -74.436431
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4176",
+   "name": "Livingston Dining Commons",
+   "address": "85 Avenue E",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.522867,
+    "lng": -74.438094
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4185",
+   "name": "Livingston Electrical Substation",
+   "address": "120 Avenue E (& Hospital Rd)",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.522866,
+    "lng": -74.444665
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4006",
+   "name": "Livingston Electrical Substation Road 3",
+   "address": "Road 3",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.519664,
+    "lng": -74.433184
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4044",
+   "name": "Livingston Potable Water Pumping Station",
+   "address": "5 Hospital Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.529699,
+    "lng": -74.438915
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4136",
+   "name": "Livingston Quad 1 - Bldg 1 (H11, H12)",
+   "address": "47 Avenue E",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.52079,
+    "lng": -74.435952
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4137",
+   "name": "Livingston Quad 1 - Bldg 2 (H13 - H15)",
+   "address": "43 Avenue E",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.520316,
+    "lng": -74.43589
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4138",
+   "name": "Livingston Quad 1 - Bldg 3 (H16, H17)",
+   "address": "35 Avenue E",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.520215,
+    "lng": -74.435241
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4139",
+   "name": "Livingston Quad 1 - Bldg 4 (H10, H18, H19)",
+   "address": "41 Avenue E",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.520683,
+    "lng": -74.43547
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4140",
+   "name": "Livingston Quad 2 - Bldg 1 (H21 - H28)",
+   "address": "23 Avenue E",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.519719,
+    "lng": -74.434589
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4141",
+   "name": "Livingston Quad 2 - Bldg 2 (H20, H29)",
+   "address": "99 Road 3",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.520075,
+    "lng": -74.434206
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4142",
+   "name": "Livingston Quad 3 - Bldg 1 (H33 - H37)",
+   "address": "91 Road 3",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.520506,
+    "lng": -74.433852
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4143",
+   "name": "Livingston Quad 3 - Bldg 2 (H30, H38, H39)",
+   "address": "85 Road 3",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.520911,
+    "lng": -74.433647
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4144",
+   "name": "Livingston Quad 3 - Bldg 3 (H31, H32)",
+   "address": "87 Road 3",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.52101,
+    "lng": -74.434293
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4154",
+   "name": "Livingston Recreation Center",
+   "code": "LVG",
+   "address": "62 Road 3",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.521127,
+    "lng": -74.430919
+   },
+   "aliases": [
+    "lvg"
+   ]
+  },
+  {
+   "id": "b4169",
+   "name": "Livingston Sculpture Arts Building",
+   "address": "39 Road 3 Rear",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.524031,
+    "lng": -74.431967
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4160",
+   "name": "Livingston Student Center LSC",
+   "code": "LST",
+   "address": "84 Joyce Kilmer Avenue",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.523555,
+    "lng": -74.437167
+   },
+   "aliases": [
+    "lst"
+   ]
+  },
+  {
+   "id": "b9008",
+   "name": "Livingston Tennis Center",
+   "address": "64 Road 3",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.520137,
+    "lng": -74.431696
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4151",
+   "name": "Livingston Tennis Center Service Facility",
+   "address": "64 Road 3",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.520761,
+    "lng": -74.431495
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8432",
+   "name": "Loree Classroom/Office Building",
+   "code": "LOR",
+   "address": "72 Lipman Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.483291,
+    "lng": -74.435358
+   },
+   "aliases": [
+    "lor"
+   ]
+  },
+  {
+   "id": "b8321",
+   "name": "Loree Gymnasium",
+   "address": "70 Lipman Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.482975,
+    "lng": -74.435364
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4153",
+   "name": "Lucy Stone Hall",
+   "code": "LSH",
+   "address": "54 Joyce Kilmer Avenue",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.521909,
+    "lng": -74.435053
+   },
+   "aliases": [
+    "lsh"
+   ]
+  },
+  {
+   "id": "b4152",
+   "name": "Lynton Residence Hall - North and South Towers",
+   "address": "70 Joyce Kilmer Avenue",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.523059,
+    "lng": -74.435877
+   },
+   "aliases": [
+    "residence life office"
+   ]
+  },
+  {
+   "id": "b8313",
+   "name": "Mabel Smith Douglass Library",
+   "code": "DL",
+   "address": "8 Chapel Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485721,
+    "lng": -74.43566
+   },
+   "aliases": [
+    "blanche and irving laurie music performing arts",
+    "dl"
+   ]
+  },
+  {
+   "id": "b6119",
+   "name": "Machinery & Insecticide Building",
+   "address": "176 Jones Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47923,
+    "lng": -74.443939
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6052",
+   "name": "Main Sewage Pump House",
+   "address": "101E College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474401,
+    "lng": -74.436076
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3597",
+   "name": "Marco Battaglia Football Practice Complex",
+   "address": "4 Scarlet Knight Way",
+   "campus": "busch",
+   "center": {
+    "lat": 40.513628,
+    "lng": -74.462276
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6350",
+   "name": "Marine and Coastal Sciences Building",
+   "code": "MS",
+   "address": "71 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479461,
+    "lng": -74.437158
+   },
+   "aliases": [
+    "ms"
+   ]
+  },
+  {
+   "id": "b6045",
+   "name": "Marine and Coastal Sciences Storage",
+   "address": "82 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479951,
+    "lng": -74.4386
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6011",
+   "name": "Marine and Coastal Sciences Storage Shed",
+   "address": "73 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479589,
+    "lng": -74.437728
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6006",
+   "name": "Martin Hall",
+   "address": "88 Lipman Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480836,
+    "lng": -74.438884
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3800",
+   "name": "Marvin Apartments 1-12",
+   "address": "601 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520578,
+    "lng": -74.453695
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3808",
+   "name": "Marvin Apartments 109-120",
+   "address": "612 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520321,
+    "lng": -74.455154
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3809",
+   "name": "Marvin Apartments 121-132",
+   "address": "616 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520098,
+    "lng": -74.455353
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3801",
+   "name": "Marvin Apartments 13-30",
+   "address": "603 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520454,
+    "lng": -74.453416
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3802",
+   "name": "Marvin Apartments 31-42",
+   "address": "609 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520034,
+    "lng": -74.454265
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3803",
+   "name": "Marvin Apartments 43-54",
+   "address": "611 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519853,
+    "lng": -74.45405
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3804",
+   "name": "Marvin Apartments 55-66",
+   "address": "615 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519773,
+    "lng": -74.454498
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3805",
+   "name": "Marvin Apartments 67-78",
+   "address": "606 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520495,
+    "lng": -74.454347
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3806",
+   "name": "Marvin Apartments 79-96",
+   "address": "608 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520605,
+    "lng": -74.454781
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3807",
+   "name": "Marvin Apartments 97-108",
+   "address": "610 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.520277,
+    "lng": -74.454651
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3831",
+   "name": "Marvin Apartments Converter Building",
+   "address": "34 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521081,
+    "lng": -74.453772
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3550",
+   "name": "Marvin Sewage Lift Station",
+   "address": "Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519547,
+    "lng": -74.454013
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4125",
+   "name": "Material Services Office & Shop",
+   "address": "84 Warehouse Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513655,
+    "lng": -74.43319
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4123",
+   "name": "Material Services Warehouse 1",
+   "address": "96 Warehouse Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.512963,
+    "lng": -74.433782
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4124",
+   "name": "Material Services Warehouse 2",
+   "address": "90 Warehouse Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513302,
+    "lng": -74.433492
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8825",
+   "name": "Matrix Plaza 1",
+   "address": "303 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.492602,
+    "lng": -74.442585
+   },
+   "aliases": []
+  },
+  {
+   "id": "b7542",
+   "name": "Matrix Plaza 2",
+   "address": "317 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.493081,
+    "lng": -74.442803
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3829",
+   "name": "Mattia Residence Hall",
+   "address": "36 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521583,
+    "lng": -74.454086
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3877",
+   "name": "McCormick Residence Hall - Hi-rise",
+   "address": "99 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.52485,
+    "lng": -74.458832
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3876",
+   "name": "McCormick Residence Hall - Low-rise",
+   "address": "99 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525015,
+    "lng": -74.45861
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3045",
+   "name": "McKinney Hall",
+   "address": "125 Hamilton Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498633,
+    "lng": -74.449836
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6240",
+   "name": "Mclean Research Laboratories",
+   "address": "178 Jones Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479376,
+    "lng": -74.444159
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3184",
+   "name": "Medical Education Building MEB",
+   "code": "MEB",
+   "address": "1 Robert Wood Johnson Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.495406,
+    "lng": -74.448712
+   },
+   "aliases": [
+    "robert wood johnson library",
+    "meb"
+   ]
+  },
+  {
+   "id": "b3067",
+   "name": "Mettler Hall",
+   "address": "117 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.502932,
+    "lng": -74.450663
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3830",
+   "name": "Metzger Residence Hall",
+   "address": "43 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521053,
+    "lng": -74.455025
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4165",
+   "name": "MGSA Visual Arts Building",
+   "code": "LAB",
+   "address": "39 Road 3",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.523622,
+    "lng": -74.432157
+   },
+   "aliases": [
+    "lab"
+   ]
+  },
+  {
+   "id": "b3010",
+   "name": "Milledoler Hall",
+   "code": "MI",
+   "address": "520 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501027,
+    "lng": -74.44694
+   },
+   "aliases": [
+    "mi"
+   ]
+  },
+  {
+   "id": "b3103",
+   "name": "Miller Hall",
+   "code": "MH",
+   "address": "14 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.49794,
+    "lng": -74.447882
+   },
+   "aliases": [
+    "mh"
+   ]
+  },
+  {
+   "id": "b6057",
+   "name": "Miniature Swine Building",
+   "address": "73E Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476131,
+    "lng": -74.438862
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6159",
+   "name": "Mobile Home 6159",
+   "address": "96 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474627,
+    "lng": -74.441475
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6160",
+   "name": "Mobile Home 6160",
+   "address": "96 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474503,
+    "lng": -74.441524
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3872",
+   "name": "Morrow Residence Hall",
+   "address": "111 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525371,
+    "lng": -74.4599
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3011",
+   "name": "Murray Hall",
+   "code": "MU",
+   "address": "510 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500658,
+    "lng": -74.446603
+   },
+   "aliases": [
+    "mu"
+   ]
+  },
+  {
+   "id": "b3012",
+   "name": "Murray Hall Switchgear",
+   "address": "510 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500391,
+    "lng": -74.446619
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8438",
+   "name": "Music Annex",
+   "code": "MX",
+   "address": "83 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.486615,
+    "lng": -74.433649
+   },
+   "aliases": [
+    "mx"
+   ]
+  },
+  {
+   "id": "b3571",
+   "name": "Nanophysics  Laboratory",
+   "code": "NPL",
+   "address": "619 Allison Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523284,
+    "lng": -74.464113
+   },
+   "aliases": [
+    "npl"
+   ]
+  },
+  {
+   "id": "b3171",
+   "name": "Naval ROTC",
+   "address": "12 Lafayette Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.50506,
+    "lng": -74.455092
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8333",
+   "name": "Neilson Dining Hall",
+   "address": "177 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481705,
+    "lng": -74.431525
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3559",
+   "name": "Nelson Biology Laboratories",
+   "code": "NH",
+   "address": "604 Allison Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.524773,
+    "lng": -74.464719
+   },
+   "aliases": [
+    "nh"
+   ]
+  },
+  {
+   "id": "b9987",
+   "name": "New Brunswick Community Farmers Market Pavilion",
+   "address": "178 Jones Avenue",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480049,
+    "lng": -74.444498
+   },
+   "aliases": []
+  },
+  {
+   "id": "b9004",
+   "name": "New Brunswick Theological Seminary",
+   "address": "35 Seminary Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501356,
+    "lng": -74.449369
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3014",
+   "name": "New Jersey Hall",
+   "code": "NJ",
+   "address": "75 Hamilton Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.499566,
+    "lng": -74.446973
+   },
+   "aliases": [
+    "nj"
+   ]
+  },
+  {
+   "id": "b9937",
+   "name": "New Jersey Law Center",
+   "address": "1 Constitution Square",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.479077,
+    "lng": -74.426859
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6260",
+   "name": "Newell Apartments 1-12",
+   "address": "48 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477924,
+    "lng": -74.432894
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6268",
+   "name": "Newell Apartments 113-128",
+   "address": "43 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477559,
+    "lng": -74.430872
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6269",
+   "name": "Newell Apartments 129-152",
+   "address": "41 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477225,
+    "lng": -74.431021
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6261",
+   "name": "Newell Apartments 13-24",
+   "address": "46 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47764,
+    "lng": -74.432877
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6270",
+   "name": "Newell Apartments 153-176",
+   "address": "39 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476986,
+    "lng": -74.430759
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6271",
+   "name": "Newell Apartments 177-204",
+   "address": "37 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476696,
+    "lng": -74.430814
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6272",
+   "name": "Newell Apartments 205-212",
+   "address": "49 Biel Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.478325,
+    "lng": -74.429209
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6273",
+   "name": "Newell Apartments 213-220",
+   "address": "47 Biel Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.478023,
+    "lng": -74.429248
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6274",
+   "name": "Newell Apartments 221-228",
+   "address": "45 Biel Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47774,
+    "lng": -74.429072
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6275",
+   "name": "Newell Apartments 229-236",
+   "address": "43 Biel Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477426,
+    "lng": -74.429018
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6276",
+   "name": "Newell Apartments 237-244",
+   "address": "41 Biel Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477142,
+    "lng": -74.429096
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6277",
+   "name": "Newell Apartments 245-252",
+   "address": "39 Biel Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476828,
+    "lng": -74.429039
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6262",
+   "name": "Newell Apartments 25-32",
+   "address": "44 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477351,
+    "lng": -74.432945
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6263",
+   "name": "Newell Apartments 33-44",
+   "address": "40 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477047,
+    "lng": -74.432733
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6264",
+   "name": "Newell Apartments 45-56",
+   "address": "38 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476752,
+    "lng": -74.432727
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6265",
+   "name": "Newell Apartments 57-64",
+   "address": "36 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476496,
+    "lng": -74.43256
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6266",
+   "name": "Newell Apartments 65-92",
+   "address": "49 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.478098,
+    "lng": -74.43106
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6267",
+   "name": "Newell Apartments 93-112",
+   "address": "47 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477833,
+    "lng": -74.430804
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6280",
+   "name": "Newell Apartments Central Heating Plant",
+   "address": "35 Biel Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.478745,
+    "lng": -74.430743
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8434",
+   "name": "Nicholas Music Center",
+   "code": "NIH",
+   "address": "85 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.486211,
+    "lng": -74.434061
+   },
+   "aliases": [
+    "nih"
+   ]
+  },
+  {
+   "id": "b8330",
+   "name": "Nicholas Residence Hall",
+   "address": "43 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481039,
+    "lng": -74.432271
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3819",
+   "name": "Nichols Apartments 1-24",
+   "address": "196 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527422,
+    "lng": -74.467047
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3824",
+   "name": "Nichols Apartments 121-144",
+   "address": "190 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527661,
+    "lng": -74.466527
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3825",
+   "name": "Nichols Apartments 145-160",
+   "address": "192 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527922,
+    "lng": -74.46727
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3820",
+   "name": "Nichols Apartments 25-48",
+   "address": "198 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527725,
+    "lng": -74.467622
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3821",
+   "name": "Nichols Apartments 49-72",
+   "address": "194 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.528137,
+    "lng": -74.467941
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3822",
+   "name": "Nichols Apartments 73-96",
+   "address": "186 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.528395,
+    "lng": -74.467409
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3823",
+   "name": "Nichols Apartments 97-120",
+   "address": "188 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.528085,
+    "lng": -74.466816
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3826",
+   "name": "Nichols Apartments Converter Building",
+   "address": "742 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526774,
+    "lng": -74.466578
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3040",
+   "name": "Off-Campus Living & Community Partnerships",
+   "address": "39 Union Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.499947,
+    "lng": -74.450929
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8335",
+   "name": "Office of Climate Action",
+   "address": "176 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.483233,
+    "lng": -74.430636
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3057",
+   "name": "Office of Teaching Evaluation & Assessment Research OTEAR",
+   "address": "116 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.502277,
+    "lng": -74.451392
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6060",
+   "name": "Oil Storage Building",
+   "address": "18 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47272,
+    "lng": -74.436347
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4114",
+   "name": "OIT Enterprise Infrastructure",
+   "address": "88 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513952,
+    "lng": -74.434273
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4117",
+   "name": "OIT Enterprise Infrastructure",
+   "address": "77 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.514215,
+    "lng": -74.433318
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3000",
+   "name": "Old Queens",
+   "address": "83 Somerset Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498759,
+    "lng": -74.446268
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3023",
+   "name": "Old Queens Gatehouse",
+   "address": "83 Somerset Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498542,
+    "lng": -74.445175
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6072",
+   "name": "Operator Training Center",
+   "code": "OTC",
+   "address": "16 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472965,
+    "lng": -74.436369
+   },
+   "aliases": [
+    "otc"
+   ]
+  },
+  {
+   "id": "b8880",
+   "name": "Paterson Street Parking Deck",
+   "address": "124 Paterson Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.493855,
+    "lng": -74.450271
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3886",
+   "name": "Paul Robeson Cultural Center PRCC",
+   "address": "600 Bartholomew Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523921,
+    "lng": -74.459061
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3055",
+   "name": "Pell Hall",
+   "address": "606 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503869,
+    "lng": -74.449359
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6316",
+   "name": "Perry Residence Hall",
+   "address": "42 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477018,
+    "lng": -74.433711
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3756",
+   "name": "Pharmacy/Psychology Parking Deck",
+   "address": "158 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523274,
+    "lng": -74.467024
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8423",
+   "name": "Philip J. Levin Theater (Drama Building)",
+   "code": "LEV",
+   "address": "87 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485635,
+    "lng": -74.434333
+   },
+   "aliases": [
+    "lev"
+   ]
+  },
+  {
+   "id": "b3865",
+   "name": "Physics & Astronomy Building",
+   "code": "SRN",
+   "address": "136 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523019,
+    "lng": -74.464714
+   },
+   "aliases": [
+    "serin ii building",
+    "srn"
+   ]
+  },
+  {
+   "id": "b3562",
+   "name": "Physics Lecture Hall",
+   "code": "PHY",
+   "address": "120 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522384,
+    "lng": -74.463469
+   },
+   "aliases": [
+    "phy"
+   ]
+  },
+  {
+   "id": "b3510",
+   "name": "Piscataway Golf Course Sewer Meter",
+   "address": "Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.518907,
+    "lng": -74.471893
+   },
+   "aliases": [
+    "sewer meter"
+   ]
+  },
+  {
+   "id": "b3759",
+   "name": "Piscataway Stadium Sewer Meter",
+   "address": "Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.514751,
+    "lng": -74.468198
+   },
+   "aliases": [
+    "sewer meter"
+   ]
+  },
+  {
+   "id": "b6007",
+   "name": "Plant Science Field House",
+   "address": "82 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480064,
+    "lng": -74.438599
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3524",
+   "name": "Pool Clubhouse",
+   "address": "101 Sutphen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.515102,
+    "lng": -74.459322
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4005",
+   "name": "Postal Plaza Building",
+   "address": "31 Postal Plaza",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.518836,
+    "lng": -74.432344
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6040",
+   "name": "Poultry & Small Animal Research - Main Building",
+   "address": "73 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475513,
+    "lng": -74.438526
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6056",
+   "name": "Poultry Building",
+   "address": "73F Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475972,
+    "lng": -74.43869
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6033",
+   "name": "Poultry Feed Storage",
+   "address": "73A Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47559,
+    "lng": -74.439062
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3757",
+   "name": "Psychology Building",
+   "code": "PSY",
+   "address": "152 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523574,
+    "lng": -74.466159
+   },
+   "aliases": [
+    "psy"
+   ]
+  },
+  {
+   "id": "b3168",
+   "name": "Public Safety Building",
+   "code": "PSB",
+   "address": "55 Paul Robeson Boulevard",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.487898,
+    "lng": -74.439771
+   },
+   "aliases": [
+    "police",
+    "psb"
+   ]
+  },
+  {
+   "id": "b8314",
+   "name": "Ravine Bridge",
+   "address": "87 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485851,
+    "lng": -74.434876
+   },
+   "aliases": [
+    "kissing bridge"
+   ]
+  },
+  {
+   "id": "b9014",
+   "name": "Records Field",
+   "address": "620 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503822,
+    "lng": -74.450594
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8319",
+   "name": "Redmond Street Garage",
+   "address": "1 Redmond Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.485952,
+    "lng": -74.439099
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8302",
+   "name": "Regina B. Heldrich Science Building",
+   "code": "HSB",
+   "address": "35 Chemistry Drive",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.486822,
+    "lng": -74.4384
+   },
+   "aliases": [
+    "chm",
+    "hsb"
+   ]
+  },
+  {
+   "id": "b8422",
+   "name": "Rehearsal Hall",
+   "code": "RLH",
+   "address": "85 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.486019,
+    "lng": -74.434397
+   },
+   "aliases": [
+    "rlh"
+   ]
+  },
+  {
+   "id": "b3593",
+   "name": "REHS Storage",
+   "address": "126 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527558,
+    "lng": -74.461132
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6329",
+   "name": "Research Greenhouses & Headhouse",
+   "address": "10 College Farm Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.478186,
+    "lng": -74.437636
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3913",
+   "name": "Richard Weeks Hall of Engineering",
+   "address": "500 Bartholomew Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.524346,
+    "lng": -74.459662
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3843",
+   "name": "Richardson Apartments 101-124",
+   "address": "189 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.52712,
+    "lng": -74.468164
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3838",
+   "name": "Richardson Apartments 125-160",
+   "address": "183 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526613,
+    "lng": -74.467726
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3842",
+   "name": "Richardson Apartments 161-184",
+   "address": "187 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525976,
+    "lng": -74.468751
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3840",
+   "name": "Richardson Apartments 185-208",
+   "address": "181 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525586,
+    "lng": -74.468338
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3839",
+   "name": "Richardson Apartments 209-232",
+   "address": "175 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.52542,
+    "lng": -74.467677
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3841",
+   "name": "Richardson Apartments Laundry",
+   "address": "185A Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526133,
+    "lng": -74.467984
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3576",
+   "name": "Richardson Community Center",
+   "address": "185 Bevier Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526238,
+    "lng": -74.468227
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3115",
+   "name": "Richardson House",
+   "address": "1 Richardson Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504332,
+    "lng": -74.454065
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3116",
+   "name": "Richardson House Garage",
+   "address": "1 Richardson Street (Rear)",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504429,
+    "lng": -74.454219
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8443",
+   "name": "Robert E. Mortensen Hall",
+   "code": "RMH",
+   "address": "79 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.4862,
+    "lng": -74.433465
+   },
+   "aliases": [
+    "shindell choral hall",
+    "rmh"
+   ]
+  },
+  {
+   "id": "b8703",
+   "name": "Robert Wood Johnson University Hospital RWJUH",
+   "address": "1 Robert Wood Johnson Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.495395,
+    "lng": -74.449679
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6013",
+   "name": "Round House",
+   "code": "RH",
+   "address": "66 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475005,
+    "lng": -74.436167
+   },
+   "aliases": [
+    "rh"
+   ]
+  },
+  {
+   "id": "b4168",
+   "name": "RUNet Field Offices",
+   "address": "63 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.51518,
+    "lng": -74.433399
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3198",
+   "name": "Rutgers Academic Building",
+   "code": "AB",
+   "address": "15 Seminary Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501942,
+    "lng": -74.448115
+   },
+   "aliases": [
+    "abe abw",
+    "ab"
+   ]
+  },
+  {
+   "id": "b4181",
+   "name": "Rutgers Business School",
+   "code": "BRR",
+   "address": "100 Rockafeller Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.523303,
+    "lng": -74.44067
+   },
+   "aliases": [
+    "100 rock",
+    "brr"
+   ]
+  },
+  {
+   "id": "b3188",
+   "name": "Rutgers Cancer Institute RCI",
+   "code": "CNJ",
+   "address": "195 Little Albany Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.496411,
+    "lng": -74.448737
+   },
+   "aliases": [
+    "cnj"
+   ]
+  },
+  {
+   "id": "b8445",
+   "name": "Rutgers Center for Adult Autism Services",
+   "address": "100 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.48102,
+    "lng": -74.440336
+   },
+   "aliases": [
+    "rcaas"
+   ]
+  },
+  {
+   "id": "b3177",
+   "name": "Rutgers Counseling Center",
+   "address": "17 Senior Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503514,
+    "lng": -74.454023
+   },
+   "aliases": [
+    "caps"
+   ]
+  },
+  {
+   "id": "b4115",
+   "name": "Rutgers Environmental Health & Safety REHS",
+   "address": "82 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.514298,
+    "lng": -74.433976
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4116",
+   "name": "Rutgers Environmental Health & Safety REHS",
+   "address": "74 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.51459,
+    "lng": -74.433726
+   },
+   "aliases": []
+  },
+  {
+   "id": "b7537",
+   "name": "Rutgers Federal Credit Union",
+   "address": "85 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.524652,
+    "lng": -74.45738
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8824",
+   "name": "Rutgers Federal Credit Union",
+   "address": "100 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501172,
+    "lng": -74.450254
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3007",
+   "name": "Rutgers Future Scholars",
+   "address": "502 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500427,
+    "lng": -74.44581
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6353",
+   "name": "Rutgers Gardens Alumni Pavilion",
+   "address": "140 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47329,
+    "lng": -74.42068
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6229",
+   "name": "Rutgers Gardens Cold Storage Conex Box",
+   "address": "132 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472668,
+    "lng": -74.424551
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6233",
+   "name": "Rutgers Gardens Greenhouse 4",
+   "address": "132 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.47246,
+    "lng": -74.424482
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6104",
+   "name": "Rutgers Gardens Log Cabin",
+   "address": "140 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473547,
+    "lng": -74.420341
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6243",
+   "name": "Rutgers Gardens Main Office",
+   "address": "112 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.471097,
+    "lng": -74.426184
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6242",
+   "name": "Rutgers Gardens Office",
+   "address": "142 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472584,
+    "lng": -74.421308
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6097",
+   "name": "Rutgers Gardens Potting Shed",
+   "address": "136 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474324,
+    "lng": -74.42242
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6491",
+   "name": "Rutgers Gardens Shed",
+   "address": "140 Log Cabin Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.473231,
+    "lng": -74.421174
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6093",
+   "name": "Rutgers Gardens Welschman Garage",
+   "address": "128 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472483,
+    "lng": -74.423966
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6092",
+   "name": "Rutgers Gardens Welschman House",
+   "address": "128 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472685,
+    "lng": -74.424115
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3099",
+   "name": "Rutgers Global",
+   "address": "30 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498777,
+    "lng": -74.447851
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3113",
+   "name": "Rutgers Global - International Student and Scholar Services",
+   "address": "180 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504542,
+    "lng": -74.453765
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3159",
+   "name": "Rutgers Global - Study Abroad and Center for Global Education",
+   "address": "102 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501441,
+    "lng": -74.450565
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4048",
+   "name": "Rutgers iTV Studio",
+   "code": "OTR",
+   "address": "14 Berrue Circle",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.52478,
+    "lng": -74.430949
+   },
+   "aliases": [
+    "instructional television studio",
+    "otr"
+   ]
+  },
+  {
+   "id": "b7593",
+   "name": "Rutgers Lifelong Learning Center",
+   "address": "3 Rutgers Plaza",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.477679,
+    "lng": -74.425495
+   },
+   "aliases": [
+    "administrative services building asb 3"
+   ]
+  },
+  {
+   "id": "b4051",
+   "name": "Rutgers Makerspace",
+   "code": "VIX",
+   "address": "35 Berrue Circle",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.523429,
+    "lng": -74.431436
+   },
+   "aliases": [
+    "vrl",
+    "vix"
+   ]
+  },
+  {
+   "id": "b8730",
+   "name": "Rutgers School of Dental Medicine at The Aspire",
+   "address": "135 Somerset Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.497196,
+    "lng": -74.449225
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3123",
+   "name": "Rutgers Student Activities Center SAC",
+   "address": "613 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.50437,
+    "lng": -74.449064
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8309",
+   "name": "Ruth Dill Johnson Crockett Building",
+   "code": "RJC",
+   "address": "162 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.482341,
+    "lng": -74.429118
+   },
+   "aliases": [
+    "rjc"
+   ]
+  },
+  {
+   "id": "b8324",
+   "name": "Ruth Schilling Hennessy Alumni Center",
+   "address": "181 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.482044,
+    "lng": -74.432276
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4158",
+   "name": "RWJBarnabas Health Athletic Performance Center",
+   "address": "95 Rockafeller Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.524193,
+    "lng": -74.441706
+   },
+   "aliases": [
+    "apc"
+   ]
+  },
+  {
+   "id": "b3887",
+   "name": "RWJBarnabas Health Stadium",
+   "address": "304 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.518105,
+    "lng": -74.464126
+   },
+   "aliases": [
+    "yurcak soccer lacrosse"
+   ]
+  },
+  {
+   "id": "b3888",
+   "name": "RWJBarnabas Health Stadium Concessions",
+   "address": "300 Fitch Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.517705,
+    "lng": -74.464155
+   },
+   "aliases": [
+    "yurcak soccer lacrosse"
+   ]
+  },
+  {
+   "id": "b8716",
+   "name": "RWJMS at 10 Plum Street",
+   "address": "10 Plum Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.493805,
+    "lng": -74.451785
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3689",
+   "name": "RWJMS Research Building & School of Public Health",
+   "code": "RRB",
+   "address": "683 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523576,
+    "lng": -74.470845
+   },
+   "aliases": [
+    "rrb"
+   ]
+  },
+  {
+   "id": "b3688",
+   "name": "RWJMS Research Tower",
+   "code": "RRT",
+   "address": "675 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.524776,
+    "lng": -74.469562
+   },
+   "aliases": [
+    "rrt"
+   ]
+  },
+  {
+   "id": "b3691",
+   "name": "RWJMS Staged Research Building",
+   "address": "661 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526529,
+    "lng": -74.468966
+   },
+   "aliases": []
+  },
+  {
+   "id": "b9006",
+   "name": "Saint Peter's University Hospital",
+   "address": "254 Easton Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.501131,
+    "lng": -74.45951
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6088",
+   "name": "Salt Shed",
+   "address": "18 Ag Extension Way",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.472219,
+    "lng": -74.437988
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4148",
+   "name": "Salt Storage Silo",
+   "address": "Warehouse Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.514542,
+    "lng": -74.432212
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3015",
+   "name": "SAS Dean's Office",
+   "address": "77 Hamilton Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.499432,
+    "lng": -74.447135
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3026",
+   "name": "SAS Department of Religion",
+   "address": "64 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.500055,
+    "lng": -74.449106
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3048",
+   "name": "SAS English Office - 36 Union",
+   "address": "36 Union Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.499333,
+    "lng": -74.450528
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3041",
+   "name": "SAS English Office - 43 Mine",
+   "code": "MIN",
+   "address": "43 Mine Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.499822,
+    "lng": -74.451563
+   },
+   "aliases": [
+    "min"
+   ]
+  },
+  {
+   "id": "b3021",
+   "name": "SAS Office of Undergraduate Education",
+   "code": "UC",
+   "address": "35 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.499281,
+    "lng": -74.447455
+   },
+   "aliases": [
+    "uc"
+   ]
+  },
+  {
+   "id": "b3897",
+   "name": "Scarlet Knights Sports Club Field House",
+   "address": "41 Brett Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519154,
+    "lng": -74.456673
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3005",
+   "name": "Schanck Observatory",
+   "address": "470 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.499376,
+    "lng": -74.445293
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3135",
+   "name": "School of Communication & Information Annex A",
+   "address": "192 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.505069,
+    "lng": -74.454303
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3136",
+   "name": "School of Communication & Information Annex B",
+   "address": "15 Huntington Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.50498,
+    "lng": -74.454469
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3134",
+   "name": "School of Communication & Information SC&I",
+   "code": "CI",
+   "address": "4 Huntington Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.505267,
+    "lng": -74.453179
+   },
+   "aliases": [
+    "sci",
+    "ci"
+   ]
+  },
+  {
+   "id": "b3558",
+   "name": "School of Engineering",
+   "code": "EN",
+   "address": "98 Brett Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522375,
+    "lng": -74.460674
+   },
+   "aliases": [
+    "en"
+   ]
+  },
+  {
+   "id": "b3588",
+   "name": "School of Engineering-Solvents Building",
+   "address": "98 Brett Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.521716,
+    "lng": -74.460077
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3693",
+   "name": "School of Health Professions Building",
+   "address": "675 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525431,
+    "lng": -74.468734
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3166",
+   "name": "School of Nursing SON",
+   "code": "NUR",
+   "address": "110 Paterson Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.49424,
+    "lng": -74.448407
+   },
+   "aliases": [
+    "rson",
+    "nur"
+   ]
+  },
+  {
+   "id": "b8862",
+   "name": "School of Social Work",
+   "address": "390 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.496051,
+    "lng": -74.444357
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3038",
+   "name": "Scott Hall",
+   "code": "SC",
+   "address": "43 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.499811,
+    "lng": -74.447617
+   },
+   "aliases": [
+    "sc"
+   ]
+  },
+  {
+   "id": "b6053",
+   "name": "Seed Dryer Building",
+   "address": "61 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475201,
+    "lng": -74.434743
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3561",
+   "name": "Serin Physics Building",
+   "address": "126 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522721,
+    "lng": -74.464077
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4159",
+   "name": "Service Building - Athletic Fields",
+   "address": "Hospital Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.528336,
+    "lng": -74.442336
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3554",
+   "name": "Sewage Treatment Office Trailer 1",
+   "address": "122 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527177,
+    "lng": -74.459938
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3546",
+   "name": "Sewage Treatment Office Trailer 2",
+   "address": "122 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527355,
+    "lng": -74.459943
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3534",
+   "name": "Sewage Treatment Office Trailer 3",
+   "address": "122 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527407,
+    "lng": -74.459872
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3552",
+   "name": "Sewage Treatment Plant Administration",
+   "address": "122 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527239,
+    "lng": -74.46009
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3545",
+   "name": "Sewage Treatment Storage Trailer",
+   "address": "122 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.52739,
+    "lng": -74.459996
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3547",
+   "name": "Sewage Treatment Tank",
+   "address": "122 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.527527,
+    "lng": -74.46024
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6162",
+   "name": "Shed 6162",
+   "address": "96 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474626,
+    "lng": -74.441317
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3500",
+   "name": "SHI Stadium and Hale Center",
+   "code": "HAL",
+   "address": "1 Scarlet Knight Way",
+   "campus": "busch",
+   "center": {
+    "lat": 40.513479,
+    "lng": -74.465156
+   },
+   "aliases": [
+    "football stadium",
+    "hal"
+   ]
+  },
+  {
+   "id": "b6107",
+   "name": "Shipping Container 6107",
+   "address": "95 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474378,
+    "lng": -74.440673
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6108",
+   "name": "Shipping Container 6108",
+   "address": "95 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474405,
+    "lng": -74.440714
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6118",
+   "name": "Shipping Container 6118",
+   "address": "95 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474491,
+    "lng": -74.440821
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6136",
+   "name": "Shipping Container 6136",
+   "address": "92 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474084,
+    "lng": -74.440917
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6161",
+   "name": "Shipping Container 6161",
+   "address": "96 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474567,
+    "lng": -74.441494
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6166",
+   "name": "Shipping Container 6166",
+   "address": "92 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474081,
+    "lng": -74.440964
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6396",
+   "name": "Short-Term Hazardous Storage Facility",
+   "address": "100 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474926,
+    "lng": -74.4417
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3810",
+   "name": "Silvers Apartments 133-148",
+   "address": "617 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519404,
+    "lng": -74.454258
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3811",
+   "name": "Silvers Apartments 149-164",
+   "address": "621 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519093,
+    "lng": -74.454512
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3812",
+   "name": "Silvers Apartments 165-180",
+   "address": "625 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.518785,
+    "lng": -74.454679
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3813",
+   "name": "Silvers Apartments 181-196",
+   "address": "631 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.518534,
+    "lng": -74.455099
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3814",
+   "name": "Silvers Apartments 197-220",
+   "address": "629 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.51885,
+    "lng": -74.45539
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3815",
+   "name": "Silvers Apartments 221-244",
+   "address": "623 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519023,
+    "lng": -74.455075
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3816",
+   "name": "Silvers Apartments 245-260",
+   "address": "624 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519414,
+    "lng": -74.455568
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3817",
+   "name": "Silvers Apartments 261-276",
+   "address": "620 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519724,
+    "lng": -74.455329
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3818",
+   "name": "Silvers Apartments 277-292",
+   "address": "618 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519947,
+    "lng": -74.455711
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3687",
+   "name": "Silvers Community Center",
+   "address": "623 Marvin Lane",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519476,
+    "lng": -74.455013
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3110",
+   "name": "Simeon De Witt Building",
+   "address": "185 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.504984,
+    "lng": -74.45319
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6046",
+   "name": "Small Mammal Building",
+   "address": "75 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475268,
+    "lng": -74.439108
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3570",
+   "name": "Smithers Hall - Center of Alcohol Studies",
+   "code": "SMH",
+   "address": "607 Allison Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.524264,
+    "lng": -74.463599
+   },
+   "aliases": [
+    "smh"
+   ]
+  },
+  {
+   "id": "b3199",
+   "name": "Sojourner Truth Apartments",
+   "address": "40 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.499203,
+    "lng": -74.448648
+   },
+   "aliases": [
+    "the yard"
+   ]
+  },
+  {
+   "id": "b6486",
+   "name": "Solar Animal Shelter 1",
+   "address": "8 College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.466395,
+    "lng": -74.434094
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6487",
+   "name": "Solar Animal Shelter 2",
+   "address": "8 College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.466397,
+    "lng": -74.433733
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6488",
+   "name": "Solar Animal Shelter 3",
+   "address": "8 College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.466397,
+    "lng": -74.433376
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6257",
+   "name": "Solar Poultry House",
+   "address": "73C Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475682,
+    "lng": -74.439633
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3881",
+   "name": "Sonny A. Werblin Recreation Center",
+   "address": "656 Bartholomew Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.519576,
+    "lng": -74.460895
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6295",
+   "name": "Starkey Apartments 501-524",
+   "address": "38 Biel Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476192,
+    "lng": -74.431071
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6292",
+   "name": "Starkey Apartments 525-548",
+   "address": "36 Biel Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476277,
+    "lng": -74.430217
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6293",
+   "name": "Starkey Apartments 549-572",
+   "address": "34 Biel Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475853,
+    "lng": -74.429817
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6294",
+   "name": "Starkey Apartments 573-596",
+   "address": "32 Biel Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475736,
+    "lng": -74.430572
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8310",
+   "name": "Stephanie Morris Marryott Music Building",
+   "code": "MUS",
+   "address": "81 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.48663,
+    "lng": -74.433073
+   },
+   "aliases": [
+    "schare recital hall",
+    "mus"
+   ]
+  },
+  {
+   "id": "b3086",
+   "name": "Stonier Hall",
+   "address": "135 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503201,
+    "lng": -74.451205
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6157",
+   "name": "Storage Shipping Container CK6157",
+   "address": "67 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475771,
+    "lng": -74.435762
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3137",
+   "name": "Student Affairs",
+   "address": "2 Richardson Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503979,
+    "lng": -74.453888
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3087",
+   "name": "Student Center Shed",
+   "address": "Behind 126 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.502582,
+    "lng": -74.452901
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4128",
+   "name": "Surplus & Material Services Warehouse",
+   "address": "76 Warehouse Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513993,
+    "lng": -74.4329
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3862",
+   "name": "Susan L. Cullman Laboratory for Cancer Research",
+   "code": "SCL",
+   "address": "164 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523292,
+    "lng": -74.467868
+   },
+   "aliases": [
+    "scl"
+   ]
+  },
+  {
+   "id": "b6022",
+   "name": "Swine Farrowing House",
+   "address": "65 Sheepfold Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.475407,
+    "lng": -74.435877
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3854",
+   "name": "T. Alexander Pond SERC Science & Engineering Resource Center",
+   "code": "SEC",
+   "address": "118 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522723,
+    "lng": -74.46283
+   },
+   "aliases": [
+    "sec"
+   ]
+  },
+  {
+   "id": "b4164",
+   "name": "Television & Radio Equipment Shelter",
+   "address": "Near Joyce Kilmer & Road 3",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.522489,
+    "lng": -74.430816
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3596",
+   "name": "Tennis House Media Center",
+   "address": "2 Scarlet Knight Way",
+   "campus": "busch",
+   "center": {
+    "lat": 40.512987,
+    "lng": -74.463059
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3871",
+   "name": "Thomas Residence Hall",
+   "address": "105 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525117,
+    "lng": -74.459325
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6004",
+   "name": "Thompson Hall",
+   "code": "TH",
+   "address": "96 Lipman Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481476,
+    "lng": -74.439906
+   },
+   "aliases": [
+    "th"
+   ]
+  },
+  {
+   "id": "b4146",
+   "name": "Tillett Hall",
+   "code": "TIL",
+   "address": "53 Avenue E",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.521704,
+    "lng": -74.435809
+   },
+   "aliases": [
+    "til"
+   ]
+  },
+  {
+   "id": "b3066",
+   "name": "Tinsley Hall",
+   "address": "113 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.502429,
+    "lng": -74.450152
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4167",
+   "name": "Track & Field Storage",
+   "address": "59 Hospital Road",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.526368,
+    "lng": -74.442508
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6071",
+   "name": "Trailer 6071",
+   "address": "76 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474822,
+    "lng": -74.438839
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6111",
+   "name": "Trailer 6111",
+   "address": "95 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474452,
+    "lng": -74.440722
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6112",
+   "name": "Trailer 6112",
+   "address": "95 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474477,
+    "lng": -74.440757
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6163",
+   "name": "Trailer 6163",
+   "address": "97 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.474733,
+    "lng": -74.441298
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3694",
+   "name": "UBHC Children's Transitional Residence CTR",
+   "address": "653 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.528566,
+    "lng": -74.470193
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3695",
+   "name": "UBHC North Building",
+   "address": "667 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526759,
+    "lng": -74.470063
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3690",
+   "name": "UBHC University Behavioral Healthcare - Piscataway",
+   "address": "671 Hoes Lane West",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525669,
+    "lng": -74.470188
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3154",
+   "name": "University Center at Easton Avenue",
+   "address": "30 Easton Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.496943,
+    "lng": -74.447643
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3154.09",
+   "name": "University Center Parking Deck",
+   "address": "139 Little Albany Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.496687,
+    "lng": -74.44764
+   },
+   "aliases": [
+    "easton avenue deck"
+   ]
+  },
+  {
+   "id": "b8418",
+   "name": "University Housing - Cook/Douglass Maintenance",
+   "address": "1 Seaman Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.483576,
+    "lng": -74.439429
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4111",
+   "name": "University Housing - Furniture/Fabric Shop",
+   "address": "107 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513019,
+    "lng": -74.435681
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4070",
+   "name": "University Housing - Grounds Operation",
+   "address": "14 Suttons Lane",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.524358,
+    "lng": -74.429406
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3132",
+   "name": "University Housing Garage",
+   "address": "115 College Ave",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.50317,
+    "lng": -74.449416
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3744",
+   "name": "University Housing Storage Shed",
+   "address": "Van Der Meulen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.526288,
+    "lng": -74.463363
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6327",
+   "name": "University Housing Storage Shed",
+   "address": "South End of Lot 99A",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476346,
+    "lng": -74.431989
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6419",
+   "name": "University Housing Storage Shed",
+   "address": "2 Biel Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.478554,
+    "lng": -74.428546
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8338",
+   "name": "University Housing Storage Shed",
+   "address": "31 Gibbons Circle",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.486106,
+    "lng": -74.430294
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8334",
+   "name": "University Inn & Conference Center",
+   "address": "178 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.483629,
+    "lng": -74.430621
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8406",
+   "name": "University Post Office",
+   "address": "57 Lipman Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.483529,
+    "lng": -74.438317
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3904",
+   "name": "University Visitors Welcome Center",
+   "address": "100 Sutphen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.516094,
+    "lng": -74.46039
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3589",
+   "name": "Van Der Meulen Road Electric Substation",
+   "address": "Van Der Meulen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525684,
+    "lng": -74.463523
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3016",
+   "name": "Van Dyck Hall",
+   "code": "VD",
+   "address": "16 Seminary Place",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.50072,
+    "lng": -74.447938
+   },
+   "aliases": [
+    "vd"
+   ]
+  },
+  {
+   "id": "b3001",
+   "name": "Van Nest Hall",
+   "address": "19 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498681,
+    "lng": -74.447077
+   },
+   "aliases": [
+    "rutgers alumni house"
+   ]
+  },
+  {
+   "id": "b8439",
+   "name": "Victoria J. Mastrobuono Theater",
+   "code": "VJM",
+   "address": "87 George Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.485288,
+    "lng": -74.434687
+   },
+   "aliases": [
+    "ntr",
+    "vjm"
+   ]
+  },
+  {
+   "id": "b6304",
+   "name": "Volatile Storage Building (Env. Sci.)",
+   "address": "65 Poultry Farm Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476025,
+    "lng": -74.43761
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8307",
+   "name": "Voorhees Chapel",
+   "code": "VC",
+   "address": "5 Chapel Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.486577,
+    "lng": -74.435618
+   },
+   "aliases": [
+    "vc"
+   ]
+  },
+  {
+   "id": "b6283",
+   "name": "Voorhees Residence Hall",
+   "address": "34 Biel Road West",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.476495,
+    "lng": -74.433381
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3573",
+   "name": "Waksman Institute of Microbiology",
+   "code": "WAK",
+   "address": "190 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522865,
+    "lng": -74.471259
+   },
+   "aliases": [
+    "wak"
+   ]
+  },
+  {
+   "id": "b3574",
+   "name": "Waksman Institute of Microbiology Braun Lab Wing",
+   "address": "188 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.522925,
+    "lng": -74.471836
+   },
+   "aliases": []
+  },
+  {
+   "id": "b6000",
+   "name": "Waller Hall",
+   "code": "WAL",
+   "address": "59 Lipman Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.483255,
+    "lng": -74.437913
+   },
+   "aliases": [
+    "wal"
+   ]
+  },
+  {
+   "id": "b6347",
+   "name": "Walter E. Foran Hall",
+   "code": "FOR",
+   "address": "59 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.48056,
+    "lng": -74.435266
+   },
+   "aliases": [
+    "chang library",
+    "for"
+   ]
+  },
+  {
+   "id": "b8419",
+   "name": "Walters Hall",
+   "code": "WLT",
+   "address": "2 Chapel Drive",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.486581,
+    "lng": -74.434904
+   },
+   "aliases": [
+    "wlt"
+   ]
+  },
+  {
+   "id": "b4112",
+   "name": "Warehouse",
+   "address": "102 Street 1603",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.513185,
+    "lng": -74.434932
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3908",
+   "name": "Warehouse Facility",
+   "address": "110 Ethel Road West",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.531622,
+    "lng": -74.428854
+   },
+   "aliases": []
+  },
+  {
+   "id": "b4171",
+   "name": "Water Distribution Valve Facility",
+   "address": "1 Road 1",
+   "campus": "livingston",
+   "center": {
+    "lat": 40.517571,
+    "lng": -74.429369
+   },
+   "aliases": [
+    "hot box pump house"
+   ]
+  },
+  {
+   "id": "b3053",
+   "name": "Wessels Hall",
+   "address": "602 George Street",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.503631,
+    "lng": -74.449765
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8394",
+   "name": "Willets Hall",
+   "address": "11 Suydam Street",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.484315,
+    "lng": -74.439285
+   },
+   "aliases": [
+    "willets"
+   ]
+  },
+  {
+   "id": "b3750",
+   "name": "William Levine Hall - Ernest Mario School of Pharmacy",
+   "code": "PH",
+   "address": "160 Frelinghuysen Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.52374,
+    "lng": -74.467392
+   },
+   "aliases": [
+    "ph"
+   ]
+  },
+  {
+   "id": "b3004",
+   "name": "Winants Hall",
+   "address": "7 College Avenue",
+   "campus": "college_ave",
+   "center": {
+    "lat": 40.498203,
+    "lng": -74.4468
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3875",
+   "name": "Winkler Residence Hall",
+   "address": "97 Davidson Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.525367,
+    "lng": -74.458412
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8427",
+   "name": "Wittenborn Scholars Residence",
+   "address": "5 Cobb Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.48298,
+    "lng": -74.429118
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8325",
+   "name": "Wood Lawn Carriage House",
+   "code": "CAR",
+   "address": "185 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481445,
+    "lng": -74.432425
+   },
+   "aliases": [
+    "car"
+   ]
+  },
+  {
+   "id": "b8326",
+   "name": "Wood Lawn Gatehouse",
+   "code": "GAT",
+   "address": "183 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.482811,
+    "lng": -74.432238
+   },
+   "aliases": [
+    "gat"
+   ]
+  },
+  {
+   "id": "b8327",
+   "name": "Wood Lawn Gatehouse Garage",
+   "address": "183 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.482854,
+    "lng": -74.432124
+   },
+   "aliases": []
+  },
+  {
+   "id": "b8323",
+   "name": "Wood Lawn Mansion",
+   "code": "WD",
+   "address": "191 Ryders Lane",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.481716,
+    "lng": -74.433197
+   },
+   "aliases": [
+    "eagleton institute",
+    "wd"
+   ]
+  },
+  {
+   "id": "b8329",
+   "name": "Woodbury Bunting-Cobb Residence Hall",
+   "address": "49 Dudley Road",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.480748,
+    "lng": -74.433694
+   },
+   "aliases": []
+  },
+  {
+   "id": "b3556",
+   "name": "Wright Rieman Laboratories",
+   "code": "WL",
+   "address": "610 Taylor Road",
+   "campus": "busch",
+   "center": {
+    "lat": 40.523804,
+    "lng": -74.462474
+   },
+   "aliases": [
+    "wl"
+   ]
+  },
+  {
+   "id": "b6370",
+   "name": "WRSU Transmitting Equipment Building",
+   "address": "2 College Farm Road East",
+   "campus": "cook_douglass",
+   "center": {
+    "lat": 40.466994,
+    "lng": -74.437061
+   },
+   "aliases": []
+  }
+ ]
+}

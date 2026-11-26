@@ -38,7 +38,8 @@ export function checkPermit(
   const at = describeCampusTime(when);
   const base = { lotId, permitId, at, rulesVersion: rules.version };
 
-  if (!rules.permits.some((p) => p.id === permitId)) {
+  // A combined permit ("primary+secondary") is known when every part is.
+  if (!permitParts(permitId).every((part) => rules.permits.some((p) => p.id === part))) {
     return {
       ...base,
       allowed: false,

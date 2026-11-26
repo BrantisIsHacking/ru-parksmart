@@ -25,7 +25,8 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={overpass.variable}>
-      <body className="min-h-dvh antialiased">
+      {/* Browser extensions (e.g. Grammarly) add attributes to <body> before React loads. */}
+      <body className="min-h-dvh antialiased" suppressHydrationWarning>
         <div className="mx-auto flex min-h-dvh max-w-xl flex-col">
           <header className="flex items-center justify-between px-4 pt-5 pb-3">
             <a href="/" className="flex items-center gap-2.5 text-[17px] font-extrabold tracking-tight">

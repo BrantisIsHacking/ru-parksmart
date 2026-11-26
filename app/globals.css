@@ -164,6 +164,62 @@ body {
   }
 }
 
+/* Map: height of the bottom nav, so the full-screen map stops above it. */
+:root {
+  --nav-h: calc(68px + env(safe-area-inset-bottom));
+}
+
+/* Leaflet tooltips in the sign style. */
+.leaflet-tooltip.map-tip {
+  background: var(--color-asphalt);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font: 600 13px/1.3 var(--font-sans);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.25);
+}
+.leaflet-tooltip.map-tip::before {
+  display: none;
+}
+/* Lot numbers painted on the lots once zoomed in. */
+.leaflet-tooltip.lot-label {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  color: #1b1e21;
+  font: 800 12px/1 var(--font-sans);
+  text-shadow:
+    0 0 3px #fff,
+    0 0 3px #fff,
+    0 0 2px #fff;
+}
+.leaflet-tooltip.lot-label::before {
+  display: none;
+}
+/* "My classes" labels: purple tags next to class buildings. */
+.leaflet-tooltip.class-label {
+  background: #6b3fb8;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 2px 7px;
+  font: 700 12px/1.3 var(--font-sans);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.3);
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.leaflet-tooltip.class-label::before {
+  display: none;
+}
+.leaflet-container {
+  font-family: var(--font-sans);
+  background: #e9ecef;
+}
+
 /* The one orchestrated moment: the sign's action settles into a confirmation. */
 @keyframes settle {
   from {

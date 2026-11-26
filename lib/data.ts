@@ -1,14 +1,17 @@
 // Typed access to the versioned data files. Swapping a semester's rules means
 // adding a new rules.<version>.json and pointing ACTIVE_RULES at it.
 import lotsJson from "@/data/lots.json";
+import buildingsJson from "@/data/buildings.json";
 import rulesJson from "@/data/rules.v2026-fall.json";
 import classJson from "@/data/classTimes.json";
 import baselineJson from "@/data/baseline.json";
 import busJson from "@/data/busRoutes.json";
+import { rankBuildings } from "./search";
 import type { Building, BusRoute, Campus, ClassBlock, Lot, RulesFile } from "./types";
 
 export const LOTS = lotsJson.lots as Lot[];
-export const BUILDINGS = lotsJson.buildings as Building[];
+/** Every New Brunswick building on the Rutgers campus map (scripts/import-campus-map.mjs). */
+export const BUILDINGS = buildingsJson.buildings as Building[];
 export const ACTIVE_RULES = rulesJson as RulesFile;
 export const BUS_ROUTES = busJson.routes as BusRoute[];
 
@@ -36,12 +39,17 @@ export const BASELINES = baselineJson.lots as Record<string, LotBaseline>;
 
 export const lotById = (id: string) => LOTS.find((l) => l.id === id);
 
-export function findBuilding(query: string) {
-  const q = query.trim().toLowerCase();
-  if (!q) return undefined;
-  return (
-    BUILDINGS.find((b) => b.id === q || b.name.toLowerCase() === q) ??
-    BUILDINGS.find((b) => b.aliases.some((a) => q.includes(a) || a.includes(q))) ??
-    BUILDINGS.find((b) => b.name.toLowerCase().includes(q))
-  );
+/**
+ * Resolve what a student or schedule calls a building: a Rutgers code ("TIL", "TIL-254",
+ * "ARC 103"), the full name, an alias, or part of the name.
+ */
+export function findBuilding(query: string): Building | undefined {
+  return searchBuildings(query, 1)[0];
 }
+
+/** Ranked building matches for a free-text query. */
+export function searchBuildings(query: string, limit = 8): Building[] {
+  return rankBuildings(BUILDINGS, query, limit);
+}
+
+export const lotsOnCampus = (campus: Campus) => LOTS.filter((l) => l.campus === campus);

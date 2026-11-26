@@ -1,0 +1,14 @@
+{
+  "_note": "Hand-written rules merged into the generated rules file by scripts/import-dots.mjs. The DOTS catalog does not list these.",
+  "permits": [
+    { "id": "daily-livingston", "label": "Daily permit (Yellow Lot)", "kind": "other" },
+    { "id": "none", "label": "No permit / visitor", "kind": "other" }
+  ],
+  "rules": [
+    {
+      "id": "daily-livingston-1", "lots": ["LIV-915"], "permits": ["daily-livingston"], "days": [1, 2, 3, 4, 5], "start": "06:00", "end": "24:00",
+      "note": "Student daily permit ($5 per 8 hours, max 10 per semester): Lot 915 (Yellow Lot), 6 AM – 12 AM Monday–Friday. Source: ipo.rutgers.edu/parking/permits/students.",
+      "verified": false
+    }
+  ]
+}

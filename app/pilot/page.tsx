@@ -1,6 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import lotsData from "@/data/lots.json";
+import { byLotName, groupByCampus } from "@/lib/campus";
 import { clock } from "@/lib/client/format";
 import type { PilotSummary } from "@/lib/metrics/analyze";
 import type { ManualCount } from "@/lib/types";
@@ -108,7 +109,11 @@ export default function Pilot() {
                 }}
                 aria-label="Lot"
               >
-                {lotsData.lots.map((l) => <option key={l.id} value={l.id}>{l.name}</option>)}
+                {groupByCampus(lotsData.lots, byLotName).map((g) => (
+                  <optgroup key={g.campus} label={g.label}>
+                    {g.items.map((l) => <option key={l.id} value={l.id}>{l.name}</option>)}
+                  </optgroup>
+                ))}
               </select>
               <input className="field" inputMode="numeric" required placeholder="Cars counted" value={count.occupied} onChange={(e) => setCount({ ...count, occupied: e.target.value.replace(/\D/g, "") })} aria-label="Occupied spaces" />
               <input className="field" inputMode="numeric" required placeholder="Capacity" value={count.capacity} onChange={(e) => setCount({ ...count, capacity: e.target.value.replace(/\D/g, "") })} aria-label="Capacity" />

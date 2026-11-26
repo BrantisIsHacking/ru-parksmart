@@ -25,9 +25,9 @@ describe("classWavePressure", () => {
     expect(before1020).toBeGreaterThan(0.8);
     expect(midBlock).toBeLessThan(0.2);
   });
-  it("is zero on weekends and null for campuses without data", () => {
+  it("is zero on weekends and covers every campus", () => {
     expect(classWavePressure("livingston", at(SAT, 10, 5))).toBe(0);
-    expect(classWavePressure("cook_douglass", at(TUE, 10, 5))).toBeNull();
+    expect(classWavePressure("cook_douglass", at(TUE, 10, 5))).toBeGreaterThan(0);
   });
 });
 

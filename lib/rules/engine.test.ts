@@ -44,6 +44,28 @@ const CASES: [string, string, Day, string, boolean][] = [
   ["LIV-915", "none", "Tue", "10:15", false],
   ["LIV-915", "commuter-college-ave", "Tue", "10:15", false],
   ["LIV-915", "commuter-college-ave", "Tue", "17:00", true],
+  // College Ave, Cook and Douglass (generated from the DOTS catalog).
+  ["CA-20", "commuter-college-ave", "Tue", "10:15", true],
+  ["CA-11", "commuter-college-ave", "Tue", "10:15", false], // Lot 11 is flex-only
+  ["CA-11", "commuter-college-ave", "Tue", "17:30", true],
+  ["CA-32", "commuter-college-ave", "Tue", "17:30", true], // Lot 32 is a flex lot for College Ave commuters only
+  ["CA-32", "commuter-livingston", "Tue", "17:30", false],
+  ["COOK-98A", "commuter-cook", "Tue", "10:15", true],
+  ["COOK-98A", "commuter-busch+secondary-cook", "Tue", "09:30", false], // secondary starts at 10 AM
+  ["COOK-98A", "commuter-busch+secondary-cook", "Tue", "10:30", true],
+  ["COOK-94", "commuter-cook", "Tue", "10:15", false], // Cook flex lot
+  ["DOUG-DOUGLAS-DECK", "commuter-douglass", "Tue", "10:15", true],
+  ["DOUG-79A", "commuter-douglass", "Sat", "12:00", true], // weekend flex
+  // Residents: the assigned lot any time, plus student commuter lots from 5 PM.
+  ["LIV-103", "resident-college-ave-livingston", "Wed", "03:00", true], // College Ave resident, Livingston option
+  ["LIV-916", "resident-college-ave-livingston", "Tue", "10:15", false],
+  ["LIV-916", "resident-college-ave-livingston", "Tue", "17:30", true],
+  ["BUS-623", "resident-college-ave-busch", "Wed", "03:00", true], // College Ave resident, Busch option
+  ["DOUG-76", "resident-douglass-woodbury", "Tue", "10:15", true], // assigned by residence hall
+  ["DOUG-74A", "resident-douglass-woodbury", "Tue", "10:15", false], // another hall's lot
+  ["DOUG-79A", "resident-douglass-woodbury", "Tue", "10:15", false], // commuter lot before 5 PM
+  ["DOUG-79A", "resident-douglass-woodbury", "Tue", "17:30", true], // flex
+  ["CA-20", "resident-cook-newell", "Tue", "18:00", true], // flex reaches every campus
 ];
 
 describe("rules file", () => {
@@ -82,6 +104,25 @@ describe("checkPermit", () => {
   });
 });
 
+describe("combined permits", () => {
+  it("accepts any commuter primary with any secondary", () => {
+    const primaries = ACTIVE_RULES.permits.filter((p) => p.id.startsWith("commuter-"));
+    const secondaries = ACTIVE_RULES.permits.filter((p) => p.kind === "secondary");
+    expect(secondaries.length).toBe(4);
+    for (const p of primaries) {
+      for (const s of secondaries) {
+        const res = checkPermit(ACTIVE_RULES, "LIV-915", `${p.id}+${s.id}`, at("Tue", "12:00"));
+        expect(res.reason).not.toMatch(/Unknown permit/);
+      }
+    }
+  });
+  it("rejects a combined permit with an unknown part", () => {
+    const res = checkPermit(ACTIVE_RULES, "BUS-613", "commuter-busch+secondary-mars", at("Tue", "12:00"));
+    expect(res.allowed).toBe(false);
+    expect(res.reason).toMatch(/Unknown permit/);
+  });
+});
+
 describe("eligibleLots", () => {
   it("lists only lots the permit may use", () => {
     const ids = eligibleLots(ACTIVE_RULES, "commuter-livingston", at("Tue", "10:15")).map((c) => c.lotId);
@@ -90,6 +131,6 @@ describe("eligibleLots", () => {
 
   it("adds the secondary campus for a combined permit", () => {
     const ids = eligibleLots(ACTIVE_RULES, "commuter-livingston+secondary-busch", at("Tue", "10:15")).map((c) => c.lotId);
-    expect(ids.sort()).toEqual(["BUS-613", "LIV-915"]);
+    expect(ids.sort()).toEqual(["BUS-602", "BUS-613", "LIV-915"]);
   });
 });

@@ -2,7 +2,8 @@ import "server-only";
 // Function declarations Gemini can call, and their server-side implementations.
 // Every eligibility answer flows through lib/rules/engine.ts.
 import type { FunctionDeclaration } from "@google/genai";
-import { ACTIVE_RULES, BUILDINGS, LOTS } from "../data";
+import { ACTIVE_RULES, LOTS, searchBuildings } from "../data";
+import { groupByCampus } from "../campus";
 import { checkPermit } from "../rules/engine";
 import { describeCampusTime } from "../time";
 import { estimatesFor, recommend, resolveTime } from "../server/services";
@@ -16,8 +17,18 @@ export const FUNCTION_DECLARATIONS: FunctionDeclaration[] = [
   {
     name: "list_lots",
     description:
-      "List the pilot parking lots (ids, names, campus), known buildings, and permit types. Call this to map a lot or building the student mentions to an id.",
+      "List the parking lots (ids and names, grouped by campus) and permit types. Call this to map a lot the student mentions to an id. For buildings use find_building.",
     parametersJsonSchema: { type: "object", properties: {} },
+  },
+  {
+    name: "find_building",
+    description:
+      "Find Rutgers New Brunswick buildings by name, code (TIL, ARC, HLL, SC) or address, from the official campus map. Returns the best matches with campus and code.",
+    parametersJsonSchema: {
+      type: "object",
+      properties: { query: { type: "string", description: "What the student called the building, e.g. 'Hill Center' or 'TIL-254'" } },
+      required: ["query"],
+    },
   },
   {
     name: "check_permit",
@@ -48,15 +59,17 @@ export const FUNCTION_DECLARATIONS: FunctionDeclaration[] = [
   {
     name: "plan_park_or_ride",
     description:
-      "Plan where to park to reach a building by a time: checks permit eligibility for every lot, congestion, walking time, and the scheduled campus bus fallback. Returns the usual lot, the recommendation, alternatives, and a park-by time.",
+      "Plan where to park to reach a building (or a lat/lng point) by a time: checks permit eligibility for every lot, congestion, walking time, and the scheduled campus bus fallback. Returns the usual lot, the recommendation, alternatives, and a park-by time.",
     parametersJsonSchema: {
       type: "object",
       properties: {
         permit_id: { type: "string", description: "Permit type id" },
-        destination: { type: "string", description: "Building name, e.g. Tillett Hall" },
+        destination: { type: "string", description: "Building name or code, e.g. Tillett Hall or TIL" },
+        lat: { type: "number", description: "Destination latitude, when the student gave a point instead of a building" },
+        lng: { type: "number", description: "Destination longitude" },
         arrive_by: { type: "string", description: "When the student must be at the building. " + TIME_DESC },
       },
-      required: ["permit_id", "destination", "arrive_by"],
+      required: ["permit_id", "arrive_by"],
     },
   },
 ];
@@ -89,11 +102,17 @@ export async function runTool(name: string, args: Args, ctx: ToolContext): Promi
   switch (name) {
     case "list_lots":
       return {
-        lots: LOTS.map((l) => ({ id: l.id, name: l.name, campus: l.campus, verified: l.verified })),
-        buildings: BUILDINGS.map((b) => ({ name: b.name, campus: b.campus })),
+        campuses: groupByCampus(LOTS).map((g) => ({ campus: g.label, lots: g.items.map((l) => ({ id: l.id, name: l.name })) })),
         permits: ACTIVE_RULES.permits,
+        combinedPermits: "A student with a secondary permit has an id like 'commuter-livingston+secondary-busch'.",
         rulesVersion: ACTIVE_RULES.version,
       };
+    case "find_building": {
+      const query = str(args.query);
+      if (!query) return { error: "query is required" };
+      const matches = searchBuildings(query, 5).map((b) => ({ name: b.name, code: b.code ?? null, campus: b.campus, address: b.address ?? null }));
+      return matches.length ? { matches } : { matches, note: "No building matched. Ask the student for the building code from their schedule." };
+    }
     case "check_permit": {
       const lotId = str(args.lot_id);
       const permitId = str(args.permit_id);
@@ -112,9 +131,10 @@ export async function runTool(name: string, args: Args, ctx: ToolContext): Promi
     case "plan_park_or_ride": {
       const permitId = str(args.permit_id);
       const destination = str(args.destination);
-      if (!permitId || !destination) return { error: "permit_id and destination are required" };
+      const point = typeof args.lat === "number" && typeof args.lng === "number" ? { lat: args.lat, lng: args.lng } : null;
+      if (!permitId || (!destination && !point)) return { error: "permit_id and a destination (building or lat/lng) are required" };
       const arriveBy = resolveTime(str(args.arrive_by), ctx.now);
-      const { plan } = await recommend({ permitId, destination, arriveBy, now: ctx.now });
+      const { plan } = await recommend({ permitId, destination, destinationPoint: point, arriveBy, now: ctx.now });
       if (plan.parkAndRide) ctx.parkAndRideShown = true;
       return { ...plan, arriveByLocal: describeCampusTime(arriveBy) };
     }

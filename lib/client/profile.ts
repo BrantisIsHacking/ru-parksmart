@@ -67,6 +67,9 @@ export function useProfile(): [Profile | null, (patch: Partial<Profile>) => void
 const DAY = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 export function describeClasses(classes: ClassEntry[]): string {
   return classes
-    .map((c) => `${c.course ? c.course + " " : ""}${c.building} ${c.days.map((d) => DAY[d]).join("/")} ${c.start}`)
+    .map((c) => {
+      const room = c.buildingCode && c.room ? ` (${c.buildingCode}-${c.room})` : "";
+      return `${c.course ? c.course + " " : ""}${c.building}${room}${c.campus ? ` [${c.campus}]` : ""} ${c.days.map((d) => DAY[d]).join("/")} ${c.start}`;
+    })
     .join("; ");
 }

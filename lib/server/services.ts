@@ -2,7 +2,8 @@ import "server-only";
 // Shared server operations used by both the API routes and Gemini's tools,
 // so the assistant and the app UI always give the same answer.
 import { COUNT_MAX_AGE_MIN, estimateLot, OUTCOME_MAX_AGE_MIN, REPORT_MAX_AGE_MIN } from "../congestion/estimator";
-import { findBuilding, LOTS } from "../data";
+import { LOTS } from "../data";
+import { resolvePlace, type DestinationPoint } from "../places";
 import { planTrip, type TripPlan } from "../planner/parkOrRide";
 import { campusParts, campusTimeOnDay, parseHHMM } from "../time";
 import type { ClassEntry, LotEstimate } from "../types";
@@ -70,20 +71,20 @@ export interface Recommendation {
 
 export async function recommend(opts: {
   permitId: string;
-  destination: string;
+  /** Building name or code. Ignored when destinationPoint is given. */
+  destination?: string | null;
+  /** A point picked on the map. */
+  destinationPoint?: DestinationPoint | null;
   arriveBy: Date;
   commuteMin?: number | null;
   now?: Date;
 }): Promise<Recommendation> {
-  const building = findBuilding(opts.destination);
-  if (!building) {
-    throw new Error(`Unknown building "${opts.destination}". Pilot buildings: Tillett Hall, Lucy Stone Hall, Beck Hall, Livingston Student Center, Rutgers Business School.`);
-  }
+  const place = resolvePlace(opts.destination, opts.destinationPoint);
   const now = opts.now ?? new Date();
   // Estimate congestion for roughly when the student will be parking.
   const parkingTime = new Date(Math.max(now.getTime(), opts.arriveBy.getTime() - 15 * 60_000));
   const estimates = await estimatesFor(parkingTime, now);
-  const plan = planTrip({ permitId: opts.permitId, destination: building, arriveBy: opts.arriveBy, estimates });
+  const plan = planTrip({ permitId: opts.permitId, destination: place, arriveBy: opts.arriveBy, estimates });
   const leaveBy =
     plan.recommended && opts.commuteMin
       ? new Date(new Date(plan.recommended.parkBy).getTime() - opts.commuteMin * 60_000).toISOString()

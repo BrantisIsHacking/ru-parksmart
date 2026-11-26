@@ -16,6 +16,8 @@ export interface Lot {
   capacity: number;
   /** Placeholder lots must be mapped to real Rutgers lots before the pilot. */
   verified: boolean;
+  /** The source only places this lot to ~1 km; it is shown but never planned to. */
+  coordsApprox?: boolean;
 }
 
 export interface Building {
@@ -23,12 +25,25 @@ export interface Building {
   name: string;
   campus: Campus;
   center: LatLng;
+  /** Rutgers building code used in schedules, e.g. "TIL". */
+  code?: string;
+  /** Street address, e.g. "53 Avenue E". */
+  address?: string;
   aliases: string[];
+}
+
+/** Anywhere a student can be headed: a building, or a point picked on the map. */
+export interface Place {
+  name: string;
+  center: LatLng;
+  campus?: Campus;
 }
 
 export interface Permit {
   id: string;
   label: string;
+  /** primary: one per student; secondary: optional add-on for another campus; other: daily permit, none. */
+  kind?: "primary" | "secondary" | "other";
 }
 
 /** One allow-rule. A permit may park in a lot when ANY rule matches. Default is deny. */
@@ -178,16 +193,32 @@ export interface BusRoute {
   firstDeparture: string;
   lastDeparture: string;
   headwayMin: number;
+  /** Minutes for one full loop; a ride to an earlier stop wraps around it. */
+  loopMin?: number;
   stops: BusStop[];
   verified: boolean;
 }
 
 export interface ClassEntry {
+  /** Course title as shown, e.g. "Linear Optimization". */
   course?: string;
+  /** Rutgers course number, e.g. "01:640:354". */
+  courseNumber?: string;
+  /** Section, e.g. "01". */
+  section?: string;
+  /** Building display name, e.g. "Beck Hall" (or what the student typed if it didn't resolve). */
   building: string;
+  /** Campus map building id ("b4145") once resolved; the planner prefers it over the name. */
+  buildingId?: string | null;
+  /** Rutgers building code, e.g. "BE". */
+  buildingCode?: string | null;
+  /** Room, e.g. "AUD" or "254". */
+  room?: string | null;
   campus?: Campus | null;
   days: number[];
   start: string;
+  /** End time "HH:MM", when known. */
+  end?: string | null;
 }
 
 export interface MetricEvent {

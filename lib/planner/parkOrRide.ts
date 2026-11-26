@@ -5,9 +5,11 @@ import { ACTIVE_RULES, BUS_ROUTES, LOTS } from "../data";
 import { distanceMeters, walkMinutes } from "../geo";
 import { checkPermit } from "../rules/engine";
 import { campusParts, campusTimeOnDay, parseHHMM } from "../time";
-import type { Building, BusRoute, BusStop, Lot, LotEstimate, LotStatus, RulesFile } from "../types";
+import type { BusRoute, BusStop, LatLng, Lot, LotEstimate, LotStatus, Place, RulesFile } from "../types";
 
 export const MAX_WALK_MIN = 20;
+/** Walks longer than this are compared against the bus; the faster one wins. */
+export const BUS_CONSIDER_WALK_MIN = 12;
 const MAX_STOP_DISTANCE_M = 600;
 const BUFFER_MIN = 3;
 const STATUS_PENALTY: Record<LotStatus, number> = { green: 0, yellow: 4, gray: 6, red: 30 };
@@ -17,6 +19,8 @@ export interface BusLeg {
   routeName: string;
   fromStop: string;
   toStop: string;
+  fromStopCenter: LatLng;
+  toStopCenter: LatLng;
   departAt: string;
   rideMin: number;
   walkToStopMin: number;
@@ -44,6 +48,7 @@ export interface TripOption {
 
 export interface TripPlan {
   destination: string;
+  destinationCenter: LatLng;
   arriveBy: string;
   /** Closest eligible lot: what most students would try first. */
   usual: TripOption | null;
@@ -79,13 +84,15 @@ export function latestDeparture(route: BusRoute, stop: BusStop, latest: Date): D
   return campusTimeOnDay(latest, first + k * route.headwayMin);
 }
 
-function busLeg(lot: Lot, dest: Building, arriveBy: Date, routes: BusRoute[]): { leg: BusLeg; parkBy: Date } | null {
+function busLeg(lot: Lot, dest: Place, arriveBy: Date, routes: BusRoute[]): { leg: BusLeg; parkBy: Date } | null {
   let best: { leg: BusLeg; parkBy: Date } | null = null;
   for (const route of routes) {
     const from = nearestStop(route, lot.center);
     const to = nearestStop(route, dest.center);
     if (!from || !to || from.id === to.id) continue;
-    const rideMin = Math.max(2, Math.abs(to.offsetMin - from.offsetMin));
+    // Buses run one way around a loop: riding to an earlier stop goes the long way round.
+    const forward = to.offsetMin - from.offsetMin;
+    const rideMin = Math.max(2, forward > 0 ? forward : route.loopMin ? route.loopMin + forward : Math.abs(forward));
     const walkFrom = walkMinutes(to.center, dest.center);
     const walkTo = walkMinutes(lot.center, from.center);
     const depart = latestDeparture(route, from, new Date(arriveBy.getTime() - (rideMin + walkFrom) * 60_000));
@@ -99,6 +106,8 @@ function busLeg(lot: Lot, dest: Building, arriveBy: Date, routes: BusRoute[]): {
           routeName: route.name,
           fromStop: from.name,
           toStop: to.name,
+          fromStopCenter: from.center,
+          toStopCenter: to.center,
           departAt: depart.toISOString(),
           rideMin,
           walkToStopMin: walkTo,
@@ -114,7 +123,7 @@ function busLeg(lot: Lot, dest: Building, arriveBy: Date, routes: BusRoute[]): {
 
 export interface PlanInput {
   permitId: string;
-  destination: Building;
+  destination: Place;
   arriveBy: Date;
   estimates: Map<string, LotEstimate>;
   lots?: Lot[];
@@ -137,47 +146,46 @@ export function planTrip({
   const parkingTime = new Date(arriveBy.getTime() - 15 * 60_000);
 
   for (const lot of lots) {
+    // Lots the source only places to ~1 km can't give honest walk times.
+    if (lot.coordsApprox) continue;
     const permit = checkPermit(rules, lot.id, permitId, parkingTime);
     if (!permit.allowed) continue;
     const est = estimates.get(lot.id);
     const status = est?.status ?? "gray";
     const walk = walkMinutes(lot.center, destination.center);
-    let option: Omit<TripOption, "score"> | null = null;
-
-    if (walk <= MAX_WALK_MIN) {
-      option = {
-        lotId: lot.id,
-        lotName: lot.name,
-        status,
-        fill: est?.fill ?? null,
-        confidence: est?.confidence ?? 0,
-        mode: "walk",
-        walkMin: walk,
-        bus: null,
-        parkBy: new Date(arriveBy.getTime() - (walk + BUFFER_MIN) * 60_000).toISOString(),
-        totalMin: walk + BUFFER_MIN,
-        permitVerified: permit.verified,
-      };
-    } else {
-      const ride = busLeg(lot, destination, arriveBy, routes);
-      if (ride) {
-        option = {
-          lotId: lot.id,
-          lotName: lot.name,
-          status,
-          fill: est?.fill ?? null,
-          confidence: est?.confidence ?? 0,
+    const base = {
+      lotId: lot.id,
+      lotName: lot.name,
+      status,
+      fill: est?.fill ?? null,
+      confidence: est?.confidence ?? 0,
+      walkMin: walk,
+      permitVerified: permit.verified,
+    };
+    const walkOption: Omit<TripOption, "score"> | null =
+      walk <= MAX_WALK_MIN
+        ? {
+            ...base,
+            mode: "walk",
+            bus: null,
+            parkBy: new Date(arriveBy.getTime() - (walk + BUFFER_MIN) * 60_000).toISOString(),
+            totalMin: walk + BUFFER_MIN,
+          }
+        : null;
+    const ride = walk > BUS_CONSIDER_WALK_MIN ? busLeg(lot, destination, arriveBy, routes) : null;
+    const busOption: Omit<TripOption, "score"> | null = ride
+      ? {
+          ...base,
           mode: "bus",
-          walkMin: walk,
           bus: ride.leg,
           parkBy: ride.parkBy.toISOString(),
           totalMin: Math.round((arriveBy.getTime() - ride.parkBy.getTime()) / 60_000),
-          permitVerified: permit.verified,
-        };
-      } else {
-        notes.push(`${lot.name} is allowed but too far to walk and no scheduled bus fits.`);
-      }
-    }
+        }
+      : null;
+    // Prefer the bus only when it lets the student park later than walking would.
+    const option = busOption && (!walkOption || busOption.totalMin < walkOption.totalMin) ? busOption : walkOption;
+    // Lots too far to walk with no fitting bus are left out silently: in the evening
+    // flex hours that is most of the other campuses.
     if (option) options.push({ ...option, score: option.totalMin + STATUS_PENALTY[status] });
   }
 
@@ -192,6 +200,7 @@ export function planTrip({
 
   return {
     destination: destination.name,
+    destinationCenter: destination.center,
     arriveBy: arriveBy.toISOString(),
     usual,
     recommended,

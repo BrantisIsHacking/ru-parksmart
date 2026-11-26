@@ -1,0 +1,439 @@
+{
+ "_note": "Generated 2026-11-26 from OpenStreetMap (© OpenStreetMap contributors, ODbL). A name can have several points (one per direction).",
+ "stops": {
+  "Livingston Plaza": [
+   {
+    "lat": 40.525065,
+    "lng": -74.438526
+   }
+  ],
+  "Livingston Student Center": [
+   {
+    "lat": 40.523992,
+    "lng": -74.436589
+   }
+  ],
+  "Allison Road Classroom Building": [
+   {
+    "lat": 40.523709,
+    "lng": -74.465084
+   }
+  ],
+  "Science Buildings": [
+   {
+    "lat": 40.523892,
+    "lng": -74.464125
+   }
+  ],
+  "Stadium West Lot": [
+   {
+    "lat": 40.514572,
+    "lng": -74.465962
+   }
+  ],
+  "College Avenue Student Center": [
+   {
+    "lat": 40.503286,
+    "lng": -74.452097
+   }
+  ],
+  "Student Activities Center": [
+   {
+    "lat": 40.504107,
+    "lng": -74.448985
+   },
+   {
+    "lat": 40.503949,
+    "lng": -74.449097
+   }
+  ],
+  "The Yard": [
+   {
+    "lat": 40.499556,
+    "lng": -74.448343
+   }
+  ],
+  "Somerset Street at George Street": [
+   {
+    "lat": 40.493753,
+    "lng": -74.443728
+   }
+  ],
+  "George St at Somerset St": [
+   {
+    "lat": 40.497793,
+    "lng": -74.444502
+   }
+  ],
+  "Quads": [
+   {
+    "lat": 40.519952,
+    "lng": -74.433584
+   }
+  ],
+  "Raritan Avenue at 3rd Avenue": [
+   {
+    "lat": 40.499013,
+    "lng": -74.428117
+   },
+   {
+    "lat": 40.499245,
+    "lng": -74.427808
+   }
+  ],
+  "George St. at Albany St.": [
+   {
+    "lat": 40.497041,
+    "lng": -74.444268
+   }
+  ],
+  "George Street at Albany Street": [
+   {
+    "lat": 40.49694,
+    "lng": -74.444496
+   }
+  ],
+  "Saint Peter's Hospital": [
+   {
+    "lat": 40.501674,
+    "lng": -74.458892
+   }
+  ],
+  "Brunswick Shopping Center": [
+   {
+    "lat": 40.466344,
+    "lng": -74.453544
+   }
+  ],
+  "Martin Gerber Apartments": [
+   {
+    "lat": 40.475433,
+    "lng": -74.457582
+   },
+   {
+    "lat": 40.475154,
+    "lng": -74.457312
+   }
+  ],
+  "DeVry College of Technology": [
+   {
+    "lat": 40.465298,
+    "lng": -74.438778
+   }
+  ],
+  "Technology Centre of New Jersey": [
+   {
+    "lat": 40.467037,
+    "lng": -74.442562
+   }
+  ],
+  "Hill Center": [
+   {
+    "lat": 40.521965,
+    "lng": -74.463186
+   },
+   {
+    "lat": 40.521864,
+    "lng": -74.463285
+   }
+  ],
+  "Gibbons": [
+   {
+    "lat": 40.485247,
+    "lng": -74.431869
+   }
+  ],
+  "College Hall": [
+   {
+    "lat": 40.48568,
+    "lng": -74.437445
+   }
+  ],
+  "Red Oak Lane": [
+   {
+    "lat": 40.48282,
+    "lng": -74.437618
+   }
+  ],
+  "Biel Road": [
+   {
+    "lat": 40.479927,
+    "lng": -74.432492
+   }
+  ],
+  "Douglas Campus, George St 125' N Of Nichol Ave.": [
+   {
+    "lat": 40.485715,
+    "lng": -74.437831
+   }
+  ],
+  "George St. 55' S. Of New St.": [
+   {
+    "lat": 40.491886,
+    "lng": -74.443118
+   }
+  ],
+  "Lipman Hall": [
+   {
+    "lat": 40.481184,
+    "lng": -74.436416
+   }
+  ],
+  "George St. at Paterson St.": [
+   {
+    "lat": 40.495449,
+    "lng": -74.443904
+   },
+   {
+    "lat": 40.494773,
+    "lng": -74.443896
+   }
+  ],
+  "George St at Liberty St.": [
+   {
+    "lat": 40.493312,
+    "lng": -74.443387
+   }
+  ],
+  "NJ 18 50' N of Paulus Blvd.": [
+   {
+    "lat": 40.485578,
+    "lng": -74.42322
+   }
+  ],
+  "Douglas Campus, George St. 150' N Of Chapel Dr.": [
+   {
+    "lat": 40.485655,
+    "lng": -74.437379
+   }
+  ],
+  "George St. at Commercial Ave.": [
+   {
+    "lat": 40.487776,
+    "lng": -74.440194
+   }
+  ],
+  "George St. at Tabernacle Way": [
+   {
+    "lat": 40.489936,
+    "lng": -74.441674
+   }
+  ],
+  "NJ 18 300'N Of Paulus Blvd W.": [
+   {
+    "lat": 40.485366,
+    "lng": -74.424523
+   }
+  ],
+  "George St. at Throop Ave.": [
+   {
+    "lat": 40.488765,
+    "lng": -74.441089
+   }
+  ],
+  "George St. at Remsen Ave.": [
+   {
+    "lat": 40.490165,
+    "lng": -74.441996
+   }
+  ],
+  "Somerset St. at George St.": [
+   {
+    "lat": 40.498142,
+    "lng": -74.445127
+   }
+  ],
+  "Raritan Ave at Adelaide Ave": [
+   {
+    "lat": 40.497935,
+    "lng": -74.43442
+   },
+   {
+    "lat": 40.498041,
+    "lng": -74.434603
+   }
+  ],
+  "Raritan Ave at S. First Ave": [
+   {
+    "lat": 40.498163,
+    "lng": -74.432405
+   }
+  ],
+  "Raritan Ave at S. Second Ave": [
+   {
+    "lat": 40.498451,
+    "lng": -74.429934
+   }
+  ],
+  "Raritan Ave at Third Ave": [
+   {
+    "lat": 40.499151,
+    "lng": -74.427703
+   }
+  ],
+  "Raritan Ave at S. Fourth Ave": [
+   {
+    "lat": 40.499792,
+    "lng": -74.425882
+   }
+  ],
+  "Raritan Ave at Seventh Ave": [
+   {
+    "lat": 40.501071,
+    "lng": -74.422555
+   },
+   {
+    "lat": 40.501304,
+    "lng": -74.422258
+   }
+  ],
+  "Raritan Ave at N. Fifth Ave": [
+   {
+    "lat": 40.500445,
+    "lng": -74.42451
+   }
+  ],
+  "Raritan Ave at N. Second Ave": [
+   {
+    "lat": 40.498528,
+    "lng": -74.430131
+   }
+  ],
+  "Raritan Ave at N. First Ave": [
+   {
+    "lat": 40.498256,
+    "lng": -74.432562
+   }
+  ],
+  "Woodbridge Ave at 8th Ave": [
+   {
+    "lat": 40.501025,
+    "lng": -74.421234
+   },
+   {
+    "lat": 40.500882,
+    "lng": -74.421278
+   }
+  ],
+  "RT-27 at Woodbridge Ave": [
+   {
+    "lat": 40.50074,
+    "lng": -74.422779
+   }
+  ],
+  "Livingston Ave and New St": [
+   {
+    "lat": 40.492243,
+    "lng": -74.445379
+   }
+  ],
+  "Livingston Ave and Morris St": [
+   {
+    "lat": 40.491761,
+    "lng": -74.445572
+   }
+  ],
+  "Busch Student Center": [
+   {
+    "lat": 40.52359,
+    "lng": -74.458109
+   }
+  ],
+  "Weblin Recreation Center": [
+   {
+    "lat": 40.518714,
+    "lng": -74.460081
+   },
+   {
+    "lat": 40.518605,
+    "lng": -74.459837
+   }
+  ],
+  "Busch-Livingston Health Center": [
+   {
+    "lat": 40.523579,
+    "lng": -74.442511
+   }
+  ],
+  "SoCam Apartments": [
+   {
+    "lat": 40.491924,
+    "lng": -74.443138
+   },
+   {
+    "lat": 40.492303,
+    "lng": -74.442453
+   }
+  ],
+  "Henderson Apartments": [
+   {
+    "lat": 40.481108,
+    "lng": -74.428785
+   }
+  ],
+  "Jersey Mike's Arena": [
+   {
+    "lat": 40.524341,
+    "lng": -74.440652
+   }
+  ],
+  "Rodkin": [
+   {
+    "lat": 40.515778,
+    "lng": -74.462993
+   }
+  ],
+  "Douglass Student Center": [
+   {
+    "lat": 40.484864,
+    "lng": -74.436266
+   }
+  ],
+  "Liberty Street": [
+   {
+    "lat": 40.493359,
+    "lng": -74.443398
+   }
+  ],
+  "Zimmerli Art Muesum": [
+   {
+    "lat": 40.499663,
+    "lng": -74.445018
+   },
+   {
+    "lat": 40.49993,
+    "lng": -74.445309
+   }
+  ],
+  "Lot 53A": [
+   {
+    "lat": 40.520409,
+    "lng": -74.462798
+   }
+  ],
+  "The Bubble": [
+   {
+    "lat": 40.516421,
+    "lng": -74.466033
+   }
+  ],
+  "Johnson Park": [
+   {
+    "lat": 40.511122,
+    "lng": -74.465703
+   }
+  ],
+  "Helix H-1": [
+   {
+    "lat": 40.496351,
+    "lng": -74.445716
+   }
+  ],
+  "RBHS": [
+   {
+    "lat": 40.524379,
+    "lng": -74.47031
+   }
+  ]
+ }
+}
